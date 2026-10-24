@@ -6,11 +6,14 @@ import path from 'node:path';
 const TOOLS = import.meta.dirname;
 const file = path.join(TOOLS, '..', 'app', 'data', 'birds.json');
 const species = JSON.parse(await readFile(path.join(TOOLS, 'species.json'), 'utf8'));
+const labels = JSON.parse(await readFile(path.join(TOOLS, 'photo-labels.json'), 'utf8'));
 const birds = JSON.parse(await readFile(file, 'utf8'));
 const out = species.map(sp => {
   const b = birds.find(x => x.id === sp.id);
   if (!b) throw new Error(`No media yet for ${sp.id}; run fetch-media.mjs build`);
-  return { ...sp, taxonId: b.taxonId, photos: b.photos, calls: b.calls };
+  // Plumage labels (male, female, juvenile…) for species whose sexes or ages look different.
+  const photos = b.photos.map(({ label, ...p }) => labels[p.obsId]?.label ? { ...p, label: labels[p.obsId].label } : p);
+  return { ...sp, taxonId: b.taxonId, photos, calls: b.calls };
 });
 await writeFile(file, JSON.stringify(out, null, 1));
 console.log(`Updated ${out.length} birds in app/data/birds.json`);

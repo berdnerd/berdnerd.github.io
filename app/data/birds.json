@@ -486,28 +486,32 @@
     "obsId": 311850836,
     "credit": "(c) David C. Simon, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/311850836"
+    "url": "https://www.inaturalist.org/observations/311850836",
+    "label": "adult"
    },
    {
     "src": "media/photos/crimson-rosella-144060732.jpg",
     "obsId": 144060732,
     "credit": "(c) Taylor, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/144060732"
+    "url": "https://www.inaturalist.org/observations/144060732",
+    "label": "adult"
    },
    {
     "src": "media/photos/crimson-rosella-109542898.jpg",
     "obsId": 109542898,
     "credit": "(c) lilia100108, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/109542898"
+    "url": "https://www.inaturalist.org/observations/109542898",
+    "label": "adult"
    },
    {
-    "src": "media/photos/crimson-rosella-267627361.jpg",
-    "obsId": 267627361,
-    "credit": "(c) rolfpersoonia, some rights reserved (CC BY-NC)",
+    "src": "media/photos/crimson-rosella-45757560.jpg",
+    "obsId": 45757560,
+    "credit": "(c) andrewpavlov, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/267627361"
+    "url": "https://www.inaturalist.org/observations/45757560",
+    "label": "juvenile"
    }
   ],
   "calls": [
@@ -620,28 +624,32 @@
     "obsId": 4525504,
     "credit": "(c) Jenny Donald, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "http://www.inaturalist.org/observations/4525504"
+    "url": "http://www.inaturalist.org/observations/4525504",
+    "label": "male"
    },
    {
     "src": "media/photos/australian-king-parrot-247068639.jpg",
     "obsId": 247068639,
     "credit": "(c) ian_mcallan, some rights reserved (CC BY)",
     "licence": "cc-by",
-    "url": "https://www.inaturalist.org/observations/247068639"
+    "url": "https://www.inaturalist.org/observations/247068639",
+    "label": "male"
    },
    {
-    "src": "media/photos/australian-king-parrot-149449365.jpg",
-    "obsId": 149449365,
-    "credit": "(c) Bradley J., some rights reserved (CC BY-NC)",
+    "src": "media/photos/australian-king-parrot-337383028.jpg",
+    "obsId": 337383028,
+    "credit": "(c) hannahtaylor20053, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/149449365"
+    "url": "https://www.inaturalist.org/observations/337383028",
+    "label": "female"
    },
    {
-    "src": "media/photos/australian-king-parrot-9630281.jpg",
-    "obsId": 9630281,
-    "credit": "(c) Carole Riley, some rights reserved (CC BY-NC)",
+    "src": "media/photos/australian-king-parrot-128950938.jpg",
+    "obsId": 128950938,
+    "credit": "(c) Konrad Szylar, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/9630281"
+    "url": "https://www.inaturalist.org/observations/128950938",
+    "label": "female"
    }
   ],
   "calls": [
@@ -1155,28 +1163,32 @@
     "obsId": 107892452,
     "credit": "(c) Žilvinas Pūtys, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/107892452"
+    "url": "https://www.inaturalist.org/observations/107892452",
+    "label": "male"
    },
    {
     "src": "media/photos/magpie-lark-38822930.jpg",
     "obsId": 38822930,
     "credit": "(c) Thomas Mesaglio, some rights reserved (CC BY)",
     "licence": "cc-by",
-    "url": "https://www.inaturalist.org/observations/38822930"
+    "url": "https://www.inaturalist.org/observations/38822930",
+    "label": "male"
    },
    {
     "src": "media/photos/magpie-lark-182818766.jpg",
     "obsId": 182818766,
     "credit": "(c) Roxanne Lazarus, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/182818766"
+    "url": "https://www.inaturalist.org/observations/182818766",
+    "label": "male"
    },
    {
-    "src": "media/photos/magpie-lark-153557214.jpg",
-    "obsId": 153557214,
-    "credit": "(c) David C. Simon, some rights reserved (CC BY-NC)",
-    "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/153557214"
+    "src": "media/photos/magpie-lark-193578838.jpg",
+    "obsId": 193578838,
+    "credit": "(c) Antoine MARNAT, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/193578838",
+    "label": "female"
    }
   ],
   "calls": [
@@ -1620,28 +1632,32 @@
     "obsId": 130055783,
     "credit": "(c) Ben Holmes Photography, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/130055783"
+    "url": "https://www.inaturalist.org/observations/130055783",
+    "label": "breeding male"
    },
    {
     "src": "media/photos/superb-fairywren-119107217.jpg",
     "obsId": 119107217,
     "credit": "(c) Michael Hawk, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/119107217"
+    "url": "https://www.inaturalist.org/observations/119107217",
+    "label": "breeding male"
    },
    {
     "src": "media/photos/superb-fairywren-389599973.jpg",
     "obsId": 389599973,
     "credit": "(c) Daniel Liepack, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/389599973"
+    "url": "https://www.inaturalist.org/observations/389599973",
+    "label": "female"
    },
    {
     "src": "media/photos/superb-fairywren-46656336.jpg",
     "obsId": 46656336,
     "credit": "(c) andrewpavlov, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/46656336"
+    "url": "https://www.inaturalist.org/observations/46656336",
+    "label": "breeding male"
    }
   ],
   "calls": [
@@ -1887,28 +1903,32 @@
     "obsId": 145164812,
     "credit": "(c) ianhearn, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/145164812"
+    "url": "https://www.inaturalist.org/observations/145164812",
+    "label": "male"
    },
    {
     "src": "media/photos/spotted-pardalote-178658273.jpg",
     "obsId": 178658273,
     "credit": "(c) andrewpavlov, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/178658273"
+    "url": "https://www.inaturalist.org/observations/178658273",
+    "label": "male"
    },
    {
     "src": "media/photos/spotted-pardalote-299677713.jpg",
     "obsId": 299677713,
     "credit": "(c) Gerold Morrison, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/299677713"
+    "url": "https://www.inaturalist.org/observations/299677713",
+    "label": "male"
    },
    {
-    "src": "media/photos/spotted-pardalote-368294164.jpg",
-    "obsId": 368294164,
-    "credit": "(c) Lore, some rights reserved (CC BY-NC)",
+    "src": "media/photos/spotted-pardalote-400385417.jpg",
+    "obsId": 400385417,
+    "credit": "(c) Amber Brodie, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/368294164"
+    "url": "https://www.inaturalist.org/observations/400385417",
+    "label": "female"
    }
   ],
   "calls": [
@@ -2019,28 +2039,32 @@
     "obsId": 149380420,
     "credit": "no rights reserved",
     "licence": "cc0",
-    "url": "https://www.inaturalist.org/observations/149380420"
+    "url": "https://www.inaturalist.org/observations/149380420",
+    "label": "male"
    },
    {
     "src": "media/photos/golden-whistler-250198936.jpg",
     "obsId": 250198936,
     "credit": "(c) lillypollard, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/250198936"
+    "url": "https://www.inaturalist.org/observations/250198936",
+    "label": "male"
    },
    {
     "src": "media/photos/golden-whistler-85316573.jpg",
     "obsId": 85316573,
     "credit": "(c) andrewpavlov, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/85316573"
+    "url": "https://www.inaturalist.org/observations/85316573",
+    "label": "male"
    },
    {
     "src": "media/photos/golden-whistler-166393421.jpg",
     "obsId": 166393421,
     "credit": "(c) Bay Amelia, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/166393421"
+    "url": "https://www.inaturalist.org/observations/166393421",
+    "label": "female"
    }
   ],
   "calls": [
@@ -2152,28 +2176,32 @@
     "obsId": 406532790,
     "credit": "(c) Linda Rodriguez, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/406532790"
+    "url": "https://www.inaturalist.org/observations/406532790",
+    "label": "male"
    },
    {
     "src": "media/photos/eastern-koel-195835918.jpg",
     "obsId": 195835918,
     "credit": "(c) jameslambo, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/195835918"
+    "url": "https://www.inaturalist.org/observations/195835918",
+    "label": "juvenile"
    },
    {
     "src": "media/photos/eastern-koel-63451714.jpg",
     "obsId": 63451714,
     "credit": "(c) Jens Sommer-Knudsen, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/63451714"
+    "url": "https://www.inaturalist.org/observations/63451714",
+    "label": "male"
    },
    {
-    "src": "media/photos/eastern-koel-39688468.jpg",
-    "obsId": 39688468,
-    "credit": "(c) kalimata, some rights reserved (CC BY-NC)",
+    "src": "media/photos/eastern-koel-17056051.jpg",
+    "obsId": 17056051,
+    "credit": "(c) Tony Strazzari, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/39688468"
+    "url": "https://www.inaturalist.org/observations/17056051",
+    "label": "female"
    }
   ],
   "calls": [
@@ -2619,28 +2647,32 @@
     "obsId": 325269412,
     "credit": "(c) ian_mcallan, some rights reserved (CC BY)",
     "licence": "cc-by",
-    "url": "https://www.inaturalist.org/observations/325269412"
+    "url": "https://www.inaturalist.org/observations/325269412",
+    "label": "male"
    },
    {
     "src": "media/photos/australian-brushturkey-329771984.jpg",
     "obsId": 329771984,
     "credit": "(c) SkippingShoe, some rights reserved (CC BY)",
     "licence": "cc-by",
-    "url": "https://www.inaturalist.org/observations/329771984"
+    "url": "https://www.inaturalist.org/observations/329771984",
+    "label": "male"
    },
    {
     "src": "media/photos/australian-brushturkey-35520603.jpg",
     "obsId": 35520603,
     "credit": "(c) djglore, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/35520603"
+    "url": "https://www.inaturalist.org/observations/35520603",
+    "label": "male"
    },
    {
-    "src": "media/photos/australian-brushturkey-261375606.jpg",
-    "obsId": 261375606,
-    "credit": "(c) David, some rights reserved (CC BY-NC)",
+    "src": "media/photos/australian-brushturkey-235453029.jpg",
+    "obsId": 235453029,
+    "credit": "(c) suzedunford, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/261375606"
+    "url": "https://www.inaturalist.org/observations/235453029",
+    "label": "female"
    }
   ],
   "calls": [
@@ -2679,28 +2711,32 @@
     "obsId": 170988060,
     "credit": "(c) Scott Penfold, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/170988060"
+    "url": "https://www.inaturalist.org/observations/170988060",
+    "label": "male"
    },
    {
     "src": "media/photos/superb-lyrebird-263955993.jpg",
     "obsId": 263955993,
     "credit": "(c) Martin, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/263955993"
+    "url": "https://www.inaturalist.org/observations/263955993",
+    "label": "male"
    },
    {
     "src": "media/photos/superb-lyrebird-389270977.jpg",
     "obsId": 389270977,
     "credit": "(c) Beckie Gee, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/389270977"
+    "url": "https://www.inaturalist.org/observations/389270977",
+    "label": "female or young male"
    },
    {
     "src": "media/photos/superb-lyrebird-67440159.jpg",
     "obsId": 67440159,
     "credit": "(c) haruspex, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/67440159"
+    "url": "https://www.inaturalist.org/observations/67440159",
+    "label": "male"
    }
   ],
   "calls": [
@@ -2746,28 +2782,32 @@
     "obsId": 250346130,
     "credit": "(c) Litty and Philipp, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/250346130"
+    "url": "https://www.inaturalist.org/observations/250346130",
+    "label": "male"
    },
    {
     "src": "media/photos/satin-bowerbird-253074972.jpg",
     "obsId": 253074972,
     "credit": "(c) jervisbaygirl, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/253074972"
+    "url": "https://www.inaturalist.org/observations/253074972",
+    "label": "female or young male"
    },
    {
     "src": "media/photos/satin-bowerbird-149710285.jpg",
     "obsId": 149710285,
     "credit": "(c) andrewpavlov, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/149710285"
+    "url": "https://www.inaturalist.org/observations/149710285",
+    "label": "female or young male"
    },
    {
     "src": "media/photos/satin-bowerbird-110936196.jpg",
     "obsId": 110936196,
     "credit": "(c) Taylor, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/110936196"
+    "url": "https://www.inaturalist.org/observations/110936196",
+    "label": "female or young male"
    }
   ],
   "calls": [
@@ -2945,28 +2985,32 @@
     "obsId": 56524616,
     "credit": "no rights reserved",
     "licence": "cc0",
-    "url": "https://www.inaturalist.org/observations/56524616"
+    "url": "https://www.inaturalist.org/observations/56524616",
+    "label": "male"
    },
    {
     "src": "media/photos/australian-wood-duck-67118236.jpg",
     "obsId": 67118236,
     "credit": "(c) Ashley M Bradford, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/67118236"
+    "url": "https://www.inaturalist.org/observations/67118236",
+    "label": "male"
    },
    {
     "src": "media/photos/australian-wood-duck-293995650.jpg",
     "obsId": 293995650,
     "credit": "(c) Paul Taillie, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/293995650"
+    "url": "https://www.inaturalist.org/observations/293995650",
+    "label": "pair"
    },
    {
     "src": "media/photos/australian-wood-duck-40072944.jpg",
     "obsId": 40072944,
     "credit": "(c) Taylor, some rights reserved (CC BY-NC)",
     "licence": "cc-by-nc",
-    "url": "https://www.inaturalist.org/observations/40072944"
+    "url": "https://www.inaturalist.org/observations/40072944",
+    "label": "female"
    }
   ],
   "calls": [

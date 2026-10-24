@@ -129,6 +129,16 @@ function shortCredit(item) {
   return esc(credit.replace(/^\(c\)\s*/, '© ').replace(/,? (some|all) rights reserved.*$/i, '').replace(/,? uploaded by.*$/i, ''));
 }
 
+// "a female Australian King-Parrot", "a Satin Bowerbird (female or young male)", "a Laughing Kookaburra".
+function describe(bird, photo) {
+  const label = photo?.label;
+  const simple = label && /^(male|female|juvenile|adult|breeding male|young male)$/.test(label);
+  const name = simple ? `${label} ${bird.name}` : bird.name;
+  const article = /^[AEIOU]/i.test(name) ? 'an' : 'a';
+  return `${article} ${esc(name)}${label && !simple ? ` (${esc(label)})` : ''}`;
+}
+const labelBadge = photo => photo?.label ? `<span class="plumage">${esc(photo.label)}</span>` : '';
+
 function playClip(src, button) {
   document.querySelectorAll('.playing').forEach(el => el.classList.remove('playing'));
   if (audio.dataset.src === src && !audio.paused) { audio.pause(); return; }
@@ -284,7 +294,7 @@ function learnCards(family, index) {
   $main.innerHTML = `
     ${topBar(`<h2 class="grow">${familyName(family)}</h2><span class="score-pill">${index + 1}/${birds.length}</span>`)}
     <div class="card">
-      <div class="media"><img src="${esc(photo.src)}" alt="${esc(b.name)}"><div class="credit">${shortCredit(photo)} · ${esc(licenceLabel(photo.licence))}</div></div>
+      <div class="media"><img src="${esc(photo.src)}" alt="${esc(b.name)}">${labelBadge(photo)}<div class="credit">${shortCredit(photo)} · ${esc(licenceLabel(photo.licence))}</div></div>
       <div class="card-body">
         <h2>${esc(b.name)}</h2>
         <p class="muted small"><i>${esc(b.sci)}</i>${b.status === 'introduced' ? ' · introduced' : ''}</p>
@@ -346,7 +356,7 @@ function renderQuestion(answeredId) {
 
   // The call quiz's play button lives in the bottom dock, within thumb reach.
   const prompt = round.mode === 'photo'
-    ? `<div class="media"><img src="${esc(photo.src)}" alt="Mystery bird"><div class="credit">${shortCredit(photo)} · ${esc(licenceLabel(photo.licence))}</div></div>`
+    ? `<div class="media"><img src="${esc(photo.src)}" alt="Mystery bird">${answered ? labelBadge(photo) : ''}<div class="credit">${shortCredit(photo)} · ${esc(licenceLabel(photo.licence))}</div></div>`
     : '';
 
   const showPhotos = round.mode === 'call' && settings.callAnswer === 'photos';
@@ -360,7 +370,7 @@ function renderQuestion(answeredId) {
     ? `<div class="choices photos${options.length === 3 ? ' three' : ''}">${options.map((o, i) => `
         <button data-id="${o.id}" class="${choiceClass(o)}" ${answered ? 'disabled' : ''} aria-label="${answered ? esc(o.name) : `Option ${i + 1}`}">
           <img src="${esc(optionPhotos[o.id].src)}" alt="">
-          ${answered ? `<span class="label">${esc(o.name)}</span>` : ''}
+          ${answered ? `<span class="label">${esc(o.name)}${optionPhotos[o.id].label ? ` · ${esc(optionPhotos[o.id].label)}` : ''}</span>` : ''}
         </button>`).join('')}</div>`
     : `<div class="choices names">${options.map(o => `
         <button data-id="${o.id}" class="${choiceClass(o)}" ${answered ? 'disabled' : ''}>${esc(o.name)}</button>`).join('')}</div>`;
@@ -371,7 +381,7 @@ function renderQuestion(answeredId) {
     const extra = round.mode === 'photo' && target.calls.length
       ? `<button class="btn secondary" data-hear>🔊 Hear its call</button>` : '';
     const seePhoto = round.mode === 'call' && !showPhotos
-      ? `<div class="media"><img src="${esc(optionPhotos[target.id].src)}" alt="${esc(target.name)}"></div>` : '';
+      ? `<div class="media"><img src="${esc(optionPhotos[target.id].src)}" alt="${esc(target.name)}">${labelBadge(optionPhotos[target.id])}</div>` : '';
     // After a wrong answer, show what you picked next to what it was, so the difference sticks.
     const chosen = !correct && byId(answeredId);
     const compare = chosen ? `
@@ -379,9 +389,11 @@ function renderQuestion(answeredId) {
           <img src="${esc((optionPhotos[chosen.id] || chosen.photos[0]).src)}" alt="">
           <div><b>You picked ${esc(chosen.name)}</b><div class="sub">${esc(chosen.tip)}</div></div>
         </div>` : '';
+    const shown = round.mode === 'photo' ? photo : optionPhotos[target.id];
     feedback = `
       <div class="feedback ${correct ? 'good' : 'bad'}" aria-live="polite">
-        <h3>${correct ? `Correct, ${/^[AEIOU]/.test(target.name) ? 'an' : 'a'} ${esc(target.name)}!` : `It was the ${esc(target.name)}`}</h3>
+        <h3>${correct ? `Correct, ${describe(target, shown)}!` : `It was ${describe(target, shown)}`}</h3>
+        <p class="muted small sci"><i>${esc(target.sci)}</i></p>
         ${seePhoto}
         <p>${esc(target.tip)}</p>
         ${compare}
@@ -898,7 +910,7 @@ function birdDetail(id, back) {
   $main.innerHTML = `
     ${topBar(`<h2 class="grow">${esc(b.name)}</h2>`)}
     <div class="gallery">${b.photos.map(p => `
-      <div class="media"><img src="${esc(p.src)}" alt="${esc(b.name)}" loading="lazy">
+      <div class="media"><img src="${esc(p.src)}" alt="${esc(b.name)}" loading="lazy">${labelBadge(p)}
         <div class="credit">${shortCredit(p)} · ${esc(licenceLabel(p.licence))}</div></div>`).join('')}</div>
     <p class="muted small">${b.photos.length > 1 ? 'Swipe for more photos · ' : ''}<i>${esc(b.sci)}</i></p>
     <div class="tip">${esc(b.tip)}</div>

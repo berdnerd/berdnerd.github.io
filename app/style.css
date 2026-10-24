@@ -220,6 +220,12 @@ h3.section { font-size: 1rem; color: var(--muted); margin: 6px 4px -6px; }
   font-size: .68rem; color: #fff; background: linear-gradient(transparent, rgba(0, 0, 0, .55));
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
+/* Plumage badge on photos of birds whose sexes or ages differ. */
+.media .plumage {
+  position: absolute; top: 10px; left: 10px; padding: 3px 9px; border-radius: 10px;
+  background: rgba(28, 43, 34, .72); color: #fff; font: 700 .75rem/1.4 var(--font-body);
+}
+.feedback .sci { margin-top: -4px; }
 /* Bottom dock: the main action sits where the thumb rests. */
 .dock {
   position: sticky; bottom: calc(env(safe-area-inset-bottom) + 12px); margin-top: auto;

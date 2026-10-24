@@ -6,7 +6,8 @@ What's in it: a **Learn** mode (flashcards by family), **Photo** and **Call** qu
 
 Data files and how to rebuild them:
 
-- `tools/species.json` — names, family, native/introduced, lookalikes and ID tips; `node tools/update-species.mjs` copies them into `app/data/birds.json` without touching media.
+- `tools/species.json` — names, family, native/introduced, lookalikes and ID tips; `node tools/update-species.mjs` copies them (and the plumage labels in `tools/photo-labels.json`: male, female, juvenile…) into `app/data/birds.json` without touching media.
+- `node tools/add-photo.mjs <bird id> <observation id> [replace observation id]` adds one iNaturalist photo to a bird (used to make sure both sexes of dimorphic species are shown).
 - `tools/facts.json` — hand-checked facts for the knowledge quiz, each with its Wikipedia source; `node tools/build-facts.mjs` writes `app/data/facts.json`.
 - `tools/seasonality-overrides.json` — hand labels for seasonal patterns; `node tools/fetch-seasonality.mjs` pulls monthly counts from the Atlas of Living Australia and writes `app/data/seasonality.json` (re-run yearly).
 

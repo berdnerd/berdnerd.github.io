@@ -1,0 +1,63 @@
+{
+ "_about": "Plumage labels for photos of birds whose sexes or ages look different, keyed by iNaturalist observation id. 'label' is shown on the photo and read into quiz feedback ('Correct, a female Australian King-Parrot!'). Sources: iNaturalist annotations where present, otherwise checked by eye against the tips. node tools/update-species.mjs copies them into app/data/birds.json.",
+
+ "250346130": { "label": "male", "source": "eye: glossy blue-black adult at its bower" },
+ "253074972": { "label": "female or young male", "source": "eye: green, scalloped underside" },
+ "149710285": { "label": "female or young male", "source": "eye: green, scalloped underside" },
+ "110936196": { "label": "female or young male", "source": "eye: green, scalloped underside" },
+
+ "149380420": { "label": "male", "source": "eye: black head, white throat, golden breast" },
+ "250198936": { "label": "male", "source": "eye" },
+ "85316573": { "label": "male", "source": "eye" },
+ "166393421": { "label": "female", "source": "eye: plain grey-brown" },
+
+ "130055783": { "label": "breeding male", "source": "eye: bright blue and black" },
+ "119107217": { "label": "breeding male", "source": "eye" },
+ "389599973": { "label": "female", "source": "eye: brown with reddish eye patch and bill" },
+ "46656336": { "label": "breeding male", "source": "eye" },
+
+ "406532790": { "label": "male", "source": "eye: glossy black, red eye" },
+ "195835918": { "label": "juvenile", "source": "inaturalist" },
+ "63451714": { "label": "male", "source": "inaturalist" },
+ "39688468": { "label": "juvenile", "source": "inaturalist" },
+
+ "56524616": { "label": "male", "source": "eye: plain dark brown head, no face stripes" },
+ "67118236": { "label": "male", "source": "inaturalist" },
+ "293995650": { "label": "pair", "source": "eye: two birds, male behind, female in front" },
+ "40072944": { "label": "female", "source": "eye: pale stripes above and below the eye, speckled" },
+
+ "107892452": { "label": "male", "source": "eye: black throat, white eyebrow" },
+ "38822930": { "label": "male", "source": "inaturalist" },
+ "182818766": { "label": "male", "source": "inaturalist; black throat, white eyebrow" },
+ "153557214": { "label": "male", "source": "inaturalist" },
+
+ "325269412": { "label": "male", "source": "eye: large yellow wattle" },
+ "329771984": { "label": "male", "source": "eye: large yellow wattle" },
+ "35520603": { "label": "male", "source": "inaturalist" },
+ "261375606": { "label": "juvenile", "source": "inaturalist" },
+
+ "170988060": { "label": "male", "source": "eye: lyre-shaped tail" },
+ "263955993": { "label": "male", "source": "eye: lyre-shaped tail" },
+ "389270977": { "label": "female or young male", "source": "eye: plain tail without lyre plumes" },
+ "67440159": { "label": "male", "source": "eye: displaying" },
+
+ "145164812": { "label": "male", "source": "eye: bright yellow throat" },
+ "178658273": { "label": "male", "source": "eye: bright yellow throat" },
+ "299677713": { "label": "male", "source": "eye: bright yellow throat" },
+ "368294164": { "label": "male", "source": "eye: bright yellow throat" },
+
+ "4525504": { "label": "male", "source": "inaturalist" },
+ "247068639": { "label": "male", "source": "inaturalist" },
+ "337383028": { "label": "female", "source": "inaturalist; green head, red belly" },
+ "128950938": { "label": "female", "source": "inaturalist; green head, red belly" },
+
+ "235453029": { "label": "female", "source": "inaturalist; small pale wattle" },
+ "45757560": { "label": "juvenile", "source": "inaturalist; mostly green with red head" },
+ "311850836": { "label": "adult", "source": "eye" },
+ "144060732": { "label": "adult", "source": "eye" },
+ "109542898": { "label": "adult", "source": "eye" },
+
+ "17056051": { "label": "female", "source": "inaturalist; brown, barred and spotted" },
+ "193578838": { "label": "female", "source": "inaturalist; white throat" },
+ "400385417": { "label": "female", "source": "inaturalist; pale throat, spotted crown" }
+}
