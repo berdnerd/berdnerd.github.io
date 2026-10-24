@@ -250,6 +250,13 @@ h3.section { font-size: 1rem; color: var(--muted); margin: 6px 4px -6px; }
 .feedback.good h3 { color: var(--good); }
 .feedback.bad h3 { color: var(--bad); }
 .feedback .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+.compare { display: flex; gap: 10px; align-items: center; margin-top: 4px; padding: 8px; border-radius: 12px; background: rgba(255, 255, 255, .45); }
+@media (prefers-color-scheme: dark) { .compare { background: rgba(0, 0, 0, .2); } }
+.compare img { width: 56px; height: 56px; border-radius: 10px; object-fit: cover; flex: none; }
+.compare .sub { font-size: .85rem; color: var(--muted); }
+.mixups { display: grid; gap: 8px; }
+.row.static { cursor: default; }
+.row.static img + img { margin-left: -6px; }
 
 .btn {
   border: 0; border-radius: 14px; padding: 12px 18px;

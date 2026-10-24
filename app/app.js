@@ -34,15 +34,46 @@ function applyPalette() {
 applyPalette();
 const saveStats = () => store.set('stats', stats);
 
-function record(id, correct) {
+// Spaced repetition: each bird sits in a Leitner box 0-4. A right answer moves it up a box and
+// schedules the next review further out; a wrong answer drops it to box 0 and makes it due now.
+const DAY = 86400000;
+const INTERVALS = [0, 1, 3, 7, 21].map(d => d * DAY);
+const now = () => Date.now();
+function entry(id) {
   const s = stats[id] || (stats[id] = { right: 0, wrong: 0, streak: 0 });
-  if (correct) { s.right++; s.streak++; } else { s.wrong++; s.streak = 0; }
+  if (s.box === undefined) {        // stats saved before spaced repetition existed
+    s.box = Math.min(s.streak || 0, 4);
+    s.due = 0;
+    s.last = 0;
+  }
+  s.mixedWith ||= {};
+  return s;
+}
+function record(id, correct, chosenId) {
+  const s = entry(id);
+  if (correct) { s.right++; s.streak++; s.box = Math.min(s.box + 1, 4); }
+  else { s.wrong++; s.streak = 0; s.box = 0; if (chosenId && chosenId !== id) s.mixedWith[chosenId] = (s.mixedWith[chosenId] || 0) + 1; }
+  s.last = now();
+  s.due = s.last + INTERVALS[s.box];
   saveStats();
 }
 function status(id) {
   const s = stats[id];
   if (!s || s.right + s.wrong === 0) return 'new';
-  return s.streak >= 3 ? 'mastered' : 'learning';
+  return entry(id).box >= 3 ? 'mastered' : 'learning';
+}
+const isDue = id => { const s = stats[id]; return !!s && now() >= entry(id).due; };
+// The pairs you mix up most, across all birds, as [targetId, chosenId, count].
+function worstMixUps(limit = 3) {
+  const pairs = {};
+  for (const [id, s] of Object.entries(stats)) {
+    for (const [other, n] of Object.entries(s.mixedWith || {})) {
+      const key = [id, other].sort().join('|');
+      pairs[key] = (pairs[key] || 0) + n;
+    }
+  }
+  return Object.entries(pairs).sort((a, b) => b[1] - a[1]).slice(0, limit)
+    .map(([key, n]) => [...key.split('|'), n]);
 }
 
 // ---------- Helpers ----------
@@ -105,11 +136,18 @@ function playClip(src, button) {
 }
 function stopAudio() { audio.pause(); }
 
-// Weight birds you get wrong (or haven't seen) more heavily, so they come up more often.
+// Birds you haven't met, keep getting wrong, or are due for review come up more often;
+// birds comfortably ahead of their review date mostly rest.
 function weightFor(id) {
   const s = stats[id];
   if (!s) return 3;
-  return Math.max(0.4, 1 + s.wrong * 1.5 - s.streak * 0.6);
+  const e = entry(id);
+  const base = Math.max(0.3, 1 + e.wrong * 0.5 - e.box * 0.25);
+  if (now() >= e.due) {
+    const overdueDays = (now() - e.due) / DAY;
+    return base * Math.min(4, 2 + overdueDays / 7);
+  }
+  return base * 0.35;
 }
 function pickTarget(pool, recent) {
   const candidates = pool.filter(b => !recent.includes(b.id));
@@ -142,6 +180,7 @@ function home() {
   stopAudio();
   const seen = BIRDS.filter(b => status(b.id) !== 'new').length;
   const mastered = BIRDS.filter(b => status(b.id) === 'mastered').length;
+  const due = BIRDS.filter(b => isDue(b.id)).length;
   const totals = Object.values(stats).reduce((a, s) => ({ r: a.r + s.right, w: a.w + s.wrong }), { r: 0, w: 0 });
   const accuracy = totals.r + totals.w ? Math.round(100 * totals.r / (totals.r + totals.w)) + '%' : '–';
   $main.innerHTML = `
@@ -151,7 +190,7 @@ function home() {
     </div>
     <div class="stat-row">
       <div class="stat"><b>${mastered}</b><span>mastered</span></div>
-      <div class="stat"><b>${seen}</b><span>seen</span></div>
+      <div class="stat"><b>${seen ? due : BIRDS.length}</b><span>${seen ? 'due for review' : 'to meet'}</span></div>
       <div class="stat"><b>${accuracy}</b><span>accuracy</span></div>
     </div>
     <button class="mode photo" data-go="photo">
@@ -240,11 +279,19 @@ function renderQuestion(answeredId) {
       ? `<button class="btn secondary" data-hear>🔊 Hear its call</button>` : '';
     const seePhoto = round.mode === 'call' && !showPhotos
       ? `<div class="media"><img src="${esc(optionPhotos[target.id].src)}" alt="${esc(target.name)}"></div>` : '';
+    // After a wrong answer, show what you picked next to what it was, so the difference sticks.
+    const chosen = !correct && byId(answeredId);
+    const compare = chosen ? `
+        <div class="compare">
+          <img src="${esc((optionPhotos[chosen.id] || chosen.photos[0]).src)}" alt="">
+          <div><b>You picked ${esc(chosen.name)}</b><div class="sub">${esc(chosen.tip)}</div></div>
+        </div>` : '';
     feedback = `
       <div class="feedback ${correct ? 'good' : 'bad'}" aria-live="polite">
         <h3>${correct ? `Correct, ${/^[AEIOU]/.test(target.name) ? 'an' : 'a'} ${esc(target.name)}!` : `It was the ${esc(target.name)}`}</h3>
         ${seePhoto}
         <p>${esc(target.tip)}</p>
+        ${compare}
         ${round.mode === 'call' ? `<p class="muted small">Recording: ${shortCredit(call)} · ${esc(licenceLabel(call.licence))}</p>` : ''}
         ${extra ? `<div class="actions">${extra}</div>` : ''}
       </div>`;
@@ -282,7 +329,7 @@ function renderQuestion(answeredId) {
 function answer(id) {
   const { target } = round.q;
   const correct = id === target.id;
-  record(target.id, correct);
+  record(target.id, correct, id);
   if (correct) round.score++;
   else {
     if (!round.missed.includes(target.id)) round.missed.push(target.id);
@@ -296,9 +343,15 @@ function results() {
   const total = settings.roundLength;
   const pct = round.score / total;
   const message = pct === 1 ? 'Perfect round!' : pct >= .8 ? 'Great birding!' : pct >= .5 ? 'Getting there.' : 'Keep practising.';
+  const mixUps = worstMixUps(3).filter(([, , n]) => n >= 2);
   $main.innerHTML = `
     ${topBar('<h2 class="grow">Results</h2>')}
     <div class="score"><b>${round.score}/${total}</b><p class="muted">${message}</p></div>
+    ${mixUps.length ? `<h3>Your usual mix-ups</h3>
+      <div class="mixups">${mixUps.map(([a, b, n]) => `<div class="row static">
+        <img src="${esc(byId(a).photos[0]?.src)}" alt=""><img src="${esc(byId(b).photos[0]?.src)}" alt="">
+        <div class="grow"><b>${esc(byId(a).name)} ↔ ${esc(byId(b).name)}</b><div class="sub">${n} time${n === 1 ? '' : 's'}</div></div>
+      </div>`).join('')}</div>` : ''}
     ${round.missed.length ? `<h3>To work on</h3>
       <div class="missed">${round.missed.map(id => byId(id)).map(b => `
         <button class="row" data-bird="${b.id}">
