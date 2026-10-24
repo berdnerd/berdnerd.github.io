@@ -226,9 +226,17 @@ function home() {
       <div class="emoji">${icon('seasons')}</div>
       <div><h3>Seasons quiz</h3><p>Who visits for summer, who's about all year.</p></div>
     </button>` : ''}
+    <button class="mode odd" data-go="odd">
+      <div class="emoji">${icon('odd')}</div>
+      <div><h3>Odd one out</h3><p>Four photos, three belong together.</p></div>
+    </button>
     <button class="mode browse" data-go="browse">
       <div class="emoji">${icon('browse')}</div>
       <div><h3>Field guide</h3><p>Browse all the birds, photos and calls.</p></div>
+    </button>
+    <button class="mode basics" data-go="basics">
+      <div class="emoji">${icon('basics')}</div>
+      <div><h3>Bird basics</h3><p>Parts of a bird, beak shapes, where to look, how to listen.</p></div>
     </button>
     <button class="mode settings" data-go="settings">
       <div class="emoji">${icon('settings')}</div>
@@ -241,6 +249,8 @@ function home() {
     else if (go === 'learn') learnFamilies();
     else if (go === 'facts') startKnowledge();
     else if (go === 'seasons') startSeasons();
+    else if (go === 'odd') startOdd();
+    else if (go === 'basics') basics();
     else settingsScreen();
   });
   const unlock = $main.querySelector('[data-unlock]');
@@ -445,7 +455,7 @@ function results() {
     <button class="btn block secondary" data-home>Home</button>`;
   wireBack();
   $main.querySelector('[data-again]').onclick = () =>
-    round.mode === 'facts' ? startKnowledge() : round.mode === 'seasons' ? startSeasons() : startRound(round.mode, round.birds);
+    round.mode === 'facts' ? startKnowledge() : round.mode === 'seasons' ? startSeasons() : round.mode === 'odd' ? startOdd() : startRound(round.mode, round.birds);
   $main.querySelector('[data-home]').onclick = home;
   $main.querySelectorAll('[data-bird]').forEach(el => el.onclick = () => birdDetail(el.dataset.bird, results));
 }
@@ -669,6 +679,177 @@ function renderSeasonQuestion(answeredId) {
   const next = $main.querySelector('[data-next]');
   if (next) next.onclick = () => { round.index++; nextSeasonQuestion(); };
   $main.querySelector('.feedback')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// ---------- Odd one out ----------
+// Four photos; three share something (family, native/introduced, stays all year) and one doesn't.
+function startOdd() {
+  round = { mode: 'odd', pool: BIRDS, index: 0, score: 0, recent: [], missed: [], birds: BIRDS };
+  nextOddQuestion();
+}
+
+function makeOddQuestion(recent) {
+  const fresh = list => { const f = list.filter(b => !recent.includes(b.id)); return f.length ? f : list; };
+  // Only three introduced birds exist, so that question would repeat itself; keep it rare.
+  const kind = rand(['family', 'family', 'family', 'family', 'family', 'status', 'season', 'season']);
+  if (kind === 'status' && FACTS && Object.keys(FACTS).length) {
+    const introduced = BIRDS.filter(b => b.status === 'introduced');
+    const native = BIRDS.filter(b => b.status !== 'introduced');
+    const odd = rand(fresh(native));
+    return { odd, group: shuffle(introduced).slice(0, 3), reason: `The other three were introduced to Australia. The ${odd.name} is native.` };
+  }
+  if (kind === 'season' && Object.keys(SEASONS.birds).length) {
+    const residents = seasonBirds('resident');
+    const seasonal = seasonBirds('migrant-summer', 'winter-influx', 'spring-summer');
+    const odd = rand(fresh(seasonal));
+    const why = seasonOf(odd.id).note || SEASON_TEXT[seasonLabel(odd.id)];
+    return { odd, group: shuffle(residents).slice(0, 3), reason: `The other three are around Sydney all year. The ${odd.name}: ${why.charAt(0).toLowerCase()}${why.slice(1)}` };
+  }
+  const [familyKey, familyLabel] = rand(FAMILIES.filter(([k]) => BIRDS.filter(b => b.family === k).length >= 3));
+  const group = shuffle(BIRDS.filter(b => b.family === familyKey)).slice(0, 3);
+  const odd = rand(fresh(BIRDS.filter(b => b.family !== familyKey)));
+  return { odd, group, reason: `The other three are ${familyLabel.toLowerCase()}. The ${odd.name} belongs with the ${familyName(odd.family).toLowerCase()}.` };
+}
+
+function nextOddQuestion() {
+  stopAudio();
+  if (round.index >= settings.roundLength) return results();
+  const q = makeOddQuestion(round.recent);
+  round.recent = [...round.recent, q.odd.id].slice(-8);
+  q.options = shuffle([q.odd, ...q.group]);
+  q.photos = Object.fromEntries(q.options.map(b => [b.id, b.photos[0]]));
+  round.q = { ...q, target: q.odd };
+  renderOddQuestion();
+}
+
+function renderOddQuestion(answeredId) {
+  const { odd, options, photos, reason } = round.q;
+  const answered = answeredId !== undefined;
+  const correct = answeredId === odd.id;
+  const cls = b => !answered ? '' : b.id === odd.id ? 'right' : b.id === answeredId ? 'wrong' : 'dim';
+  $main.innerHTML = `
+    ${topBar(`<div class="progress" role="progressbar" aria-valuenow="${round.index}" aria-valuemax="${settings.roundLength}"><span></span></div><span class="score-pill" aria-label="Score">${round.score}</span>`)}
+    <h2 class="question">Which one is the odd one out?</h2>
+    <div class="choices photos">${options.map((b, i) => `
+      <button data-id="${b.id}" class="${cls(b)}" ${answered ? 'disabled' : ''} aria-label="${answered ? esc(b.name) : `Option ${i + 1}`}">
+        <img src="${esc(photos[b.id].src)}" alt="">
+        ${answered ? `<span class="label">${esc(b.name)}</span>` : ''}
+      </button>`).join('')}</div>
+    ${answered ? `
+      <div class="feedback ${correct ? 'good' : 'bad'}" aria-live="polite">
+        <h3>${correct ? 'Correct!' : `It was the ${esc(odd.name)}`}</h3>
+        <p>${esc(reason)}</p>
+      </div>
+      <div class="dock"><button class="btn block" data-next>${round.index + 1 >= settings.roundLength ? 'See results' : 'Next'}</button></div>` : ''}`;
+  $main.querySelector('.progress > span').style.width = `${100 * round.index / settings.roundLength}%`;
+  wireBack(home);
+  $main.querySelectorAll('.choices button:not(:disabled)').forEach(btn => btn.onclick = () => {
+    const ok = btn.dataset.id === odd.id;
+    if (ok) round.score++; else { if (!round.missed.includes(odd.id)) round.missed.push(odd.id); navigator.vibrate?.(120); }
+    renderOddQuestion(btn.dataset.id);
+  });
+  const next = $main.querySelector('[data-next]');
+  if (next) next.onclick = () => { round.index++; nextOddQuestion(); };
+  $main.querySelector('.feedback')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// ---------- Bird basics: a short illustrated reference ----------
+const TOPOGRAPHY_SVG = `<svg viewBox="0 0 340 210" class="diagram" aria-label="Parts of a bird">
+  <g fill="var(--tile-sage)" stroke="var(--brand)" stroke-width="2" stroke-linejoin="round">
+    <path d="M60 128 C70 90 120 78 170 84 C210 88 240 104 262 128 L312 150 L300 156 L256 142 C236 158 200 168 160 166 C120 164 84 154 60 128 Z"/>
+    <circle cx="80" cy="96" r="26"/>
+    <path d="M56 92 L22 100 L58 106 Z" fill="var(--accent)"/>
+    <path d="M150 164 L146 192 M160 165 L158 192 M138 192 L154 192 M150 192 L166 192" fill="none" stroke-linecap="round"/>
+    <path d="M110 100 C140 96 190 100 220 118 C190 126 150 128 112 118 Z" fill="var(--brand)" fill-opacity=".25"/>
+  </g>
+  <circle cx="86" cy="90" r="4" fill="var(--ink)"/>
+  <g fill="none" stroke="var(--muted)" stroke-width="1.2">
+    <path d="M78 70 L78 40 M104 86 L140 56 M40 98 L40 40 M70 118 L48 150 M120 146 L100 176 M165 100 L182 48 M250 134 L262 88 M270 152 L288 182 M164 180 L200 196"/>
+  </g>
+  <g font-size="11" fill="var(--ink)">
+    <text x="78" y="36" text-anchor="middle">crown</text>
+    <text x="142" y="52">nape</text>
+    <text x="40" y="36" text-anchor="middle">bill</text>
+    <text x="46" y="162" text-anchor="middle">throat</text>
+    <text x="100" y="188" text-anchor="middle">breast</text>
+    <text x="184" y="44">wing</text>
+    <text x="264" y="84">rump</text>
+    <text x="290" y="194">tail</text>
+    <text x="204" y="200">legs</text>
+  </g>
+</svg>`;
+
+const BEAKS = [
+  ['Hook', 'Tears meat. Raptors, and the smaller hook of butcherbirds and currawongs.', ['white-bellied-sea-eagle', 'grey-butcherbird', 'pied-currawong'],
+    'M10 20 C14 10 30 8 44 14 L52 26 L46 24 C40 22 34 30 24 28 C16 26 12 24 10 20 Z'],
+  ['Crusher', 'Short, deep and curved: cracks seeds and nuts. Parrots and cockatoos.', ['sulphur-crested-cockatoo', 'crimson-rosella', 'galah'],
+    'M14 14 C24 6 40 8 46 18 C50 26 44 34 36 34 L30 28 C24 30 16 26 14 14 Z'],
+  ['Fine probe', 'Thin and often down-curved: reaches nectar. Honeyeaters.', ['eastern-spinebill', 'new-holland-honeyeater', 'red-wattlebird'],
+    'M8 22 C20 18 36 16 54 28 L56 31 C38 24 22 24 8 25 Z'],
+  ['Long curve', 'Long and down-curved: probes mud and grass. Ibis.', ['australian-white-ibis'],
+    'M6 12 C20 12 40 16 56 36 L52 38 C38 24 20 18 6 16 Z'],
+  ['Dagger', 'Long, straight and heavy: spears and bashes prey. Kookaburra and kingfishers.', ['laughing-kookaburra'],
+    'M6 18 L54 24 L6 30 Z'],
+  ['Flat', 'Broad and flat with a filter edge: dabbles in water and grazes grass. Ducks.', ['pacific-black-duck', 'australian-wood-duck'],
+    'M8 20 C20 12 44 12 56 22 C44 32 20 32 8 24 Z'],
+  ['Pouch', 'Huge, with a stretchy throat pouch for scooping fish. Pelican.', ['australian-pelican'],
+    'M4 14 L58 20 L50 26 C40 40 20 40 10 30 Z'],
+];
+const beakSvg = d => `<svg viewBox="0 0 62 46" class="beak" aria-hidden="true"><path d="${d}" fill="var(--accent)" stroke="var(--ink)" stroke-width="1.5" stroke-linejoin="round"/></svg>`;
+
+const SHAPES = [
+  ['Parrot', 'Stocky, big head, short hooked bill, long tail; flies fast and straight.', 'M30 8 C40 8 48 16 48 26 C48 30 46 33 44 36 C50 40 54 48 52 58 L48 76 L44 76 L44 62 C40 66 32 66 26 62 L22 70 L20 60 C14 54 12 44 16 36 C12 32 10 24 14 18 C18 10 24 8 30 8 Z M46 20 L58 25 L48 29 Z', ['rainbow-lorikeet', 'crimson-rosella']],
+  ['Raptor', 'Broad wings held flat or in a shallow V, short neck, soars in circles.', 'M40 8 C44 8 46 14 46 22 L76 18 C78 22 76 28 72 30 L48 36 L50 52 C50 60 46 66 40 70 C34 66 30 60 30 52 L32 36 L8 30 C4 28 2 22 4 18 L34 22 C34 14 36 8 40 8 Z', ['white-bellied-sea-eagle']],
+  ['Duck', 'Boat-shaped body sitting low on water, flat bill, short legs.', 'M14 44 C14 30 28 26 40 26 L46 14 C52 10 58 14 58 20 L56 28 L72 30 C72 46 60 56 40 56 C26 56 14 52 14 44 Z', ['pacific-black-duck', 'australian-wood-duck']],
+  ['Small perching bird', 'Compact, upright, thin legs; flits between perches.', 'M40 10 C50 10 56 18 56 28 C56 36 52 42 46 46 L64 58 L44 52 L42 68 L38 68 L36 52 L30 54 C22 50 20 42 22 34 C24 22 30 10 40 10 Z M34 16 L22 20 L34 24 Z', ['superb-fairywren', 'silvereye']],
+  ['Long legs', 'Tall, long legs and neck, walks the ground or shallows.', 'M34 8 C40 8 44 12 44 18 L44 30 C54 32 60 40 58 50 L46 50 L46 72 L42 72 L42 50 L36 50 L36 72 L32 72 L32 50 C22 48 18 40 22 32 C26 26 30 24 34 22 Z', ['australian-white-ibis', 'masked-lapwing']],
+  ['Pigeon', 'Plump, small head, short legs; walks with a bob and takes off with a clatter.', 'M24 22 C24 16 30 13 35 17 L39 26 C52 26 64 34 64 46 C64 56 54 62 42 62 L40 72 L36 62 L32 72 L30 62 C20 60 14 52 16 42 C18 34 24 30 31 30 C27 28 24 26 24 22 Z M22 18 L12 21 L22 24 Z', ['crested-pigeon', 'spotted-dove']],
+];
+const shapeSvg = d => `<svg viewBox="0 0 80 78" class="shape" aria-hidden="true"><path d="${d}" fill="var(--brand)"/></svg>`;
+
+function basics() {
+  stopAudio();
+  const birdLinks = ids => ids.map(id => `<button class="chip" data-bird="${id}">${esc(byId(id).name)}</button>`).join('');
+  $main.innerHTML = `
+    ${topBar('<h2 class="grow">Bird basics</h2>')}
+    <p class="muted">The words the tips use, and how to look and listen. Tap a bird name to open its page.</p>
+
+    <h3 class="section">Parts of a bird</h3>
+    <div class="panel pad">
+      ${TOPOGRAPHY_SVG}
+      <p class="small">A <b>crest</b> is raised feathers on the crown (cockatoos, Crested Pigeon). A <b>wattle</b> is bare, fleshy skin hanging from the face (Red Wattlebird, Masked Lapwing, Brushturkey). An <b>eye-ring</b> is a ring of bare skin or pale feathers round the eye (Silvereye). <b>Scalloped</b> means feathers edged in a second colour, like fish scales (Eastern Rosella's back).</p>
+    </div>
+
+    <h3 class="section">Beak shapes say what a bird eats</h3>
+    <div class="panel">
+      ${BEAKS.map(([name, text, ids, d]) => `<div class="basics-row">${beakSvg(d)}<div><b>${name}</b><div class="sub">${text}</div><div class="chips">${birdLinks(ids)}</div></div></div>`).join('')}
+    </div>
+
+    <h3 class="section">Body shapes</h3>
+    <div class="panel">
+      ${SHAPES.map(([name, text, d, ids]) => `<div class="basics-row">${shapeSvg(d)}<div><b>${name}</b><div class="sub">${text}</div><div class="chips">${birdLinks(ids)}</div></div></div>`).join('')}
+    </div>
+
+    <h3 class="section">Where to look</h3>
+    <div class="panel pad small">
+      <p><b>Flowering trees and shrubs</b> — lorikeets and honeyeaters work the blossom; grevilleas and banksias are magnets. ${birdLinks(['rainbow-lorikeet', 'new-holland-honeyeater', 'eastern-spinebill'])}</p>
+      <p><b>Tree trunks and low branches</b> — the Eastern Yellow Robin clings sideways watching the ground; butcherbirds sit still and watch. ${birdLinks(['eastern-yellow-robin', 'grey-butcherbird'])}</p>
+      <p><b>Lawns and ovals</b> — magpies, Magpie-larks, Wood Ducks, Masked Lapwings and ibis all feed on open grass. ${birdLinks(['australian-magpie', 'magpie-lark', 'australian-wood-duck'])}</p>
+      <p><b>Leaf litter in bush</b> — listen for scratching: brushturkeys, lyrebirds and whipbirds stay low and hidden. ${birdLinks(['australian-brushturkey', 'superb-lyrebird', 'eastern-whipbird'])}</p>
+      <p><b>Water edges</b> — moorhens and swamphens at pond margins, cormorants drying their wings on posts, pelicans and gulls at the harbour. ${birdLinks(['dusky-moorhen', 'little-pied-cormorant', 'australian-pelican'])}</p>
+      <p><b>The sky</b> — swallows low over grass and water, Sea-Eagles soaring high over the harbour, black-cockatoos flying slowly in loose groups. ${birdLinks(['welcome-swallow', 'white-bellied-sea-eagle', 'yellow-tailed-black-cockatoo'])}</p>
+      <p><b>After dark</b> — frogmouths sit motionless on branches by day and hunt at night; the Boobook's two-note call carries across suburbs; the Koel calls all night in summer. ${birdLinks(['tawny-frogmouth', 'southern-boobook', 'eastern-koel'])}</p>
+    </div>
+
+    <h3 class="section">How to listen</h3>
+    <div class="panel pad small">
+      <p><b>Song</b> is the long, musical, often repeated performance, usually by a male holding territory: the butcherbird's flute, the magpie's warble, the whistler's whip-crack ending. ${birdLinks(['grey-butcherbird', 'australian-magpie', 'golden-whistler'])}</p>
+      <p><b>Contact calls</b> are short notes a flock uses to keep together: Silvereyes' thin "tsee", lorikeets' screeches in flight. ${birdLinks(['silvereye', 'rainbow-lorikeet'])}</p>
+      <p><b>Alarm calls</b> are loud, harsh and repeated when a threat is near: the Masked Lapwing's rattle, the Noisy Miner's chorus, the Willie Wagtail's chatter. ${birdLinks(['masked-lapwing', 'noisy-miner', 'willie-wagtail'])}</p>
+      <p>Most birds call most in the first hour after dawn. Stand still, let the bush settle, and pick out one voice at a time. The Call quiz uses 20-second clips so you can replay as often as you like.</p>
+    </div>`;
+  wireBack();
+  $main.querySelectorAll('[data-bird]').forEach(el => el.onclick = () => birdDetail(el.dataset.bird, basics));
 }
 
 const plural = name => /s$/.test(name) ? name : /y$/.test(name) && !/[aeiou]y$/.test(name) ? name.replace(/y$/, 'ies') : name + 's';

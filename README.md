@@ -1,6 +1,16 @@
 # berdnerd
 
-A phone app for learning 50 common Sydney birds by sight and sound: a photo quiz, a call quiz and a field guide. It installs to the home screen and works offline.
+A phone app for learning 50 common Sydney birds by sight and sound. It installs to the home screen and works offline.
+
+What's in it: a **Learn** mode (flashcards by family), **Photo** and **Call** quizzes with spaced repetition and real lookalike distractors, a **Knowledge** quiz (diet, other names, native or introduced, one fact per bird), a **Seasons** quiz built on Atlas of Living Australia records, **Odd one out**, a grouped **Field guide**, and **Bird basics** (parts of a bird, beak and body shapes, where to look, how to listen). New users start with a 12-bird starter pack. Settings include a colour-blind palette.
+
+Data files and how to rebuild them:
+
+- `tools/species.json` — names, family, native/introduced, lookalikes and ID tips; `node tools/update-species.mjs` copies them into `app/data/birds.json` without touching media.
+- `tools/facts.json` — hand-checked facts for the knowledge quiz, each with its Wikipedia source; `node tools/build-facts.mjs` writes `app/data/facts.json`.
+- `tools/seasonality-overrides.json` — hand labels for seasonal patterns; `node tools/fetch-seasonality.mjs` pulls monthly counts from the Atlas of Living Australia and writes `app/data/seasonality.json` (re-run yearly).
+
+An audit of the app from October 2026, with research on seasonality data and on Indigenous bird names, is in `docs/audit-2026-10-25/`.
 
 **Use it:** https://berdnerd.github.io
 
