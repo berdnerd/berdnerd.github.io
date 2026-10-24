@@ -18,7 +18,7 @@
   --card: #fffdf6;
   --ink: #1c2b22;
   --muted: #5b6b5f;
-  --line: #dde2cf;
+  --line: #c9d1b3;
   --brand: #2f6b4f;
   --brand-ink: #ffffff;
   --accent: #d99a1e;
@@ -27,10 +27,11 @@
   --tile-sky: #d3e7ef;
   --tile-bark: #ecdccd;
   --dock-bg: var(--tile-wattle);
-  --good: #2b7a4b;
+  --good: #226a40;
   --good-bg: #dcefdf;
-  --bad: #b5452f;
+  --bad: #a53d27;
   --bad-bg: #f7e1da;
+  --dock-btn-edge: transparent;
   --shadow: 0 1px 2px rgba(28, 43, 34, .06), 0 6px 18px rgba(28, 43, 34, .08);
   --radius: 18px;
   --font-display: 'Fredoka', 'Nunito', system-ui, sans-serif;
@@ -58,7 +59,30 @@
     --bad: #f39a86;
     --bad-bg: #4a2a24;
     --shadow: 0 1px 2px rgba(0, 0, 0, .25);
+    --dock-btn-edge: rgba(255, 255, 255, .22);
   }
+}
+/* Colour-blind friendly palette (Settings > Colours): blue for right, vermilion for wrong,
+   purple for "still learning". Right/wrong also always carry a tick or cross, not just a colour. */
+:root[data-palette="cvd"] {
+  --good: #0b5fb8;
+  --good-bg: #dce8f7;
+  --bad: #b03a16;
+  --bad-bg: #f8e0d6;
+  --accent: #7a3f9d;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-palette="cvd"] {
+    --good: #8ab4f8;
+    --good-bg: #1c3350;
+    --bad: #f4a582;
+    --bad-bg: #4a2a24;
+    --accent: #c39bd3;
+  }
+}
+@media (forced-colors: active) {
+  .choices button.right { outline: 3px solid CanvasText; }
+  .choices button.wrong { outline: 3px dashed CanvasText; }
 }
 
 * { box-sizing: border-box; }
@@ -109,7 +133,7 @@ a { color: var(--brand); }
   display: grid; place-items: center; font-size: 1.15rem; flex: none;
 }
 .progress { height: 10px; border-radius: 5px; background: var(--line); overflow: hidden; flex: 1; }
-.progress > span { display: block; height: 100%; border-radius: 5px; background: linear-gradient(90deg, var(--brand), var(--accent)); transition: width .3s; }
+.progress > span { display: block; height: 100%; border-radius: 5px; background: var(--brand); transition: width .3s; }
 .score-pill {
   font-family: var(--font-display); font-weight: 600; min-width: 42px; height: 32px; padding: 0 10px;
   display: grid; place-items: center; border-radius: 16px; background: var(--tile-wattle);
@@ -127,7 +151,14 @@ a { color: var(--brand); }
   transition: transform .12s;
 }
 .mode:active { transform: scale(.98); }
-.mode .emoji { font-size: 1.9rem; width: 58px; height: 58px; border-radius: 16px; display: grid; place-items: center; flex: none; }
+.mode .emoji { font-size: 1.9rem; width: 58px; height: 58px; border-radius: 16px; display: grid; place-items: center; flex: none; color: var(--brand); }
+.mode .emoji svg { width: 30px; height: 30px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.mode.learn .emoji { background: var(--tile-sky); }
+.mode.facts .emoji { background: var(--tile-bark); }
+.mode.seasons .emoji { background: var(--tile-wattle); }
+.mode.odd .emoji { background: var(--tile-sage); }
+.mode.basics .emoji { background: var(--tile-sky); }
+.mode small.tag { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 8px; background: var(--tile-wattle); font: 700 .7rem/1.4 var(--font-body); color: var(--ink); vertical-align: middle; }
 .mode h3 { font-size: 1.2rem; }
 .mode p { color: var(--muted); font-size: .92rem; margin-top: 1px; }
 .mode.photo .emoji { background: var(--tile-sage); }
@@ -165,7 +196,7 @@ h3.section { font-size: 1rem; color: var(--muted); margin: 6px 4px -6px; }
   display: flex; align-items: center; gap: 12px; padding: 10px;
   background: var(--dock-bg); border-radius: 28px; box-shadow: 0 8px 28px rgba(0, 0, 0, .18);
 }
-.dock .btn.block { flex: 1; }
+.dock .btn.block { flex: 1; box-shadow: inset 0 0 0 1px var(--dock-btn-edge); }
 .dock-text { display: grid; line-height: 1.25; }
 .dock-text b { font: 600 1.2rem/1.2 var(--font-display); }
 .dock-text span { font-size: .85rem; opacity: .75; }
@@ -194,10 +225,23 @@ h3.section { font-size: 1rem; color: var(--muted); margin: 6px 4px -6px; }
   font: 600 .9rem/1.2 var(--font-display);
   color: #fff; background: linear-gradient(transparent, rgba(0, 0, 0, .7));
 }
+.choices button { position: relative; }
 .choices button.right { border-color: var(--good); background: var(--good-bg); }
 .choices button.wrong { border-color: var(--bad); background: var(--bad-bg); }
 .choices button:disabled { cursor: default; }
 .choices button.dim { opacity: .5; }
+/* A tick or cross as well as the colour, so right and wrong read without colour vision. */
+.choices button.right::after, .choices button.wrong::after {
+  position: absolute; top: 50%; right: 12px; transform: translateY(-50%);
+  width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center;
+  font: 700 1rem/1 var(--font-body); color: #fff;
+}
+.choices button.right::after { content: '\2713'; background: var(--good); }
+.choices button.wrong::after { content: '\2715'; background: var(--bad); }
+.choices.names button.right, .choices.names button.wrong { padding-right: 52px; }
+.choices.photos button.right::after, .choices.photos button.wrong::after { top: 10px; right: 10px; transform: none; box-shadow: 0 1px 4px rgba(0, 0, 0, .4); }
+/* Three photo answers: the third spans the row so there is no orphan tile. */
+.choices.photos.three button:last-child { grid-column: 1 / -1; aspect-ratio: 2.08; }
 
 .feedback { border-radius: var(--radius); padding: 14px 16px; display: grid; gap: 6px; scroll-margin-bottom: 110px; }
 .feedback.good { background: var(--good-bg); }
@@ -237,15 +281,19 @@ h3.section { font-size: 1rem; color: var(--muted); margin: 6px 4px -6px; }
 }
 .search:focus { outline: none; border-color: var(--brand); }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.grid h3.family { grid-column: 1 / -1; margin: 10px 2px -2px; font-size: 1.05rem; color: var(--muted); }
+.grid h3.family:first-child { margin-top: 0; }
 .tile {
   border: 0; padding: 0; background: var(--card); box-shadow: var(--shadow);
   border-radius: 16px; overflow: hidden; text-align: left; position: relative;
 }
 .tile img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; background: var(--line); }
 .tile span { display: block; padding: 8px 10px 10px; font: 600 .95rem/1.2 var(--font-display); }
-.tile .dot { position: absolute; top: 8px; right: 8px; width: 14px; height: 14px; border-radius: 50%; border: 2px solid #fff; }
+/* Mastered: a filled dot with a tick. Learning: a hollow ring. Different shapes, not just colours. */
+.tile .dot { position: absolute; top: 8px; right: 8px; width: 18px; height: 18px; border-radius: 50%; box-shadow: 0 0 0 2px #fff; display: grid; place-items: center; }
 .dot.mastered { background: var(--good); }
-.dot.learning { background: var(--accent); }
+.dot.mastered::after { content: '\2713'; color: #fff; font: 700 .7rem/1 var(--font-body); }
+.dot.learning { background: var(--card); border: 4px solid var(--accent); }
 
 .gallery { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 8px; border-radius: var(--radius); scrollbar-width: none; }
 .gallery::-webkit-scrollbar { display: none; }

@@ -20,13 +20,18 @@ const store = {
 };
 const savedSettings = store.get('settings', {});
 const settings = Object.assign(
-  { photoChoices: 4, callChoices: 4, lookalikes: true, roundLength: 10, callAnswer: 'photos' },
+  { photoChoices: 4, callChoices: 4, lookalikes: true, roundLength: 10, callAnswer: 'photos', palette: 'standard' },
   // Earlier versions had one "choices" setting for both quizzes.
   savedSettings.choices ? { photoChoices: savedSettings.choices, callChoices: savedSettings.choices } : {},
   savedSettings);
 delete settings.choices;
 const stats = store.get('stats', {});
-const saveSettings = () => store.set('settings', settings);
+const saveSettings = () => { store.set('settings', settings); applyPalette(); };
+function applyPalette() {
+  if (settings.palette === 'cvd') document.documentElement.dataset.palette = 'cvd';
+  else delete document.documentElement.dataset.palette;
+}
+applyPalette();
 const saveStats = () => store.set('stats', stats);
 
 function record(id, correct) {
@@ -44,6 +49,25 @@ function status(id) {
 const FEATHER_ICON = `<svg viewBox="-20 -56 40 122" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
   <path d="M0,-50 C13,-42 16,-20 14,-2 L8,2 L13,6 C11,24 6,36 0,44 C-6,36 -12,22 -13,6 C-15,-16 -13,-40 0,-50 Z" fill="currentColor" fill-opacity=".18"/>
   <path d="M0,-46 C0.8,-10 0.8,24 -1,62"/></svg>`;
+// Simple line icons (24-unit grid, stroked in the brand colour by CSS) so every platform shows the same thing.
+const ICONS = {
+  photo: '<rect x="3" y="7" width="18" height="13" rx="3"/><circle cx="12" cy="13.5" r="3.5"/><path d="M8.5 7l1.5-2.5h4L15.5 7"/>',
+  call: '<path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13" width="4" height="7" rx="1.5"/><rect x="17" y="13" width="4" height="7" rx="1.5"/>',
+  browse: '<path d="M12 6.5C10.5 5 8 4.5 4 4.8v13.7c4-.3 6.5.2 8 1.5 1.5-1.3 4-1.8 8-1.5V4.8c-4-.3-6.5.2-8 1.7z"/><path d="M12 6.5V20"/>',
+  settings: '<circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/>',
+  learn: '<rect x="3" y="6" width="14" height="11" rx="2.5"/><path d="M7 20h11.5a2.5 2.5 0 0 0 2.5-2.5V9"/><path d="M7 11h6"/>',
+  facts: '<path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1.1 2.2h5c.1-1 .5-1.7 1.1-2.2A6 6 0 0 0 12 3z"/>',
+  seasons: '<rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M7.5 15.5l2 2 3-3.5 2 1.5 2.5-3"/>',
+  odd: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><circle cx="17.5" cy="17.5" r="3.5"/>',
+  basics: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/><path d="M8 10.5h5M10.5 8v5"/>',
+};
+const icon = name => `<svg viewBox="0 0 24 24" aria-hidden="true">${ICONS[name]}</svg>`;
+const FAMILIES = [
+  ['parrots', 'Parrots & cockatoos'], ['honeyeaters', 'Honeyeaters'], ['black-white', 'Black-and-white birds'],
+  ['bush', 'Bush birds'], ['night-cuckoos', 'Cuckoos & night birds'], ['ground', 'Ground & forest birds'],
+  ['water', 'Water & shore'], ['introduced', 'Introduced birds'],
+];
+const familyName = key => FAMILIES.find(([k]) => k === key)?.[1] || key;
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const rand = arr => arr[Math.floor(Math.random() * arr.length)];
 function shuffle(arr) {
@@ -131,20 +155,20 @@ function home() {
       <div class="stat"><b>${accuracy}</b><span>accuracy</span></div>
     </div>
     <button class="mode photo" data-go="photo">
-      <div class="emoji">📷</div>
+      <div class="emoji">${icon('photo')}</div>
       <div><h3>Photo quiz</h3><p>See a bird, pick its name.</p></div>
     </button>
     <button class="mode call" data-go="call">
-      <div class="emoji">🎧</div>
+      <div class="emoji">${icon('call')}</div>
       <div><h3>Call quiz</h3><p>Hear a call, match it to the bird.</p></div>
     </button>
     <button class="mode browse" data-go="browse">
-      <div class="emoji">📖</div>
+      <div class="emoji">${icon('browse')}</div>
       <div><h3>Field guide</h3><p>Browse all the birds, photos and calls.</p></div>
     </button>
     <button class="mode settings" data-go="settings">
-      <div class="emoji">⚙️</div>
-      <div><h3>Settings</h3><p>Choices, round length, offline download.</p></div>
+      <div class="emoji">${icon('settings')}</div>
+      <div><h3>Settings</h3><p>Choices, round length, colours, offline download.</p></div>
     </button>`;
   $main.querySelectorAll('[data-go]').forEach(btn => btn.onclick = () => {
     const go = btn.dataset.go;
@@ -201,7 +225,7 @@ function renderQuestion(answeredId) {
     return 'dim';
   };
   const choices = showPhotos
-    ? `<div class="choices photos">${options.map((o, i) => `
+    ? `<div class="choices photos${options.length === 3 ? ' three' : ''}">${options.map((o, i) => `
         <button data-id="${o.id}" class="${choiceClass(o)}" ${answered ? 'disabled' : ''} aria-label="${answered ? esc(o.name) : `Option ${i + 1}`}">
           <img src="${esc(optionPhotos[o.id].src)}" alt="">
           ${answered ? `<span class="label">${esc(o.name)}</span>` : ''}
@@ -301,19 +325,24 @@ function browse() {
     <p class="muted small">Green dot: mastered (3 right in a row). Orange: still learning.</p>`;
   wireBack();
   const grid = $main.querySelector('.grid');
+  const tile = b => {
+    const st = status(b.id);
+    return `<button class="tile" data-bird="${b.id}">
+      <img src="${esc(b.photos[0]?.src)}" alt="" loading="lazy">
+      ${st !== 'new' ? `<i class="dot ${st}" title="${st === 'mastered' ? 'Mastered' : 'Still learning'}"></i>` : ''}
+      <span>${esc(b.name)}</span>
+    </button>`;
+  };
   const draw = () => {
     const q = browseFilter.toLowerCase();
-    grid.innerHTML = BIRDS
-      .filter(b => !q || b.name.toLowerCase().includes(q) || b.sci.toLowerCase().includes(q))
-      .slice().sort((a, b) => a.name.localeCompare(b.name))
-      .map(b => {
-        const st = status(b.id);
-        return `<button class="tile" data-bird="${b.id}">
-          <img src="${esc(b.photos[0]?.src)}" alt="" loading="lazy">
-          ${st !== 'new' ? `<i class="dot ${st}"></i>` : ''}
-          <span>${esc(b.name)}</span>
-        </button>`;
-      }).join('');
+    const matches = BIRDS.filter(b => !q || b.name.toLowerCase().includes(q) || b.sci.toLowerCase().includes(q));
+    // Grouped by family when browsing; a flat alphabetical list when searching.
+    grid.innerHTML = q
+      ? matches.slice().sort((a, b) => a.name.localeCompare(b.name)).map(tile).join('')
+      : FAMILIES.map(([key, label]) => {
+          const birds = matches.filter(b => b.family === key).sort((a, b) => a.name.localeCompare(b.name));
+          return birds.length ? `<h3 class="family">${label}</h3>${birds.map(tile).join('')}` : '';
+        }).join('');
     grid.querySelectorAll('[data-bird]').forEach(el => el.onclick = () => birdDetail(el.dataset.bird, browse));
   };
   const input = $main.querySelector('.search');
@@ -366,7 +395,12 @@ function settingsScreen() {
       <div class="setting"><span>Questions per round</span>${seg('roundLength', [10, 20, 30])}</div>
       <div class="setting"><span>Tricky lookalikes</span>${seg('lookalikes', [true, false], ['On', 'Off'])}</div>
     </div>
-    <p class="muted small">Tricky lookalikes fills the wrong answers with similar birds (Australian Ravens with Pied Currawongs, Crimson Rosellas with Eastern Rosellas) instead of random ones.</p>
+    <p class="muted small">Tricky lookalikes fills the wrong answers with birds that really get mixed up (Noisy Miner with Common Myna, Crimson with Eastern Rosella), including ones you have confused yourself.</p>
+    <h3 class="section">Colours</h3>
+    <div class="panel">
+      <div class="setting"><span>Right / wrong colours</span>${seg('palette', ['standard', 'cvd'], ['Green & red', 'Blue & orange'])}</div>
+    </div>
+    <p class="muted small">Blue & orange suits red–green colour blindness. Right and wrong answers always get a tick or a cross as well.</p>
     <h3 class="section">This phone</h3>
     <div class="panel">
       <div class="setting"><div><b>Use offline</b><div class="muted small" data-offline-status>Save every photo and call to this phone.</div></div>
