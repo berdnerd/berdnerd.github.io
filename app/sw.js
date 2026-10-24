@@ -1,9 +1,9 @@
 // Bump VERSION whenever app files change so phones pick up the update.
-const VERSION = 'v14';
+const VERSION = 'v15';
 const SHELL_CACHE = `sydney-birds-shell-${VERSION}`;
 const MEDIA_CACHE = 'sydney-birds-media';
 const SHELL = [
-  './', 'index.html', 'style.css', 'app.js', 'manifest.webmanifest', 'data/birds.json',
+  './', 'index.html', 'style.css', 'app.js', 'manifest.webmanifest', 'data/birds.json', 'data/facts.json', 'data/seasonality.json',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png',
   'feathers.svg', 'fonts/fredoka.woff2', 'fonts/nunito.woff2',
 ];

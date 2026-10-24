@@ -223,6 +223,7 @@ h3.section { font-size: 1rem; color: var(--muted); margin: 6px 4px -6px; }
 .play.playing { animation: pulse 1.4s ease-in-out infinite; }
 @keyframes pulse { 50% { transform: scale(1.08); } }
 
+h2.question { font-size: 1.35rem; padding: 4px 2px; }
 .choices { display: grid; gap: 10px; }
 .choices.names button {
   border: 2px solid transparent; background: var(--card); box-shadow: var(--shadow);

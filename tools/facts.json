@@ -1,0 +1,611 @@
+{
+ "_about": "Hand-checked facts for the knowledge quiz. \"fact\" is a verb phrase that follows \"Which bird …?\". Sources are the English Wikipedia articles (CC BY-SA 4.0) retrieved 2026-10-25; the raw local-model draft with supporting quotes is in docs/audit-2026-10-25/facts-draft.json.",
+ "australian-magpie": {
+  "diet": "Insects, worms and other small creatures from the ground, plus some seeds and scraps",
+  "names": [
+   "maggie",
+   "piping shrike",
+   "flute-bird",
+   "organ-bird"
+  ],
+  "fact": "can recognise at least 100 different people, and rarely swoops the ones it knows",
+  "source": {
+   "title": "Australian magpie",
+   "url": "https://en.wikipedia.org/wiki/Australian_magpie",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "laughing-kookaburra": {
+  "diet": "Lizards, insects, worms, snakes and mice; it even takes goldfish from garden ponds",
+  "names": [
+   "laughing jackass",
+   "great brown kingfisher"
+  ],
+  "fact": "has a laugh so famous it is used as a stock jungle sound effect in films",
+  "source": {
+   "title": "Laughing kookaburra",
+   "url": "https://en.wikipedia.org/wiki/Laughing_kookaburra",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "sulphur-crested-cockatoo": {
+  "diet": "Seeds, grain, fruit and shoots; it also chews soft timber and eats clay",
+  "names": [
+   "cocky",
+   "white cockatoo"
+  ],
+  "fact": "has learned to open wheelie bins in Sydney, a trick that spreads by imitation",
+  "source": {
+   "title": "Sulphur-crested cockatoo",
+   "url": "https://en.wikipedia.org/wiki/Sulphur-crested_cockatoo",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "galah": {
+  "diet": "Seeds gathered on the ground, mostly in the morning and late afternoon",
+  "names": [
+   "pink and grey cockatoo",
+   "rose-breasted cockatoo"
+  ],
+  "fact": "gave Australian English its slang word for a fool",
+  "source": {
+   "title": "Galah",
+   "url": "https://en.wikipedia.org/wiki/Galah",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "little-corella": {
+  "diet": "Seeds of grasses and crops such as wheat and barley, plus lawn grass",
+  "names": [
+   "short-billed corella",
+   "bare-eyed cockatoo"
+  ],
+  "fact": "gathers in flocks whose screeching can be heard several kilometres away",
+  "source": {
+   "title": "Little corella",
+   "url": "https://en.wikipedia.org/wiki/Little_corella",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "yellow-tailed-black-cockatoo": {
+  "diet": "Seeds of she-oaks, banksias and pine cones, plus wood-boring grubs",
+  "names": [
+   "funereal cockatoo"
+  ],
+  "fact": "needs nest hollows in trees around 200 years old, so old trees matter to it",
+  "source": {
+   "title": "Yellow-tailed black cockatoo",
+   "url": "https://en.wikipedia.org/wiki/Yellow-tailed_black_cockatoo",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "rainbow-lorikeet": {
+  "diet": "Nectar and pollen from eucalypt and other flowers, plus fruit",
+  "names": [],
+  "fact": "is the most commonly counted bird in BirdLife Australia’s annual Backyard Bird Count",
+  "source": {
+   "title": "Rainbow lorikeet",
+   "url": "https://en.wikipedia.org/wiki/Rainbow_lorikeet",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "crimson-rosella": {
+  "diet": "Seeds, fruit, nectar, berries and nuts, plus insects such as termites",
+  "names": [
+   "red lowry",
+   "Pennant’s parakeet",
+   "mountain parrot"
+  ],
+  "fact": "has green youngsters, and females sometimes destroy other pairs’ eggs to win a nest hollow",
+  "source": {
+   "title": "Crimson rosella",
+   "url": "https://en.wikipedia.org/wiki/Crimson_rosella",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "eastern-rosella": {
+  "diet": "Grass seeds, buds, flowers, nectar, fruit and insects",
+  "names": [
+   "golden-mantled rosella"
+  ],
+  "fact": "escaped from cages in New Zealand around 1910 and is now established there",
+  "source": {
+   "title": "Eastern rosella",
+   "url": "https://en.wikipedia.org/wiki/Eastern_rosella",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "australian-king-parrot": {
+  "diet": "Fruit and seeds taken from trees or picked up off the ground",
+  "names": [],
+  "fact": "sits near the bottom of the pecking order when birds crowd a feeder",
+  "source": {
+   "title": "Australian king parrot",
+   "url": "https://en.wikipedia.org/wiki/Australian_king_parrot",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "noisy-miner": {
+  "diet": "Nectar, fruit and insects, including manna, honeydew and lerp from gum leaves",
+  "names": [
+   "Mickey miner",
+   "soldierbird"
+  ],
+  "fact": "drives smaller birds out of gardens so aggressively it has been called a ‘reverse keystone’ species",
+  "source": {
+   "title": "Noisy miner",
+   "url": "https://en.wikipedia.org/wiki/Noisy_miner",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "red-wattlebird": {
+  "diet": "Mainly nectar, topped up with insects, berries and fruit",
+  "names": [
+   "gillbird",
+   "barkingbird"
+  ],
+  "fact": "mops up nectar with a brush-tipped tongue of more than a hundred bristles",
+  "source": {
+   "title": "Red wattlebird",
+   "url": "https://en.wikipedia.org/wiki/Red_wattlebird",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "little-wattlebird": {
+  "diet": "Nectar, insects, berries and seeds",
+  "names": [
+   "brush wattlebird"
+  ],
+  "fact": "is the smallest wattlebird and has no wattles at all",
+  "source": {
+   "title": "Little wattlebird",
+   "url": "https://en.wikipedia.org/wiki/Little_wattlebird",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "new-holland-honeyeater": {
+  "diet": "Nectar and honeydew, with spiders and insects for protein",
+  "names": [],
+  "fact": "was among the first Australian birds to be scientifically described, back in 1790",
+  "source": {
+   "title": "New Holland honeyeater",
+   "url": "https://en.wikipedia.org/wiki/New_Holland_honeyeater",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "eastern-spinebill": {
+  "diet": "Nectar from gums, banksias and garden flowers, plus small insects",
+  "names": [
+   "spine-billed honeyeater",
+   "cobbler’s awl"
+  ],
+  "fact": "stores fat when flowers are plentiful to get through lean times",
+  "source": {
+   "title": "Eastern spinebill",
+   "url": "https://en.wikipedia.org/wiki/Eastern_spinebill",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "pied-currawong": {
+  "diet": "Berries, seeds, insects, eggs and small animals; it raids other birds’ nests",
+  "names": [
+   "currawang",
+   "tallawong",
+   "chillawong"
+  ],
+  "fact": "is named for its call, written down as ‘curra-wong’ or ‘kadow-kadang’",
+  "source": {
+   "title": "Pied currawong",
+   "url": "https://en.wikipedia.org/wiki/Pied_currawong",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "australian-raven": {
+  "diet": "Insects, carrion, small animals and whatever people leave behind",
+  "names": [
+   "southern raven",
+   "Kelly"
+  ],
+  "fact": "built Australia’s highest recorded crow-family nest, on top of the AWA Tower in Sydney",
+  "source": {
+   "title": "Australian raven",
+   "url": "https://en.wikipedia.org/wiki/Australian_raven",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "magpie-lark": {
+  "diet": "Small creatures such as insects, worms and snails from lawns and mud",
+  "names": [
+   "peewee",
+   "mudlark",
+   "Murray magpie"
+  ],
+  "fact": "sings in duet, each partner adding a note half a second after the other",
+  "source": {
+   "title": "Magpie-lark",
+   "url": "https://en.wikipedia.org/wiki/Magpie-lark",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "grey-butcherbird": {
+  "diet": "Insects, small lizards and birds, and occasionally fruit",
+  "names": [],
+  "fact": "wedges spare food into the fork of a branch to eat later",
+  "source": {
+   "title": "Grey butcherbird",
+   "url": "https://en.wikipedia.org/wiki/Grey_butcherbird",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "willie-wagtail": {
+  "diet": "Insects and other small arthropods, occasionally a small lizard",
+  "names": [
+   "shepherd’s companion",
+   "black-and-white fantail"
+  ],
+  "fact": "fearlessly harasses birds far bigger than itself, kookaburras and eagles included",
+  "source": {
+   "title": "Willie wagtail",
+   "url": "https://en.wikipedia.org/wiki/Willie_wagtail",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "spotted-dove": {
+  "diet": "Grass seeds, grain, fallen fruit and the odd insect",
+  "names": [
+   "spotted turtle-dove",
+   "lace-necked dove"
+  ],
+  "fact": "was brought to Melbourne in the 1860s and has since spread along the east coast",
+  "source": {
+   "title": "Spotted dove",
+   "url": "https://en.wikipedia.org/wiki/Spotted_dove",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "crested-pigeon": {
+  "diet": "Seeds and grain, including those of the weed Paterson’s curse",
+  "names": [
+   "topknot pigeon"
+  ],
+  "fact": "makes a whistling sound with its wings on take-off that warns other birds of danger",
+  "source": {
+   "title": "Crested pigeon",
+   "url": "https://en.wikipedia.org/wiki/Crested_pigeon",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "common-myna": {
+  "diet": "Insects, fruit, seeds and scraps from around people",
+  "names": [
+   "Indian myna"
+  ],
+  "fact": "was voted Australia’s ‘most important pest’ in a 2008 poll and nicknamed the ‘cane toad of the sky’",
+  "source": {
+   "title": "Common myna",
+   "url": "https://en.wikipedia.org/wiki/Common_myna",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "red-whiskered-bulbul": {
+  "diet": "Fruit, berries, insects and nectar",
+  "names": [
+   "crested bulbul"
+  ],
+  "fact": "was released in Sydney in 1880 and had spread through the suburbs by the 1920s",
+  "source": {
+   "title": "Red-whiskered bulbul",
+   "url": "https://en.wikipedia.org/wiki/Red-whiskered_bulbul",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "superb-fairywren": {
+  "diet": "Mostly insects, with some seeds, flowers and fruit",
+  "names": [
+   "blue wren",
+   "superb blue wren"
+  ],
+  "fact": "was voted Australian Bird of the Year in 2021",
+  "source": {
+   "title": "Superb fairywren",
+   "url": "https://en.wikipedia.org/wiki/Superb_fairywren",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "welcome-swallow": {
+  "diet": "Insects caught on the wing",
+  "names": [],
+  "fact": "got its name from people welcoming its return as a sign of spring",
+  "source": {
+   "title": "Welcome swallow",
+   "url": "https://en.wikipedia.org/wiki/Welcome_swallow",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "silvereye": {
+  "diet": "Insects, spiders, fruit and nectar",
+  "names": [
+   "wax-eye",
+   "white-eye"
+  ],
+  "fact": "crosses Bass Strait from Tasmania each winter to feed in Victoria and New South Wales",
+  "source": {
+   "title": "Silvereye",
+   "url": "https://en.wikipedia.org/wiki/Silvereye",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "grey-fantail": {
+  "diet": "Flying insects caught in acrobatic chases",
+  "names": [],
+  "fact": "often builds several nests before laying, with seven in one season on record",
+  "source": {
+   "title": "Grey fantail",
+   "url": "https://en.wikipedia.org/wiki/Grey_fantail",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "spotted-pardalote": {
+  "diet": null,
+  "names": [
+   "diamondbird"
+  ],
+  "fact": "nests underground, at the end of a tunnel dug into a bank",
+  "source": {
+   "title": "Spotted pardalote",
+   "url": "https://en.wikipedia.org/wiki/Spotted_pardalote",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "eastern-yellow-robin": {
+  "diet": "Insects and other small creatures pounced on from a low perch",
+  "names": [],
+  "fact": "is no relation to the European robin, despite the name",
+  "source": {
+   "title": "Eastern yellow robin",
+   "url": "https://en.wikipedia.org/wiki/Eastern_yellow_robin",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "golden-whistler": {
+  "diet": "Insects, spiders and berries",
+  "names": [
+   "golden whistler",
+   "white-throated thickhead"
+  ],
+  "fact": "has been split into as many as 59 subspecies, one of the highest counts of any bird",
+  "source": {
+   "title": "Australian golden whistler",
+   "url": "https://en.wikipedia.org/wiki/Australian_golden_whistler",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "eastern-whipbird": {
+  "diet": "Insects picked from the leaf litter",
+  "names": [
+   "coachwhip bird",
+   "stockwhip bird"
+  ],
+  "fact": "sings its whip-crack as a duet: the male cracks the whip and the female answers",
+  "source": {
+   "title": "Eastern whipbird",
+   "url": "https://en.wikipedia.org/wiki/Eastern_whipbird",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "eastern-koel": {
+  "diet": "Mostly fruit as an adult, especially figs",
+  "names": [
+   "common koel",
+   "rainbird",
+   "stormbird"
+  ],
+  "fact": "is a cuckoo whose chick, unlike most, does not push the host’s own chicks out of the nest",
+  "source": {
+   "title": "Pacific koel",
+   "url": "https://en.wikipedia.org/wiki/Pacific_koel",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "channel-billed-cuckoo": {
+  "diet": "Figs, mistletoe fruit and mulberries, plus insects and other birds’ eggs and nestlings",
+  "names": [],
+  "fact": "is the world’s largest cuckoo and its largest brood parasite",
+  "source": {
+   "title": "Channel-billed cuckoo",
+   "url": "https://en.wikipedia.org/wiki/Channel-billed_cuckoo",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "black-faced-cuckooshrike": {
+  "diet": "Insects, caterpillars and other invertebrates, with some fruit and seeds",
+  "names": [],
+  "fact": "gathers in flocks of up to a hundred birds outside the breeding season",
+  "source": {
+   "title": "Black-faced cuckooshrike",
+   "url": "https://en.wikipedia.org/wiki/Black-faced_cuckooshrike",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "tawny-frogmouth": {
+  "diet": "Large night-flying insects, spiders, worms and small animals",
+  "names": [
+   "mopoke"
+  ],
+  "fact": "pairs for life and keeps the same territory for a decade or more",
+  "source": {
+   "title": "Tawny frogmouth",
+   "url": "https://en.wikipedia.org/wiki/Tawny_frogmouth",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "southern-boobook": {
+  "diet": "Mice, beetles, moths and small birds, caught by pouncing from a perch",
+  "names": [
+   "mopoke",
+   "boobook owl"
+  ],
+  "fact": "is the smallest owl on the Australian mainland",
+  "source": {
+   "title": "Australian boobook",
+   "url": "https://en.wikipedia.org/wiki/Australian_boobook",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "australian-white-ibis": {
+  "diet": "Crayfish, mussels, insects and, in cities, scraps from bins",
+  "names": [
+   "bin chicken",
+   "tip turkey"
+  ],
+  "fact": "earned the nickname ‘bin chicken’, yet had no breeding records in Sydney until the 1980s",
+  "source": {
+   "title": "Australian white ibis",
+   "url": "https://en.wikipedia.org/wiki/Australian_white_ibis",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "masked-lapwing": {
+  "diet": "Insects and worms found on the ground",
+  "names": [
+   "masked plover",
+   "spur-winged plover"
+  ],
+  "fact": "swoops people and animals that come near its nest in the breeding season",
+  "source": {
+   "title": "Masked lapwing",
+   "url": "https://en.wikipedia.org/wiki/Masked_lapwing",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "australian-brushturkey": {
+  "diet": "Scraps and compost in the suburbs, and whatever it rakes up from the leaf litter",
+  "names": [
+   "bush turkey",
+   "scrub turkey"
+  ],
+  "fact": "checks the temperature of its compost-heap nest mound by sticking its beak in",
+  "source": {
+   "title": "Australian brushturkey",
+   "url": "https://en.wikipedia.org/wiki/Australian_brushturkey",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "superb-lyrebird": {
+  "diet": "Earthworms, insects and other invertebrates scratched from the forest floor, plus fungi",
+  "names": [],
+  "fact": "can mimic chainsaws, car alarms and camera shutters as well as other birds",
+  "source": {
+   "title": "Superb lyrebird",
+   "url": "https://en.wikipedia.org/wiki/Superb_lyrebird",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "satin-bowerbird": {
+  "diet": "Fruit above all, with leaves, seeds and insects",
+  "names": [],
+  "fact": "holds the longevity record for a banded songbird in the wild: twenty-six years",
+  "source": {
+   "title": "Satin bowerbird",
+   "url": "https://en.wikipedia.org/wiki/Satin_bowerbird",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "silver-gull": {
+  "diet": "Worms, fish, insects and crustaceans, and chips wherever people eat them",
+  "names": [
+   "seagull"
+  ],
+  "fact": "thrives around shopping centres and rubbish tips as well as beaches",
+  "source": {
+   "title": "Silver gull",
+   "url": "https://en.wikipedia.org/wiki/Silver_gull",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "pacific-black-duck": {
+  "diet": "Seeds of water plants, plus small crustaceans, snails and insects",
+  "names": [
+   "grey duck"
+  ],
+  "fact": "interbreeds with introduced mallards, which threatens it as a distinct species",
+  "source": {
+   "title": "Pacific black duck",
+   "url": "https://en.wikipedia.org/wiki/Pacific_black_duck",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "australian-wood-duck": {
+  "diet": "Grasses, clover, herbs and grain, with the odd insect",
+  "names": [
+   "maned duck",
+   "maned goose"
+  ],
+  "fact": "is the only living member of its genus and looks more like a small goose than a duck",
+  "source": {
+   "title": "Australian wood duck",
+   "url": "https://en.wikipedia.org/wiki/Australian_wood_duck",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "dusky-moorhen": {
+  "diet": "Seeds, water plants, algae, fruit, snails and other invertebrates",
+  "names": [
+   "black moorhen",
+   "waterhen"
+  ],
+  "fact": "has a territorial call that carries more than two kilometres",
+  "source": {
+   "title": "Dusky moorhen",
+   "url": "https://en.wikipedia.org/wiki/Dusky_moorhen",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "australasian-swamphen": {
+  "diet": "Grasses and seeds, plus invertebrates and other birds’ eggs and chicks",
+  "names": [
+   "pūkeko",
+   "purple swamphen"
+  ],
+  "fact": "practises joint laying, with several females adding eggs to one shared nest",
+  "source": {
+   "title": "Australasian swamphen",
+   "url": "https://en.wikipedia.org/wiki/Australasian_swamphen",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "australian-pelican": {
+  "diet": "Mainly fish, but also crustaceans, other birds and scraps",
+  "names": [],
+  "fact": "has the longest bill of any living bird, up to 50 cm",
+  "source": {
+   "title": "Australian pelican",
+   "url": "https://en.wikipedia.org/wiki/Australian_pelican",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "little-pied-cormorant": {
+  "diet": "Fish, crustaceans, eels and insect larvae",
+  "names": [
+   "little shag"
+  ],
+  "fact": "sometimes drops a fish back on the water to turn it round and swallow it head first",
+  "source": {
+   "title": "Little pied cormorant",
+   "url": "https://en.wikipedia.org/wiki/Little_pied_cormorant",
+   "retrieved": "2026-10-25"
+  }
+ },
+ "white-bellied-sea-eagle": {
+  "diet": "Fish for about half its diet, plus carrion, seabirds and other animals",
+  "names": [
+   "white-breasted sea eagle"
+  ],
+  "fact": "spans up to 2.2 metres across the wings and is one of Australia’s largest birds of prey",
+  "source": {
+   "title": "White-bellied sea eagle",
+   "url": "https://en.wikipedia.org/wiki/White-bellied_sea_eagle",
+   "retrieved": "2026-10-25"
+  }
+ }
+}

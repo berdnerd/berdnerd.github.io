@@ -218,6 +218,10 @@ function home() {
       <div class="emoji">${icon('call')}</div>
       <div><h3>Call quiz</h3><p>Hear a call, match it to the bird.</p></div>
     </button>
+    ${factBirds().length >= 4 ? `<button class="mode facts" data-go="facts">
+      <div class="emoji">${icon('facts')}</div>
+      <div><h3>Knowledge quiz</h3><p>What they eat, what else they're called, and more.</p></div>
+    </button>` : ''}
     <button class="mode browse" data-go="browse">
       <div class="emoji">${icon('browse')}</div>
       <div><h3>Field guide</h3><p>Browse all the birds, photos and calls.</p></div>
@@ -231,6 +235,7 @@ function home() {
     if (go === 'photo' || go === 'call') startRound(go);
     else if (go === 'browse') browse();
     else if (go === 'learn') learnFamilies();
+    else if (go === 'facts') startKnowledge();
     else settingsScreen();
   });
   const unlock = $main.querySelector('[data-unlock]');
@@ -434,10 +439,114 @@ function results() {
     <button class="btn block" data-again>Play again</button>
     <button class="btn block secondary" data-home>Home</button>`;
   wireBack();
-  $main.querySelector('[data-again]').onclick = () => startRound(round.mode, round.birds);
+  $main.querySelector('[data-again]').onclick = () => round.mode === 'facts' ? startKnowledge() : startRound(round.mode, round.birds);
   $main.querySelector('[data-home]').onclick = home;
   $main.querySelectorAll('[data-bird]').forEach(el => el.onclick = () => birdDetail(el.dataset.bird, results));
 }
+
+// ---------- Knowledge quiz ----------
+// Questions are built from data/facts.json: diet, other names, native/introduced and one notable fact
+// per bird. Each answer shows the bird and where the fact came from.
+let FACTS = {};
+const factBirds = () => BIRDS.filter(b => FACTS[b.id]);
+
+function startKnowledge() {
+  const pool = factBirds();
+  if (pool.length < 4) return;
+  round = { mode: 'facts', pool, index: 0, score: 0, recent: [], missed: [], birds: pool };
+  nextFactQuestion();
+}
+
+function makeFactQuestion(target, pool) {
+  const f = FACTS[target.id];
+  const others = shuffle(pool.filter(b => b.id !== target.id));
+  const birdOptions = () => {
+    const chosen = [];
+    const add = b => { if (b && !chosen.includes(b) && chosen.length < 3) chosen.push(b); };
+    (target.confusedWith || []).forEach(id => add(others.find(b => b.id === id)));
+    others.filter(b => b.family === target.family).forEach(add);
+    others.forEach(add);
+    return shuffle([target, ...chosen]).map(b => ({ id: b.id, text: b.name }));
+  };
+  const kinds = ['fact'];
+  if (f.diet) kinds.push('diet');
+  if (f.names?.length) kinds.push('name');
+  if (f.status === 'introduced' || Math.random() < 0.15) kinds.push('status');
+  const kind = rand(kinds);
+  if (kind === 'diet') {
+    // Other birds' diets as wrong answers, skipping ones that read the same as the right one.
+    const key = s => s.toLowerCase().replace(/[^a-z]/g, '').slice(0, 24);
+    const used = new Set([key(f.diet)]);
+    const wrong = [];
+    for (const b of others) {
+      const d = FACTS[b.id].diet;
+      if (!d || used.has(key(d))) continue;
+      used.add(key(d)); wrong.push({ id: b.id, text: d });
+      if (wrong.length === 3) break;
+    }
+    return { kind, target, prompt: `What do ${esc(plural(target.name))} mainly eat?`,
+      options: shuffle([{ id: target.id, text: f.diet }, ...wrong]) };
+  }
+  if (kind === 'name') {
+    return { kind, target, prompt: `Which bird is also called the <b>${esc(rand(f.names))}</b>?`, options: birdOptions() };
+  }
+  if (kind === 'status') {
+    const introduced = pool.filter(b => FACTS[b.id].status === 'introduced');
+    const native = pool.filter(b => FACTS[b.id].status !== 'introduced');
+    if (f.status === 'introduced') {
+      return { kind, target, prompt: 'Which of these birds was <b>introduced</b> to Australia?',
+        options: shuffle([target, ...shuffle(native).slice(0, 3)]).map(b => ({ id: b.id, text: b.name })) };
+    }
+    return { kind, target, prompt: 'Which of these birds is <b>native</b> to Australia?',
+      options: shuffle([target, ...shuffle(introduced).slice(0, 3)]).map(b => ({ id: b.id, text: b.name })) };
+  }
+  return { kind, target, prompt: `Which bird ${esc(f.fact.replace(/\.$/, ''))}?`, options: birdOptions() };
+}
+
+function nextFactQuestion() {
+  stopAudio();
+  if (round.index >= settings.roundLength) return results();
+  const target = pickTarget(round.pool, round.recent);
+  round.recent = [...round.recent, target.id].slice(-6);
+  round.q = makeFactQuestion(target, round.pool);
+  round.q.photo = rand(target.photos);
+  renderFactQuestion();
+}
+
+function renderFactQuestion(answeredId) {
+  const { target, prompt, options, photo } = round.q;
+  const f = FACTS[target.id];
+  const answered = answeredId !== undefined;
+  const correct = answeredId === target.id;
+  const cls = o => !answered ? '' : o.id === target.id ? 'right' : o.id === answeredId ? 'wrong' : 'dim';
+  $main.innerHTML = `
+    ${topBar(`<div class="progress" role="progressbar" aria-valuenow="${round.index}" aria-valuemax="${settings.roundLength}"><span></span></div><span class="score-pill" aria-label="Score">${round.score}</span>`)}
+    <h2 class="question">${prompt}</h2>
+    <div class="choices names">${options.map(o => `
+      <button data-id="${o.id}" class="${cls(o)}" ${answered ? 'disabled' : ''}>${esc(o.text)}</button>`).join('')}</div>
+    ${answered ? `
+      <div class="feedback ${correct ? 'good' : 'bad'}" aria-live="polite">
+        <h3>${correct ? 'Correct!' : `It's the ${esc(target.name)}`}</h3>
+        <div class="compare">
+          <img src="${esc(photo.src)}" alt="">
+          <div><b>${esc(target.name)}</b><div class="sub">${esc(f.fact)}</div></div>
+        </div>
+        <p class="muted small">Source: <a href="${esc(f.source.url)}" target="_blank" rel="noopener">Wikipedia, ${esc(f.source.title)}</a></p>
+      </div>
+      <div class="dock"><button class="btn block" data-next>${round.index + 1 >= settings.roundLength ? 'See results' : 'Next'}</button></div>` : ''}`;
+  $main.querySelector('.progress > span').style.width = `${100 * round.index / settings.roundLength}%`;
+  wireBack(home);
+  $main.querySelectorAll('.choices button:not(:disabled)').forEach(btn => btn.onclick = () => {
+    const ok = btn.dataset.id === target.id;
+    if (ok) round.score++; else { if (!round.missed.includes(target.id)) round.missed.push(target.id); navigator.vibrate?.(120); }
+    renderFactQuestion(btn.dataset.id);
+  });
+  const next = $main.querySelector('[data-next]');
+  if (next) next.onclick = () => { round.index++; nextFactQuestion(); };
+  $main.querySelector('.feedback')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+const plural = name => /s$/.test(name) ? name : /y$/.test(name) && !/[aeiou]y$/.test(name) ? name.replace(/y$/, 'ies') : name + 's';
 
 // ---------- Field guide ----------
 let browseFilter = '';
@@ -606,6 +715,7 @@ function credits() {
 async function start() {
   try {
     BIRDS = await (await fetch('data/birds.json')).json();
+    FACTS = await fetch('data/facts.json').then(r => r.ok ? r.json() : {}).catch(() => ({}));
   } catch {
     $main.innerHTML = '<p>Could not load the bird list. Check your connection and reopen the app.</p>';
     return;
