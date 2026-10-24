@@ -863,6 +863,87 @@
   ]
  },
  {
+  "bird": "crimson-rosella",
+  "obsId": "xc1173944",
+  "start": 0.0,
+  "verdict": "good",
+  "score": -1.87,
+  "peak": 0.73,
+  "dominance": 1.0,
+  "slices_with_bird": 2,
+  "loudest_other": [
+   "Gray Fantail",
+   0.85
+  ]
+ },
+ {
+  "bird": "crimson-rosella",
+  "obsId": "xc1166584",
+  "start": 0.0,
+  "verdict": "ok",
+  "score": 0.39,
+  "peak": 0.39,
+  "dominance": 1.0,
+  "slices_with_bird": 1,
+  "loudest_other": null
+ },
+ {
+  "bird": "crimson-rosella",
+  "obsId": "xc1072332",
+  "start": 0.0,
+  "verdict": "good",
+  "score": 1.72,
+  "peak": 0.78,
+  "dominance": 0.8,
+  "slices_with_bird": 5,
+  "loudest_other": [
+   "Sulphur-crested Cockatoo",
+   0.74
+  ]
+ },
+ {
+  "bird": "crimson-rosella",
+  "obsId": "xc1072331",
+  "start": 0.0,
+  "verdict": "good",
+  "score": 2.78,
+  "peak": 0.97,
+  "dominance": 1.0,
+  "slices_with_bird": 5,
+  "loudest_other": [
+   "Australian Ringneck",
+   0.54
+  ]
+ },
+ {
+  "bird": "crimson-rosella",
+  "obsId": "xc1069586",
+  "start": 6.0,
+  "verdict": "good",
+  "score": 4.95,
+  "peak": 0.97,
+  "dominance": 1.0,
+  "slices_with_bird": 6,
+  "loudest_other": [
+   "Pale-headed Rosella",
+   0.55
+  ]
+ },
+ {
+  "bird": "crimson-rosella",
+  "obsId": "xc1055854",
+  "start": 69.0,
+  "verdict": "good",
+  "score": 2.42,
+  "peak": 0.95,
+  "dominance": 0.8,
+  "slices_with_bird": 5,
+  "loudest_other": [
+   "Eastern Rosella",
+   0.74
+  ]
+ },
+ {
   "bird": "eastern-rosella",
   "obsId": 258971770,
   "start": 0.0,
@@ -970,6 +1051,87 @@
    "Common Myna",
    0.33
   ]
+ },
+ {
+  "bird": "eastern-rosella",
+  "obsId": "xc1173636",
+  "start": 6.0,
+  "verdict": "reject",
+  "score": -0.75,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "Lesser Necklaced Laughingthrush",
+   0.43
+  ]
+ },
+ {
+  "bird": "eastern-rosella",
+  "obsId": "xc981053",
+  "start": 0.0,
+  "verdict": "ok",
+  "score": 0.29,
+  "peak": 0.5,
+  "dominance": 0.5,
+  "slices_with_bird": 2,
+  "loudest_other": [
+   "Crimson Rosella",
+   0.47
+  ]
+ },
+ {
+  "bird": "eastern-rosella",
+  "obsId": "xc366519",
+  "start": 0.0,
+  "verdict": "good",
+  "score": 2.1,
+  "peak": 0.85,
+  "dominance": 0.83,
+  "slices_with_bird": 6,
+  "loudest_other": [
+   "Australian Ringneck",
+   0.6
+  ]
+ },
+ {
+  "bird": "eastern-rosella",
+  "obsId": "xc757237",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": -1.32,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "Crimson Rosella",
+   0.76
+  ]
+ },
+ {
+  "bird": "eastern-rosella",
+  "obsId": "xc599342",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": 0.3,
+  "peak": 0.28,
+  "dominance": 1.0,
+  "slices_with_bird": 2,
+  "loudest_other": [
+   "Common Redshank",
+   0.15
+  ]
+ },
+ {
+  "bird": "eastern-rosella",
+  "obsId": "xc268266",
+  "start": 30.0,
+  "verdict": "reject",
+  "score": 0.13,
+  "peak": 0.13,
+  "dominance": 1.0,
+  "slices_with_bird": 1,
+  "loudest_other": null
  },
  {
   "bird": "australian-king-parrot",
@@ -1272,6 +1434,87 @@
   "loudest_other": [
    "Bell Miner",
    1.0
+  ]
+ },
+ {
+  "bird": "red-wattlebird",
+  "obsId": "xc1169116",
+  "start": 0.0,
+  "verdict": "ok",
+  "score": 0.36,
+  "peak": 0.36,
+  "dominance": 1.0,
+  "slices_with_bird": 1,
+  "loudest_other": [
+   "Little Wattlebird",
+   0.19
+  ]
+ },
+ {
+  "bird": "red-wattlebird",
+  "obsId": "xc1163878",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": 0,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": null
+ },
+ {
+  "bird": "red-wattlebird",
+  "obsId": "xc1135593",
+  "start": 0.0,
+  "verdict": "good",
+  "score": 3.96,
+  "peak": 0.86,
+  "dominance": 1.0,
+  "slices_with_bird": 6,
+  "loudest_other": [
+   "Plain Chachalaca",
+   0.42
+  ]
+ },
+ {
+  "bird": "red-wattlebird",
+  "obsId": "xc1072282",
+  "start": 0.0,
+  "verdict": "ok",
+  "score": 0.61,
+  "peak": 0.61,
+  "dominance": 1.0,
+  "slices_with_bird": 1,
+  "loudest_other": [
+   "Little Wattlebird",
+   0.16
+  ]
+ },
+ {
+  "bird": "red-wattlebird",
+  "obsId": "xc1072017",
+  "start": 0.0,
+  "verdict": "ok",
+  "score": 0.4,
+  "peak": 0.4,
+  "dominance": 1.0,
+  "slices_with_bird": 1,
+  "loudest_other": [
+   "Regent Honeyeater",
+   0.19
+  ]
+ },
+ {
+  "bird": "red-wattlebird",
+  "obsId": "xc1062583",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": 0.43,
+  "peak": 0.58,
+  "dominance": 0.0,
+  "slices_with_bird": 2,
+  "loudest_other": [
+   "Noisy Friarbird",
+   0.66
   ]
  },
  {
@@ -2474,6 +2717,87 @@
   ]
  },
  {
+  "bird": "common-myna",
+  "obsId": "xc331569",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": -0.92,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "American Coot",
+   0.63
+  ]
+ },
+ {
+  "bird": "common-myna",
+  "obsId": "xc804370",
+  "start": 9.0,
+  "verdict": "good",
+  "score": 3.51,
+  "peak": 0.78,
+  "dominance": 1.0,
+  "slices_with_bird": 7,
+  "loudest_other": [
+   "Masked Laughingthrush",
+   0.17
+  ]
+ },
+ {
+  "bird": "common-myna",
+  "obsId": "xc669699",
+  "start": 0.0,
+  "verdict": "good",
+  "score": 1.42,
+  "peak": 0.89,
+  "dominance": 1.0,
+  "slices_with_bird": 3,
+  "loudest_other": [
+   "Bushy-crested Jay",
+   0.25
+  ]
+ },
+ {
+  "bird": "common-myna",
+  "obsId": "xc521180",
+  "start": 75.0,
+  "verdict": "good",
+  "score": 2.37,
+  "peak": 0.84,
+  "dominance": 1.0,
+  "slices_with_bird": 4,
+  "loudest_other": [
+   "Australian Ibis",
+   0.43
+  ]
+ },
+ {
+  "bird": "common-myna",
+  "obsId": "xc446210",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": 0,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": null
+ },
+ {
+  "bird": "common-myna",
+  "obsId": "xc194940",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": -0.41,
+  "peak": 0.18,
+  "dominance": 1.0,
+  "slices_with_bird": 1,
+  "loudest_other": [
+   "Green-winged Teal",
+   0.23
+  ]
+ },
+ {
   "bird": "red-whiskered-bulbul",
   "obsId": 98962050,
   "start": 0.0,
@@ -2804,6 +3128,90 @@
   "loudest_other": [
    "Barn Swallow",
    0.89
+  ]
+ },
+ {
+  "bird": "welcome-swallow",
+  "obsId": "xc1163884",
+  "start": 9.0,
+  "verdict": "good",
+  "score": 5.62,
+  "peak": 0.99,
+  "dominance": 1.0,
+  "slices_with_bird": 6,
+  "loudest_other": [
+   "Barn Swallow",
+   0.97
+  ]
+ },
+ {
+  "bird": "welcome-swallow",
+  "obsId": "xc690879",
+  "start": 12.0,
+  "verdict": "good",
+  "score": 2.09,
+  "peak": 0.71,
+  "dominance": 0.67,
+  "slices_with_bird": 6,
+  "loudest_other": [
+   "Barn Swallow",
+   0.85
+  ]
+ },
+ {
+  "bird": "welcome-swallow",
+  "obsId": "xc675715",
+  "start": 6.0,
+  "verdict": "good",
+  "score": 6.17,
+  "peak": 1.0,
+  "dominance": 0.86,
+  "slices_with_bird": 7,
+  "loudest_other": [
+   "Barn Swallow",
+   0.95
+  ]
+ },
+ {
+  "bird": "welcome-swallow",
+  "obsId": "xc572345",
+  "start": 0.0,
+  "verdict": "good",
+  "score": 3.5,
+  "peak": 1.0,
+  "dominance": 1.0,
+  "slices_with_bird": 5,
+  "loudest_other": [
+   "Barn Swallow",
+   0.61
+  ]
+ },
+ {
+  "bird": "welcome-swallow",
+  "obsId": "xc960341",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": -0.91,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "Red-crowned Ant-Tanager",
+   0.59
+  ]
+ },
+ {
+  "bird": "welcome-swallow",
+  "obsId": "xc931755",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": -0.95,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "Red-crowned Ant-Tanager",
+   0.65
   ]
  },
  {
@@ -4091,6 +4499,87 @@
   ]
  },
  {
+  "bird": "australian-white-ibis",
+  "obsId": "xc1062938",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": 0.01,
+  "peak": 0.12,
+  "dominance": 1.0,
+  "slices_with_bird": 1,
+  "loudest_other": [
+   "Snow Goose",
+   0.11
+  ]
+ },
+ {
+  "bird": "australian-white-ibis",
+  "obsId": "xc953003",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": -0.72,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "Gray Heron",
+   0.72
+  ]
+ },
+ {
+  "bird": "australian-white-ibis",
+  "obsId": "xc467486",
+  "start": 15.0,
+  "verdict": "good",
+  "score": 2.33,
+  "peak": 0.71,
+  "dominance": 1.0,
+  "slices_with_bird": 5,
+  "loudest_other": null
+ },
+ {
+  "bird": "australian-white-ibis",
+  "obsId": "xc313350",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": 1.17,
+  "peak": 0.84,
+  "dominance": 0.4,
+  "slices_with_bird": 5,
+  "loudest_other": [
+   "Graylag Goose",
+   0.94
+  ]
+ },
+ {
+  "bird": "australian-white-ibis",
+  "obsId": "xc935904",
+  "start": 0.0,
+  "verdict": "ok",
+  "score": 0.36,
+  "peak": 0.36,
+  "dominance": 1.0,
+  "slices_with_bird": 1,
+  "loudest_other": [
+   "Cattle Egret",
+   0.15
+  ]
+ },
+ {
+  "bird": "australian-white-ibis",
+  "obsId": "xc900472",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": -0.37,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "Chilean Flamingo",
+   0.24
+  ]
+ },
+ {
   "bird": "masked-lapwing",
   "obsId": 366277829,
   "start": 0.0,
@@ -4286,6 +4775,81 @@
   "loudest_other": [
    "Torresian Crow",
    0.73
+  ]
+ },
+ {
+  "bird": "australian-brushturkey",
+  "obsId": "xc734158",
+  "start": 9.0,
+  "verdict": "reject",
+  "score": -2.16,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "Bell Miner",
+   0.61
+  ]
+ },
+ {
+  "bird": "australian-brushturkey",
+  "obsId": "xc694790",
+  "start": 0.0,
+  "verdict": "good",
+  "score": 0.65,
+  "peak": 0.65,
+  "dominance": 1.0,
+  "slices_with_bird": 2,
+  "loudest_other": [
+   "Rufous-banded Owl",
+   0.28
+  ]
+ },
+ {
+  "bird": "australian-brushturkey",
+  "obsId": "xc516495",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": 0,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": null
+ },
+ {
+  "bird": "australian-brushturkey",
+  "obsId": "xc434108",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": 0,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": null
+ },
+ {
+  "bird": "australian-brushturkey",
+  "obsId": "xc760899",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": 0,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": null
+ },
+ {
+  "bird": "australian-brushturkey",
+  "obsId": "xc517534",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": -0.16,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "Orange-footed Scrubfowl",
+   0.16
   ]
  },
  {
@@ -4828,6 +5392,90 @@
   ]
  },
  {
+  "bird": "australian-wood-duck",
+  "obsId": "xc1173007",
+  "start": 42.0,
+  "verdict": "good",
+  "score": 6.93,
+  "peak": 1.0,
+  "dominance": 1.0,
+  "slices_with_bird": 7,
+  "loudest_other": [
+   "Buff-necked Ibis",
+   0.39
+  ]
+ },
+ {
+  "bird": "australian-wood-duck",
+  "obsId": "xc1172683",
+  "start": 0.0,
+  "verdict": "good",
+  "score": 2.66,
+  "peak": 0.92,
+  "dominance": 1.0,
+  "slices_with_bird": 3,
+  "loudest_other": [
+   "Paradise Shelduck",
+   0.46
+  ]
+ },
+ {
+  "bird": "australian-wood-duck",
+  "obsId": "xc1166638",
+  "start": 96.0,
+  "verdict": "good",
+  "score": 6.25,
+  "peak": 0.98,
+  "dominance": 1.0,
+  "slices_with_bird": 7,
+  "loudest_other": [
+   "Willow Ptarmigan",
+   0.2
+  ]
+ },
+ {
+  "bird": "australian-wood-duck",
+  "obsId": "xc497608",
+  "start": 3.0,
+  "verdict": "good",
+  "score": 5.6,
+  "peak": 0.98,
+  "dominance": 1.0,
+  "slices_with_bird": 6,
+  "loudest_other": [
+   "Rainbow Lorikeet",
+   0.17
+  ]
+ },
+ {
+  "bird": "australian-wood-duck",
+  "obsId": "xc373657",
+  "start": 6.0,
+  "verdict": "good",
+  "score": 3.35,
+  "peak": 0.99,
+  "dominance": 0.86,
+  "slices_with_bird": 7,
+  "loudest_other": [
+   "Great Cormorant",
+   0.39
+  ]
+ },
+ {
+  "bird": "australian-wood-duck",
+  "obsId": "xc182954",
+  "start": 0.0,
+  "verdict": "good",
+  "score": 1.32,
+  "peak": 0.98,
+  "dominance": 0.75,
+  "slices_with_bird": 4,
+  "loudest_other": [
+   "Common Shelduck",
+   0.83
+  ]
+ },
+ {
   "bird": "dusky-moorhen",
   "obsId": 65199064,
   "start": 0.0,
@@ -4940,6 +5588,90 @@
   ]
  },
  {
+  "bird": "dusky-moorhen",
+  "obsId": "xc497607",
+  "start": 0.0,
+  "verdict": "good",
+  "score": 2.56,
+  "peak": 0.88,
+  "dominance": 1.0,
+  "slices_with_bird": 4,
+  "loudest_other": [
+   "Noisy Friarbird",
+   0.17
+  ]
+ },
+ {
+  "bird": "dusky-moorhen",
+  "obsId": "xc761854",
+  "start": 9.0,
+  "verdict": "reject",
+  "score": -0.49,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "Williamson's Sapsucker",
+   0.19
+  ]
+ },
+ {
+  "bird": "dusky-moorhen",
+  "obsId": "xc195850",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": -0.54,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "Eurasian Sparrowhawk",
+   0.54
+  ]
+ },
+ {
+  "bird": "dusky-moorhen",
+  "obsId": "xc183774",
+  "start": 15.0,
+  "verdict": "good",
+  "score": 6.28,
+  "peak": 0.99,
+  "dominance": 1.0,
+  "slices_with_bird": 7,
+  "loudest_other": [
+   "Red-tailed Black-Cockatoo",
+   0.26
+  ]
+ },
+ {
+  "bird": "dusky-moorhen",
+  "obsId": "xc779897",
+  "start": 15.0,
+  "verdict": "good",
+  "score": 5.85,
+  "peak": 0.98,
+  "dominance": 1.0,
+  "slices_with_bird": 7,
+  "loudest_other": [
+   "Common Gallinule",
+   0.47
+  ]
+ },
+ {
+  "bird": "dusky-moorhen",
+  "obsId": "xc564262",
+  "start": 0.0,
+  "verdict": "good",
+  "score": 6.57,
+  "peak": 0.98,
+  "dominance": 1.0,
+  "slices_with_bird": 7,
+  "loudest_other": [
+   "Indian Gray Hornbill",
+   0.3
+  ]
+ },
+ {
   "bird": "australasian-swamphen",
   "obsId": 95649960,
   "start": 3.0,
@@ -5049,6 +5781,76 @@
   ]
  },
  {
+  "bird": "australasian-swamphen",
+  "obsId": "xc1172802",
+  "start": 3.0,
+  "verdict": "good",
+  "score": 1.5,
+  "peak": 0.64,
+  "dominance": 0.75,
+  "slices_with_bird": 4,
+  "loudest_other": [
+   "Northern Pygmy-Owl",
+   0.21
+  ]
+ },
+ {
+  "bird": "australasian-swamphen",
+  "obsId": "xc1104850",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": -0.1,
+  "peak": 0.16,
+  "dominance": 0.0,
+  "slices_with_bird": 1,
+  "loudest_other": [
+   "Striped Owl",
+   0.22
+  ]
+ },
+ {
+  "bird": "australasian-swamphen",
+  "obsId": "xc935914",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": -0.54,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "Little Wattlebird",
+   0.28
+  ]
+ },
+ {
+  "bird": "australasian-swamphen",
+  "obsId": "xc776087",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": -1.78,
+  "peak": 0.3,
+  "dominance": 0.0,
+  "slices_with_bird": 2,
+  "loudest_other": [
+   "Gray-headed Swamphen",
+   0.87
+  ]
+ },
+ {
+  "bird": "australasian-swamphen",
+  "obsId": "xc659941",
+  "start": 0.0,
+  "verdict": "ok",
+  "score": 0.26,
+  "peak": 0.47,
+  "dominance": 1.0,
+  "slices_with_bird": 2,
+  "loudest_other": [
+   "Canyon Towhee",
+   0.36
+  ]
+ },
+ {
   "bird": "australian-pelican",
   "obsId": 206043763,
   "start": 0.0,
@@ -5060,6 +5862,76 @@
   "loudest_other": [
    "Black Swan",
    0.53
+  ]
+ },
+ {
+  "bird": "australian-pelican",
+  "obsId": "xc185637",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": -0.62,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "Human vocal",
+   0.36
+  ]
+ },
+ {
+  "bird": "australian-pelican",
+  "obsId": "xc1073374",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": -0.59,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "European Turtle-Dove",
+   0.45
+  ]
+ },
+ {
+  "bird": "australian-pelican",
+  "obsId": "xc997226",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": -0.27,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "Juniper Titmouse",
+   0.16
+  ]
+ },
+ {
+  "bird": "australian-pelican",
+  "obsId": "xc605898",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": -0.37,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "Anhinga",
+   0.37
+  ]
+ },
+ {
+  "bird": "australian-pelican",
+  "obsId": "xc211213",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": -0.39,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "Rosy Thrush-Tanager",
+   0.26
   ]
  },
  {
@@ -5103,6 +5975,31 @@
    "Common Grasshopper-Warbler",
    0.14
   ]
+ },
+ {
+  "bird": "little-pied-cormorant",
+  "obsId": "xc794988",
+  "start": 9.0,
+  "verdict": "reject",
+  "score": -0.54,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": [
+   "Noisy Friarbird",
+   0.21
+  ]
+ },
+ {
+  "bird": "little-pied-cormorant",
+  "obsId": "xc182028",
+  "start": 0.0,
+  "verdict": "reject",
+  "score": 0,
+  "peak": 0.0,
+  "dominance": 0.0,
+  "slices_with_bird": 0,
+  "loudest_other": null
  },
  {
   "bird": "white-bellied-sea-eagle",

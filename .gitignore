@@ -5,3 +5,6 @@ tools/candidates/
 tools/.venv/
 tools/fetch.log
 __pycache__/
+
+# Xeno-canto API key (personal, never published)
+tools/xc-key.txt

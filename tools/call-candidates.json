@@ -589,6 +589,60 @@
    "url": "https://www.inaturalist.org/observations/338726818",
    "raw": "raw\\crimson-rosella-c338726818.wav",
    "analysis": "analysis\\crimson-rosella-338726818.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1173944",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC1173944",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1173944",
+   "raw": "raw\\crimson-rosella-cxc1173944.mp3",
+   "analysis": "analysis\\crimson-rosella-xc1173944.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1166584",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC1166584",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1166584",
+   "raw": "raw\\crimson-rosella-cxc1166584.mp3",
+   "analysis": "analysis\\crimson-rosella-xc1166584.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1072332",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC1072332",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1072332",
+   "raw": "raw\\crimson-rosella-cxc1072332.mp3",
+   "analysis": "analysis\\crimson-rosella-xc1072332.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1072331",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC1072331",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1072331",
+   "raw": "raw\\crimson-rosella-cxc1072331.mp3",
+   "analysis": "analysis\\crimson-rosella-xc1072331.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1069586",
+   "credit": "(c) Étienne Leroy, xeno-canto XC1069586",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1069586",
+   "raw": "raw\\crimson-rosella-cxc1069586.mp3",
+   "analysis": "analysis\\crimson-rosella-xc1069586.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1055854",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC1055854",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1055854",
+   "raw": "raw\\crimson-rosella-cxc1055854.mp3",
+   "analysis": "analysis\\crimson-rosella-xc1055854.flac"
   }
  ],
  "eastern-rosella": [
@@ -663,6 +717,60 @@
    "url": "https://www.inaturalist.org/observations/309864923",
    "raw": "raw\\eastern-rosella-c309864923.m4a",
    "analysis": "analysis\\eastern-rosella-309864923.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1173636",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC1173636",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1173636",
+   "raw": "raw\\eastern-rosella-cxc1173636.mp3",
+   "analysis": "analysis\\eastern-rosella-xc1173636.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc981053",
+   "credit": "(c) Harvey L, xeno-canto XC981053",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/981053",
+   "raw": "raw\\eastern-rosella-cxc981053.mp3",
+   "analysis": "analysis\\eastern-rosella-xc981053.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc366519",
+   "credit": "(c) Greg McLachlan, xeno-canto XC366519",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/366519",
+   "raw": "raw\\eastern-rosella-cxc366519.mp3",
+   "analysis": "analysis\\eastern-rosella-xc366519.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc757237",
+   "credit": "(c) Tim Morris, xeno-canto XC757237",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/757237",
+   "raw": "raw\\eastern-rosella-cxc757237.mp3",
+   "analysis": "analysis\\eastern-rosella-xc757237.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc599342",
+   "credit": "(c) Jeffrey Evans, xeno-canto XC599342",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/599342",
+   "raw": "raw\\eastern-rosella-cxc599342.mp3",
+   "analysis": "analysis\\eastern-rosella-xc599342.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc268266",
+   "credit": "(c) Todd Mark, xeno-canto XC268266",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/268266",
+   "raw": "raw\\eastern-rosella-cxc268266.mp3",
+   "analysis": "analysis\\eastern-rosella-xc268266.flac"
   }
  ],
  "australian-king-parrot": [
@@ -885,6 +993,60 @@
    "url": "https://www.inaturalist.org/observations/382581934",
    "raw": "raw\\red-wattlebird-c382581934.wav",
    "analysis": "analysis\\red-wattlebird-382581934.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1169116",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC1169116",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1169116",
+   "raw": "raw\\red-wattlebird-cxc1169116.mp3",
+   "analysis": "analysis\\red-wattlebird-xc1169116.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1163878",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC1163878",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1163878",
+   "raw": "raw\\red-wattlebird-cxc1163878.mp3",
+   "analysis": "analysis\\red-wattlebird-xc1163878.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1135593",
+   "credit": "(c) Nick Talbot, xeno-canto XC1135593",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1135593",
+   "raw": "raw\\red-wattlebird-cxc1135593.mp3",
+   "analysis": "analysis\\red-wattlebird-xc1135593.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1072282",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC1072282",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1072282",
+   "raw": "raw\\red-wattlebird-cxc1072282.mp3",
+   "analysis": "analysis\\red-wattlebird-xc1072282.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1072017",
+   "credit": "(c) Étienne Leroy, xeno-canto XC1072017",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1072017",
+   "raw": "raw\\red-wattlebird-cxc1072017.mp3",
+   "analysis": "analysis\\red-wattlebird-xc1072017.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1062583",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC1062583",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1062583",
+   "raw": "raw\\red-wattlebird-cxc1062583.mp3",
+   "analysis": "analysis\\red-wattlebird-xc1062583.flac"
   }
  ],
  "little-wattlebird": [
@@ -1699,6 +1861,60 @@
    "url": "https://www.inaturalist.org/observations/362258449",
    "raw": "raw\\common-myna-c362258449.m4a",
    "analysis": "analysis\\common-myna-362258449.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc331569",
+   "credit": "(c) Greg McLachlan, xeno-canto XC331569",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/331569",
+   "raw": "raw\\common-myna-cxc331569.mp3",
+   "analysis": "analysis\\common-myna-xc331569.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc804370",
+   "credit": "(c) Zebedee Muller, xeno-canto XC804370",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/804370",
+   "raw": "raw\\common-myna-cxc804370.mp3",
+   "analysis": "analysis\\common-myna-xc804370.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc669699",
+   "credit": "(c) nick talbot, xeno-canto XC669699",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/669699",
+   "raw": "raw\\common-myna-cxc669699.mp3",
+   "analysis": "analysis\\common-myna-xc669699.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc521180",
+   "credit": "(c) James Ray, xeno-canto XC521180",
+   "licence": "cc-by-sa",
+   "url": "https://xeno-canto.org/521180",
+   "raw": "raw\\common-myna-cxc521180.mp3",
+   "analysis": "analysis\\common-myna-xc521180.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc446210",
+   "credit": "(c) James Ray, xeno-canto XC446210",
+   "licence": "cc-by-sa",
+   "url": "https://xeno-canto.org/446210",
+   "raw": "raw\\common-myna-cxc446210.mp3",
+   "analysis": "analysis\\common-myna-xc446210.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc194940",
+   "credit": "(c) Diego Caiafa, xeno-canto XC194940",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/194940",
+   "raw": "raw\\common-myna-cxc194940.mp3",
+   "analysis": "analysis\\common-myna-xc194940.flac"
   }
  ],
  "red-whiskered-bulbul": [
@@ -1921,6 +2137,60 @@
    "url": "https://www.inaturalist.org/observations/204467018",
    "raw": "raw\\welcome-swallow-c204467018.wav",
    "analysis": "analysis\\welcome-swallow-204467018.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1163884",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC1163884",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1163884",
+   "raw": "raw\\welcome-swallow-cxc1163884.mp3",
+   "analysis": "analysis\\welcome-swallow-xc1163884.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc690879",
+   "credit": "(c) Phil Gregory, xeno-canto XC690879",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/690879",
+   "raw": "raw\\welcome-swallow-cxc690879.mp3",
+   "analysis": "analysis\\welcome-swallow-xc690879.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc675715",
+   "credit": "(c) Richard Boon, xeno-canto XC675715",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/675715",
+   "raw": "raw\\welcome-swallow-cxc675715.mp3",
+   "analysis": "analysis\\welcome-swallow-xc675715.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc572345",
+   "credit": "(c) Ramit Singal, xeno-canto XC572345",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/572345",
+   "raw": "raw\\welcome-swallow-cxc572345.mp3",
+   "analysis": "analysis\\welcome-swallow-xc572345.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc960341",
+   "credit": "(c) Phil Gregory, xeno-canto XC960341",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/960341",
+   "raw": "raw\\welcome-swallow-cxc960341.mp3",
+   "analysis": "analysis\\welcome-swallow-xc960341.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc931755",
+   "credit": "(c) Phil Gregory, xeno-canto XC931755",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/931755",
+   "raw": "raw\\welcome-swallow-cxc931755.mp3",
+   "analysis": "analysis\\welcome-swallow-xc931755.flac"
   }
  ],
  "silvereye": [
@@ -2809,6 +3079,60 @@
    "url": "https://www.inaturalist.org/observations/222101291",
    "raw": "raw\\australian-white-ibis-c222101291.m4a",
    "analysis": "analysis\\australian-white-ibis-222101291.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1062938",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC1062938",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1062938",
+   "raw": "raw\\australian-white-ibis-cxc1062938.mp3",
+   "analysis": "analysis\\australian-white-ibis-xc1062938.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc953003",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC953003",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/953003",
+   "raw": "raw\\australian-white-ibis-cxc953003.mp3",
+   "analysis": "analysis\\australian-white-ibis-xc953003.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc467486",
+   "credit": "(c) Pritam Baruah, xeno-canto XC467486",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/467486",
+   "raw": "raw\\australian-white-ibis-cxc467486.mp3",
+   "analysis": "analysis\\australian-white-ibis-xc467486.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc313350",
+   "credit": "(c) Fraser Simpson, xeno-canto XC313350",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/313350",
+   "raw": "raw\\australian-white-ibis-cxc313350.mp3",
+   "analysis": "analysis\\australian-white-ibis-xc313350.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc935904",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC935904",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/935904",
+   "raw": "raw\\australian-white-ibis-cxc935904.mp3",
+   "analysis": "analysis\\australian-white-ibis-xc935904.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc900472",
+   "credit": "(c) Nick Talbot, xeno-canto XC900472",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/900472",
+   "raw": "raw\\australian-white-ibis-cxc900472.mp3",
+   "analysis": "analysis\\australian-white-ibis-xc900472.flac"
   }
  ],
  "masked-lapwing": [
@@ -2948,6 +3272,60 @@
    "url": "https://www.inaturalist.org/observations/382386592",
    "raw": "raw\\australian-brushturkey-c382386592.m4a",
    "analysis": "analysis\\australian-brushturkey-382386592.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc734158",
+   "credit": "(c) Mike FitzGerald, xeno-canto XC734158",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/734158",
+   "raw": "raw\\australian-brushturkey-cxc734158.mp3",
+   "analysis": "analysis\\australian-brushturkey-xc734158.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc694790",
+   "credit": "(c) nick talbot, xeno-canto XC694790",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/694790",
+   "raw": "raw\\australian-brushturkey-cxc694790.mp3",
+   "analysis": "analysis\\australian-brushturkey-xc694790.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc516495",
+   "credit": "(c) James Lambert, xeno-canto XC516495",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/516495",
+   "raw": "raw\\australian-brushturkey-cxc516495.mp3",
+   "analysis": "analysis\\australian-brushturkey-xc516495.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc434108",
+   "credit": "(c) Greg McLachlan, xeno-canto XC434108",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/434108",
+   "raw": "raw\\australian-brushturkey-cxc434108.mp3",
+   "analysis": "analysis\\australian-brushturkey-xc434108.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc760899",
+   "credit": "(c) nick talbot, xeno-canto XC760899",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/760899",
+   "raw": "raw\\australian-brushturkey-cxc760899.mp3",
+   "analysis": "analysis\\australian-brushturkey-xc760899.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc517534",
+   "credit": "(c) James Lambert, xeno-canto XC517534",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/517534",
+   "raw": "raw\\australian-brushturkey-cxc517534.mp3",
+   "analysis": "analysis\\australian-brushturkey-xc517534.flac"
   }
  ],
  "superb-lyrebird": [
@@ -3318,6 +3696,60 @@
    "url": "https://www.inaturalist.org/observations/406249700",
    "raw": "raw\\australian-wood-duck-c406249700.m4a",
    "analysis": "analysis\\australian-wood-duck-406249700.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1173007",
+   "credit": "(c) Chi-Hsuan Shao, xeno-canto XC1173007",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1173007",
+   "raw": "raw\\australian-wood-duck-cxc1173007.mp3",
+   "analysis": "analysis\\australian-wood-duck-xc1173007.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1172683",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC1172683",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1172683",
+   "raw": "raw\\australian-wood-duck-cxc1172683.mp3",
+   "analysis": "analysis\\australian-wood-duck-xc1172683.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1166638",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC1166638",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1166638",
+   "raw": "raw\\australian-wood-duck-cxc1166638.mp3",
+   "analysis": "analysis\\australian-wood-duck-xc1166638.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc497608",
+   "credit": "(c) Ramit Singal, xeno-canto XC497608",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/497608",
+   "raw": "raw\\australian-wood-duck-cxc497608.mp3",
+   "analysis": "analysis\\australian-wood-duck-xc497608.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc373657",
+   "credit": "(c) Greg McLachlan, xeno-canto XC373657",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/373657",
+   "raw": "raw\\australian-wood-duck-cxc373657.mp3",
+   "analysis": "analysis\\australian-wood-duck-xc373657.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc182954",
+   "credit": "(c) nick talbot, xeno-canto XC182954",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/182954",
+   "raw": "raw\\australian-wood-duck-cxc182954.mp3",
+   "analysis": "analysis\\australian-wood-duck-xc182954.flac"
   }
  ],
  "dusky-moorhen": [
@@ -3392,6 +3824,60 @@
    "url": "https://www.inaturalist.org/observations/338528121",
    "raw": "raw\\dusky-moorhen-c338528121.m4a",
    "analysis": "analysis\\dusky-moorhen-338528121.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc497607",
+   "credit": "(c) Ramit Singal, xeno-canto XC497607",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/497607",
+   "raw": "raw\\dusky-moorhen-cxc497607.mp3",
+   "analysis": "analysis\\dusky-moorhen-xc497607.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc761854",
+   "credit": "(c) Eddy Smith, xeno-canto XC761854",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/761854",
+   "raw": "raw\\dusky-moorhen-cxc761854.mp3",
+   "analysis": "analysis\\dusky-moorhen-xc761854.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc195850",
+   "credit": "(c) Diego Caiafa, xeno-canto XC195850",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/195850",
+   "raw": "raw\\dusky-moorhen-cxc195850.mp3",
+   "analysis": "analysis\\dusky-moorhen-xc195850.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc183774",
+   "credit": "(c) nick talbot, xeno-canto XC183774",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/183774",
+   "raw": "raw\\dusky-moorhen-cxc183774.mp3",
+   "analysis": "analysis\\dusky-moorhen-xc183774.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc779897",
+   "credit": "(c) Eddy Smith, xeno-canto XC779897",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/779897",
+   "raw": "raw\\dusky-moorhen-cxc779897.mp3",
+   "analysis": "analysis\\dusky-moorhen-xc779897.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc564262",
+   "credit": "(c) James Lambert, xeno-canto XC564262",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/564262",
+   "raw": "raw\\dusky-moorhen-cxc564262.mp3",
+   "analysis": "analysis\\dusky-moorhen-xc564262.flac"
   }
  ],
  "australasian-swamphen": [
@@ -3466,6 +3952,51 @@
    "url": "https://www.inaturalist.org/observations/254593262",
    "raw": "raw\\australasian-swamphen-c254593262.m4a",
    "analysis": "analysis\\australasian-swamphen-254593262.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1172802",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC1172802",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1172802",
+   "raw": "raw\\australasian-swamphen-cxc1172802.mp3",
+   "analysis": "analysis\\australasian-swamphen-xc1172802.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1104850",
+   "credit": "(c) Tom Cooney, xeno-canto XC1104850",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/1104850",
+   "raw": "raw\\australasian-swamphen-cxc1104850.mp3",
+   "analysis": "analysis\\australasian-swamphen-xc1104850.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc935914",
+   "credit": "(c) Romuald Mikusek, xeno-canto XC935914",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/935914",
+   "raw": "raw\\australasian-swamphen-cxc935914.mp3",
+   "analysis": "analysis\\australasian-swamphen-xc935914.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc776087",
+   "credit": "(c) Nigel Jackett, xeno-canto XC776087",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/776087",
+   "raw": "raw\\australasian-swamphen-cxc776087.mp3",
+   "analysis": "analysis\\australasian-swamphen-xc776087.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc659941",
+   "credit": "(c) Greg McLachlan, xeno-canto XC659941",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/659941",
+   "raw": "raw\\australasian-swamphen-cxc659941.mp3",
+   "analysis": "analysis\\australasian-swamphen-xc659941.flac"
   }
  ],
  "australian-pelican": [
@@ -3477,6 +4008,51 @@
    "url": "https://www.inaturalist.org/observations/206043763",
    "raw": "raw\\australian-pelican-c206043763.mp3",
    "analysis": "analysis\\australian-pelican-206043763.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc185637",
+   "credit": "(c) nick talbot, xeno-canto XC185637",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/185637",
+   "raw": "raw\\australian-pelican-cxc185637.mp3",
+   "analysis": "analysis\\australian-pelican-xc185637.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc1073374",
+   "credit": "(c) Rob Nicholson, xeno-canto XC1073374",
+   "licence": "cc-by",
+   "url": "https://xeno-canto.org/1073374",
+   "raw": "raw\\australian-pelican-cxc1073374.mp3",
+   "analysis": "analysis\\australian-pelican-xc1073374.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc997226",
+   "credit": "(c) Zebedee Muller, xeno-canto XC997226",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/997226",
+   "raw": "raw\\australian-pelican-cxc997226.mp3",
+   "analysis": "analysis\\australian-pelican-xc997226.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc605898",
+   "credit": "(c) Liam Manderson, xeno-canto XC605898",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/605898",
+   "raw": "raw\\australian-pelican-cxc605898.mp3",
+   "analysis": "analysis\\australian-pelican-xc605898.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc211213",
+   "credit": "(c) nick talbot, xeno-canto XC211213",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/211213",
+   "raw": "raw\\australian-pelican-cxc211213.mp3",
+   "analysis": "analysis\\australian-pelican-xc211213.flac"
   }
  ],
  "little-pied-cormorant": [
@@ -3506,6 +4082,24 @@
    "url": "https://www.inaturalist.org/observations/36518567",
    "raw": "raw\\little-pied-cormorant-c36518567.mp3",
    "analysis": "analysis\\little-pied-cormorant-36518567.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc794988",
+   "credit": "(c) nick talbot, xeno-canto XC794988",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/794988",
+   "raw": "raw\\little-pied-cormorant-cxc794988.mp3",
+   "analysis": "analysis\\little-pied-cormorant-xc794988.flac"
+  },
+  {
+   "src": null,
+   "obsId": "xc182028",
+   "credit": "(c) nick talbot, xeno-canto XC182028",
+   "licence": "cc-by-nc-sa",
+   "url": "https://xeno-canto.org/182028",
+   "raw": "raw\\little-pied-cormorant-cxc182028.mp3",
+   "analysis": "analysis\\little-pied-cormorant-xc182028.flac"
   }
  ],
  "white-bellied-sea-eagle": [

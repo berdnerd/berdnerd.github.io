@@ -1,6 +1,8 @@
 // Builds the app's bird media from iNaturalist, in stages:
 //   node tools/fetch-media.mjs candidates [ffmpeg]       -> tools/candidates.json + photo thumbnails to review
 //   node tools/fetch-media.mjs call-candidates [ffmpeg]  -> tools/call-candidates.json + FLAC copies for BirdNET
+//   node tools/fetch-media.mjs xc-candidates [ffmpeg]    -> adds Xeno-canto recordings for birds short of calls
+//                                                          (needs the API key in tools/xc-key.txt)
 //   (then tools/check-calls.py picks the best calls and where to cut them -> tools/call-picks.json)
 //   node tools/fetch-media.mjs build [ffmpeg]            -> picked photos + calls, and app/data/birds.json
 // Photo picks live in tools/picks.json: { "<bird id>": [coverObsId, obsId, ...] }.
@@ -151,6 +153,40 @@ async function callCandidates(sp, taxonId) {
   return out;
 }
 
+// Xeno-canto: best quality first, and recordings with no other species in the background first.
+async function xcCandidates(sp, key, count) {
+  const [genus, epithet] = sp.sci.split(' ');
+  const query = `gen:${genus} sp:${epithet} cnt:Australia`;
+  const res = await fetch(`https://xeno-canto.org/api/3/recordings?query=${encodeURIComponent(query)}&key=${key}&per_page=100`);
+  if (!res.ok) throw new Error(`Xeno-canto ${res.status}: ${(await res.text()).slice(0, 200)}`);
+  const { recordings = [] } = await res.json();
+  const usable = recordings
+    .filter(r => !/-nd/.test(r.lic))
+    .sort((a, b) => (a.also.filter(Boolean).length > 0) - (b.also.filter(Boolean).length > 0) || a.q.localeCompare(b.q));
+  const out = [];
+  for (const r of usable.slice(0, count)) {
+    const obsId = `xc${r.id}`;
+    const raw = path.join(RAW, `${sp.id}-c${obsId}.mp3`);
+    const analysis = path.join(ANALYSIS, `${sp.id}-${obsId}.flac`);
+    try {
+      await download(r.file, raw);
+      if (!(await exists(analysis))) {
+        await run(FFMPEG, ['-y', '-loglevel', 'error', '-i', raw, '-t', String(ANALYSIS_SECONDS), '-ac', '1', '-ar', '48000', analysis]);
+      }
+      out.push({
+        src: null, obsId,
+        credit: `(c) ${r.rec}, xeno-canto XC${r.id}`,
+        licence: 'cc-' + /licenses\/([a-z-]+)/.exec(r.lic)[1],
+        url: `https://xeno-canto.org/${r.id}`,
+        raw: path.relative(TOOLS, raw), analysis: path.relative(TOOLS, analysis),
+      });
+    } catch (e) {
+      console.warn(`  ! skipped XC${r.id} for ${sp.name}: ${e.message}`);
+    }
+  }
+  return out;
+}
+
 async function pickedCalls(sp, candidates, picks = []) {
   const out = [];
   for (const { obsId, start } of picks) {
@@ -191,6 +227,18 @@ if (stage === 'candidates') {
     const taxonId = photoCandidatesData[sp.id]?.taxonId ?? await resolveTaxon(sp);
     all[sp.id] = await callCandidates(sp, taxonId);
     console.log(`${sp.name}: ${all[sp.id].length} call candidates`);
+  }
+  await writeFile(callCandidatesFile, JSON.stringify(all, null, 1));
+} else if (stage === 'xc-candidates') {
+  const key = (await readFile(path.join(TOOLS, 'xc-key.txt'), 'utf8').catch(() => '')).trim();
+  if (!key) throw new Error('Put your Xeno-canto API key in tools/xc-key.txt first.');
+  const all = await readJson(callCandidatesFile, {});
+  const callPicks = await readJson(path.join(TOOLS, 'call-picks.json'), {});
+  for (const sp of species) {
+    if ((callPicks[sp.id]?.length ?? 0) >= 3) continue;
+    const added = await xcCandidates(sp, key, 6);
+    all[sp.id] = [...(all[sp.id] || []).filter(c => !String(c.obsId).startsWith('xc')), ...added];
+    console.log(`${sp.name}: +${added.length} from Xeno-canto`);
   }
   await writeFile(callCandidatesFile, JSON.stringify(all, null, 1));
 } else {

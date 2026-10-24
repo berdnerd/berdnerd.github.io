@@ -99,17 +99,29 @@
  ],
  "crimson-rosella": [
   {
+   "obsId": "xc1069586",
+   "start": 6.0
+  },
+  {
    "obsId": 241247010,
    "start": 0.0
   },
   {
-   "obsId": 109008850,
+   "obsId": "xc1072331",
    "start": 0.0
   }
  ],
  "eastern-rosella": [
   {
+   "obsId": "xc366519",
+   "start": 0.0
+  },
+  {
    "obsId": 382807527,
+   "start": 0.0
+  },
+  {
+   "obsId": "xc981053",
    "start": 0.0
   }
  ],
@@ -143,12 +155,16 @@
  ],
  "red-wattlebird": [
   {
+   "obsId": "xc1135593",
+   "start": 0.0
+  },
+  {
    "obsId": 290863531,
    "start": 0.0
   },
   {
-   "obsId": 67419963,
-   "start": 45.0
+   "obsId": "xc1072282",
+   "start": 0.0
   }
  ],
  "little-wattlebird": [
@@ -293,12 +309,16 @@
  ],
  "common-myna": [
   {
+   "obsId": "xc804370",
+   "start": 9.0
+  },
+  {
    "obsId": 309669408,
    "start": 0.0
   },
   {
-   "obsId": 257323672,
-   "start": 0.0
+   "obsId": "xc521180",
+   "start": 75.0
   }
  ],
  "red-whiskered-bulbul": [
@@ -331,8 +351,16 @@
  ],
  "welcome-swallow": [
   {
-   "obsId": 204467018,
+   "obsId": "xc675715",
    "start": 6.0
+  },
+  {
+   "obsId": "xc1163884",
+   "start": 9.0
+  },
+  {
+   "obsId": "xc572345",
+   "start": 0.0
   }
  ],
  "silvereye": [
@@ -491,6 +519,10 @@
  ],
  "australian-white-ibis": [
   {
+   "obsId": "xc467486",
+   "start": 15.0
+  },
+  {
    "obsId": 96510685,
    "start": 0.0
   },
@@ -516,6 +548,10 @@
  "australian-brushturkey": [
   {
    "obsId": 204329555,
+   "start": 0.0
+  },
+  {
+   "obsId": "xc694790",
    "start": 0.0
   }
  ],
@@ -577,28 +613,44 @@
  ],
  "australian-wood-duck": [
   {
-   "obsId": 338528061,
-   "start": 0.0
+   "obsId": "xc1173007",
+   "start": 42.0
   },
   {
-   "obsId": 369508281,
-   "start": 0.0
+   "obsId": "xc1166638",
+   "start": 96.0
+  },
+  {
+   "obsId": "xc497608",
+   "start": 3.0
   }
  ],
  "dusky-moorhen": [
   {
-   "obsId": 338528121,
+   "obsId": "xc564262",
    "start": 0.0
   },
   {
-   "obsId": 65199064,
-   "start": 0.0
+   "obsId": "xc183774",
+   "start": 15.0
+  },
+  {
+   "obsId": "xc779897",
+   "start": 15.0
   }
  ],
  "australasian-swamphen": [
   {
    "obsId": 374207800,
    "start": 6.0
+  },
+  {
+   "obsId": "xc1172802",
+   "start": 3.0
+  },
+  {
+   "obsId": "xc659941",
+   "start": 0.0
   }
  ],
  "australian-pelican": [],

@@ -153,6 +153,7 @@ function startRound(mode) {
 }
 
 function nextQuestion() {
+  stopAudio();
   if (round.index >= settings.roundLength) return results();
   const target = pickTarget(round.pool, round.recent);
   round.recent = [...round.recent, target.id].slice(-Math.min(6, round.pool.length - 1));
