@@ -202,7 +202,7 @@ function renderQuestion(answeredId) {
       ? `<div class="media"><img src="${esc(optionPhotos[target.id].src)}" alt="${esc(target.name)}"></div>` : '';
     feedback = `
       <div class="feedback ${correct ? 'good' : 'bad'}">
-        <h3>${correct ? 'Correct!' : `It was the ${esc(target.name)}`}</h3>
+        <h3>${correct ? `Correct, ${/^[AEIOU]/.test(target.name) ? 'an' : 'a'} ${esc(target.name)}!` : `It was the ${esc(target.name)}`}</h3>
         ${seePhoto}
         <p>${esc(target.tip)}</p>
         ${extra ? `<div class="actions">${extra}</div>` : ''}
