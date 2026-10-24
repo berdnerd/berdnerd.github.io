@@ -8,3 +8,6 @@ __pycache__/
 
 # Xeno-canto API key (personal, never published)
 tools/xc-key.txt
+
+# Audit notes and research kept on this PC only (personal; the app itself is public).
+docs/

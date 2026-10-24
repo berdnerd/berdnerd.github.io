@@ -10,7 +10,7 @@ Data files and how to rebuild them:
 - `tools/facts.json` — hand-checked facts for the knowledge quiz, each with its Wikipedia source; `node tools/build-facts.mjs` writes `app/data/facts.json`.
 - `tools/seasonality-overrides.json` — hand labels for seasonal patterns; `node tools/fetch-seasonality.mjs` pulls monthly counts from the Atlas of Living Australia and writes `app/data/seasonality.json` (re-run yearly).
 
-An audit of the app from October 2026, with research on seasonality data and on Indigenous bird names, is in `docs/audit-2026-10-25/`.
+An audit of the app from October 2026, with research on seasonality data and on Indigenous bird names, is kept locally in `docs/audit-2026-10-25/` (not published).
 
 **Use it:** https://berdnerd.github.io
 
