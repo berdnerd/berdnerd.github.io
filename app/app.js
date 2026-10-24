@@ -7,6 +7,8 @@ audio.setAttribute('playsinline', '');
 let BIRDS = [];
 const byId = id => BIRDS.find(b => b.id === id);
 
+const MEDIA_CACHE = 'sydney-birds-media';
+
 // ---------- Storage (per device) ----------
 const store = {
   get(key, fallback) {
@@ -53,6 +55,10 @@ function shuffle(arr) {
   return a;
 }
 const licenceLabel = code => (code || '').toUpperCase().replace(/^CC-/, 'CC ') || 'licence unknown';
+// Creative Commons asks for a link to the licence itself, not just its name.
+const licenceUrl = code => code === 'cc0'
+  ? 'https://creativecommons.org/publicdomain/zero/1.0/'
+  : `https://creativecommons.org/licenses/${(code || 'by').replace(/^cc-/, '')}/4.0/`;
 function shortCredit(item) {
   const credit = item.credit || '';
   // Public-domain items read "no rights reserved, uploaded by Name": show the name instead.
@@ -191,9 +197,9 @@ function renderQuestion(answeredId) {
     return 'dim';
   };
   const choices = showPhotos
-    ? `<div class="choices photos">${options.map(o => `
-        <button data-id="${o.id}" class="${choiceClass(o)}" ${answered ? 'disabled' : ''}>
-          <img src="${esc(optionPhotos[o.id].src)}" alt="${answered ? esc(o.name) : 'Option'}">
+    ? `<div class="choices photos">${options.map((o, i) => `
+        <button data-id="${o.id}" class="${choiceClass(o)}" ${answered ? 'disabled' : ''} aria-label="${answered ? esc(o.name) : `Option ${i + 1}`}">
+          <img src="${esc(optionPhotos[o.id].src)}" alt="">
           ${answered ? `<span class="label">${esc(o.name)}</span>` : ''}
         </button>`).join('')}</div>`
     : `<div class="choices names">${options.map(o => `
@@ -207,7 +213,7 @@ function renderQuestion(answeredId) {
     const seePhoto = round.mode === 'call' && !showPhotos
       ? `<div class="media"><img src="${esc(optionPhotos[target.id].src)}" alt="${esc(target.name)}"></div>` : '';
     feedback = `
-      <div class="feedback ${correct ? 'good' : 'bad'}">
+      <div class="feedback ${correct ? 'good' : 'bad'}" aria-live="polite">
         <h3>${correct ? `Correct, ${/^[AEIOU]/.test(target.name) ? 'an' : 'a'} ${esc(target.name)}!` : `It was the ${esc(target.name)}`}</h3>
         ${seePhoto}
         <p>${esc(target.tip)}</p>
@@ -226,11 +232,13 @@ function renderQuestion(answeredId) {
     : answered ? `<div class="dock">${nextButton}</div>` : '';
 
   $main.innerHTML = `
-    ${topBar(`<div class="progress"><span style="width:${pct}%"></span></div><span class="score-pill" aria-label="Score">${round.score}</span>`)}
+    ${topBar(`<div class="progress" role="progressbar" aria-valuenow="${round.index}" aria-valuemax="${settings.roundLength}"><span></span></div><span class="score-pill" aria-label="Score">${round.score}</span>`)}
     ${prompt}
     ${choices}
     ${feedback}
     ${dock}`;
+  // Set from script rather than a style attribute, so the page's Content-Security-Policy can forbid inline styles.
+  $main.querySelector('.progress > span').style.width = `${pct}%`;
   wireBack(() => { stopAudio(); home(); });
 
   const play = $main.querySelector('.play');
@@ -406,21 +414,30 @@ async function downloadAll() {
   button.disabled = false;
 }
 
+const ICON_CREDIT = { credit: '(c) Jude Wright, some rights reserved (CC BY-NC)', licence: 'cc-by-nc', url: 'https://www.inaturalist.org/observations/150118680' };
+
 function credits() {
+  const item = (kind, m) => `<li>${kind}: <a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.credit)}</a>
+    · <a href="${licenceUrl(m.licence)}" target="_blank" rel="noopener">${esc(licenceLabel(m.licence))}</a></li>`;
   $main.innerHTML = `
     ${topBar('<h2 class="grow">Credits</h2>')}
-    <p class="muted small">Photos and recordings come from iNaturalist observers and are used under their Creative Commons licences. Tap a credit to see the original observation.</p>
-    <div class="credits">${BIRDS.map(b => `
+    <p class="muted small">Photos and recordings were shared by observers on <a href="https://www.inaturalist.org" target="_blank" rel="noopener">iNaturalist</a>
+      and recordists on <a href="https://xeno-canto.org" target="_blank" rel="noopener">xeno-canto</a>, and are used here under the Creative Commons licences they chose.
+      Tap a name to see the original, or a licence to read it.</p>
+    <p class="muted small">Changes made: photos are resized and cropped; recordings are trimmed to about 20 seconds and their volume evened out.
+      Where an original is ShareAlike, our changed copy is available under that same licence.
+      This app is free and non-commercial.</p>
+    <div class="credits">
+      <h3>App icon</h3>
+      <ul>${item('Kookaburra photo', ICON_CREDIT)}</ul>
+      ${BIRDS.map(b => `
       <h3>${esc(b.name)}</h3>
-      <ul>${[...b.photos.map(p => ['Photo', p]), ...b.calls.map(c => ['Call', c])].map(([kind, m]) =>
-        `<li>${kind}: <a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.credit)}</a></li>`).join('')}</ul>`).join('')}
+      <ul>${[...b.photos.map(p => ['Photo', p]), ...b.calls.map(c => ['Call', c])].map(([kind, m]) => item(kind, m)).join('')}</ul>`).join('')}
     </div>`;
   wireBack(settingsScreen);
 }
 
 // ---------- Start ----------
-const MEDIA_CACHE = 'sydney-birds-media';
-
 async function start() {
   try {
     BIRDS = await (await fetch('data/birds.json')).json();

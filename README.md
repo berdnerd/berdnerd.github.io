@@ -14,7 +14,9 @@ A phone app for learning 50 common Sydney birds by sight and sound: a photo quiz
 
 ## Photos and recordings
 
-All photos and calls come from [iNaturalist](https://www.inaturalist.org) observers and are used under their Creative Commons licences. Every item is credited in the app (Settings > Photo and sound credits), with a link to the original observation.
+Photos and most calls come from [iNaturalist](https://www.inaturalist.org) observers; a few calls come from [xeno-canto](https://xeno-canto.org) recordists. All are used under their Creative Commons licences (CC0, BY, BY-NC, BY-SA, BY-NC-SA; NoDerivatives items are excluded because photos are resized and clips trimmed). Every item is credited in the app (Settings > Photo and sound credits) with a link to the original and to its licence. The app icon is a crop of [observation 150118680](https://www.inaturalist.org/observations/150118680) by Jude Wright (CC BY-NC).
+
+Most of the media is NonCommercial-licensed, so the app must stay free and ad-free.
 
 ## How the media is chosen
 

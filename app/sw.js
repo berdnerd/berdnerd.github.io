@@ -1,5 +1,5 @@
 // Bump VERSION whenever app files change so phones pick up the update.
-const VERSION = 'v10';
+const VERSION = 'v11';
 const SHELL_CACHE = `sydney-birds-shell-${VERSION}`;
 const MEDIA_CACHE = 'sydney-birds-media';
 const SHELL = [
@@ -18,8 +18,23 @@ self.addEventListener('activate', event => {
       .then(keys => Promise.all(keys
         .filter(k => k.startsWith('sydney-birds-shell-') && k !== SHELL_CACHE)
         .map(k => caches.delete(k))))
+      .then(pruneMedia)
       .then(() => self.clients.claim()));
 });
+
+// Drop saved photos and calls that are no longer in the bird list (e.g. a replaced photo).
+async function pruneMedia() {
+  try {
+    const shell = await caches.open(SHELL_CACHE);
+    const res = (await shell.match('data/birds.json')) || (await fetch('data/birds.json'));
+    const birds = await res.json();
+    const keep = new Set(birds.flatMap(b => [...b.photos, ...b.calls].map(m => new URL(m.src, location.href).pathname)));
+    const media = await caches.open(MEDIA_CACHE);
+    for (const req of await media.keys()) {
+      if (!keep.has(new URL(req.url).pathname)) await media.delete(req);
+    }
+  } catch { /* offline with no saved list: nothing to prune */ }
+}
 
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
