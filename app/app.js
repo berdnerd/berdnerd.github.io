@@ -35,6 +35,9 @@ function status(id) {
 }
 
 // ---------- Helpers ----------
+const FEATHER_ICON = `<svg viewBox="-20 -56 40 122" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M0,-50 C13,-42 16,-20 14,-2 L8,2 L13,6 C11,24 6,36 0,44 C-6,36 -12,22 -13,6 C-15,-16 -13,-40 0,-50 Z" fill="currentColor" fill-opacity=".18"/>
+  <path d="M0,-46 C0.8,-10 0.8,24 -1,62"/></svg>`;
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const rand = arr => arr[Math.floor(Math.random() * arr.length)];
 function shuffle(arr) {
@@ -104,27 +107,27 @@ function home() {
   const accuracy = totals.r + totals.w ? Math.round(100 * totals.r / (totals.r + totals.w)) + '%' : '–';
   $main.innerHTML = `
     <div class="hero">
-      <h1>Sydney Birds</h1>
-      <p class="muted">Learn ${BIRDS.length} local birds by sight and sound.</p>
+      <div class="wordmark">${FEATHER_ICON}<h1>berdnerd</h1></div>
+      <p class="muted">Learn ${BIRDS.length} Sydney birds by sight and sound.</p>
     </div>
     <div class="stat-row">
       <div class="stat"><b>${mastered}</b><span>mastered</span></div>
       <div class="stat"><b>${seen}</b><span>seen</span></div>
       <div class="stat"><b>${accuracy}</b><span>accuracy</span></div>
     </div>
-    <button class="mode" data-go="photo">
+    <button class="mode photo" data-go="photo">
       <div class="emoji">📷</div>
       <div><h3>Photo quiz</h3><p>See a bird, pick its name.</p></div>
     </button>
-    <button class="mode" data-go="call">
+    <button class="mode call" data-go="call">
       <div class="emoji">🎧</div>
       <div><h3>Call quiz</h3><p>Hear a call, match it to the bird.</p></div>
     </button>
-    <button class="mode" data-go="browse">
+    <button class="mode browse" data-go="browse">
       <div class="emoji">📖</div>
       <div><h3>Field guide</h3><p>Browse all the birds, photos and calls.</p></div>
     </button>
-    <button class="mode" data-go="settings">
+    <button class="mode settings" data-go="settings">
       <div class="emoji">⚙️</div>
       <div><h3>Settings</h3><p>Choices, round length, offline download.</p></div>
     </button>`;
@@ -211,7 +214,7 @@ function renderQuestion(answeredId) {
   }
 
   $main.innerHTML = `
-    ${topBar(`<div class="progress"><span style="width:${pct}%"></span></div><b>${round.score}</b>`)}
+    ${topBar(`<div class="progress"><span style="width:${pct}%"></span></div><span class="score-pill" aria-label="Score">${round.score}</span>`)}
     ${prompt}
     ${choices}
     ${feedback}`;

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <!-- Background motif tile, used as a CSS mask so the theme supplies the colour. -->
+  <defs>
+    <g id="feather" fill="none" stroke="#000" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <!-- vane, with a small notch on the right like a real feather -->
+      <path d="M0,-50 C13,-42 16,-20 14,-2 L8,2 L13,6 C11,24 6,36 0,44 C-6,36 -12,22 -13,6 C-15,-16 -13,-40 0,-50 Z"/>
+      <!-- quill -->
+      <path d="M0,-46 C0.8,-10 0.8,24 -1,62"/>
+      <!-- barbs -->
+      <path d="M0,-34 L8,-41 M0,-22 L11,-30 M0,-10 L12,-17 M0,14 L11,9 M0,26 L8,22
+               M0,-28 L-8,-37 M0,-16 L-11,-25 M0,-4 L-12,-12 M0,8 L-12,1 M0,20 L-10,15 M0,32 L-6,28"/>
+    </g>
+  </defs>
+  <use href="#feather" transform="translate(62 70) rotate(-28)"/>
+  <use href="#feather" transform="translate(178 168) rotate(32) scale(0.85)"/>
+  <use href="#feather" transform="translate(190 46) rotate(72) scale(0.6)"/>
+  <use href="#feather" transform="translate(62 198) rotate(-70) scale(0.55)"/>
+</svg>
