@@ -16,9 +16,13 @@ const store = {
     try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* storage unavailable */ }
   },
 };
+const savedSettings = store.get('settings', {});
 const settings = Object.assign(
-  { choices: 4, lookalikes: true, roundLength: 10, callAnswer: 'photos' },
-  store.get('settings', {}));
+  { photoChoices: 4, callChoices: 4, lookalikes: true, roundLength: 10, callAnswer: 'photos' },
+  // Earlier versions had one "choices" setting for both quizzes.
+  savedSettings.choices ? { photoChoices: savedSettings.choices, callChoices: savedSettings.choices } : {},
+  savedSettings);
+delete settings.choices;
 const stats = store.get('stats', {});
 const saveSettings = () => store.set('settings', settings);
 const saveStats = () => store.set('stats', stats);
@@ -160,7 +164,7 @@ function nextQuestion() {
   if (round.index >= settings.roundLength) return results();
   const target = pickTarget(round.pool, round.recent);
   round.recent = [...round.recent, target.id].slice(-Math.min(6, round.pool.length - 1));
-  const options = pickOptions(target, round.pool, settings.choices);
+  const options = pickOptions(target, round.pool, round.mode === 'call' ? settings.callChoices : settings.photoChoices);
   round.q = { target, options, photo: rand(target.photos), call: rand(target.calls) };
   // Photos for picture answers are chosen once, so they don't change on re-render.
   round.q.optionPhotos = Object.fromEntries(options.map(o => [o.id, rand(o.photos)]));
@@ -335,13 +339,22 @@ function seg(name, values, labels = values) {
 function settingsScreen() {
   $main.innerHTML = `
     ${topBar('<h2 class="grow">Settings</h2>')}
+    <h3 class="section">📷 Photo quiz</h3>
     <div class="panel">
-      <div class="setting"><span>Answer choices</span>${seg('choices', [2, 3, 4])}</div>
+      <div class="setting"><span>Answer choices</span>${seg('photoChoices', [2, 3, 4])}</div>
+    </div>
+    <h3 class="section">🎧 Call quiz</h3>
+    <div class="panel">
+      <div class="setting"><span>Answer choices</span>${seg('callChoices', [2, 3, 4])}</div>
+      <div class="setting"><span>Answer with</span>${seg('callAnswer', ['photos', 'names'], ['Photos', 'Names'])}</div>
+    </div>
+    <h3 class="section">Both quizzes</h3>
+    <div class="panel">
       <div class="setting"><span>Questions per round</span>${seg('roundLength', [10, 20, 30])}</div>
       <div class="setting"><span>Tricky lookalikes</span>${seg('lookalikes', [true, false], ['On', 'Off'])}</div>
-      <div class="setting"><span>Call quiz answers</span>${seg('callAnswer', ['photos', 'names'], ['Photos', 'Names'])}</div>
     </div>
-    <p class="muted small">Tricky lookalikes fills the wrong answers with similar birds (ravens with currawongs, rosellas with rosellas) instead of random ones.</p>
+    <p class="muted small">Tricky lookalikes fills the wrong answers with similar birds (Australian Ravens with Pied Currawongs, Crimson Rosellas with Eastern Rosellas) instead of random ones.</p>
+    <h3 class="section">This phone</h3>
     <div class="panel">
       <div class="setting"><div><b>Use offline</b><div class="muted small" data-offline-status>Save every photo and call to this phone.</div></div>
         <button class="btn" data-offline>Download</button></div>

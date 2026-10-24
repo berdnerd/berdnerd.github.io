@@ -140,6 +140,7 @@ a { color: var(--brand); }
 .stat span { font-size: .78rem; color: var(--muted); }
 
 /* Settings */
+h3.section { font-size: 1rem; color: var(--muted); margin: 6px 4px -6px; }
 .panel { background: var(--card); box-shadow: var(--shadow); border-radius: var(--radius); padding: 4px 16px; }
 .setting { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
 .setting:last-child { border-bottom: 0; }
