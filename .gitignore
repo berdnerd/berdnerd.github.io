@@ -1,0 +1,7 @@
+# Large working files that stay on this PC; only app/ is published.
+tools/raw/
+tools/analysis/
+tools/candidates/
+tools/.venv/
+tools/fetch.log
+__pycache__/

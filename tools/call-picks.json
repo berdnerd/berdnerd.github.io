@@ -1,0 +1,620 @@
+{
+ "australian-magpie": [
+  {
+   "obsId": 186067849,
+   "start": 0.0
+  },
+  {
+   "obsId": 274517309,
+   "start": 0.0
+  },
+  {
+   "obsId": 127728759,
+   "start": 45.0
+  }
+ ],
+ "laughing-kookaburra": [
+  {
+   "obsId": 38290038,
+   "start": 0.0
+  },
+  {
+   "obsId": 84053613,
+   "start": 0.0
+  },
+  {
+   "obsId": 383887969,
+   "start": 0.0
+  }
+ ],
+ "sulphur-crested-cockatoo": [
+  {
+   "obsId": 99524722,
+   "start": 3.0
+  },
+  {
+   "obsId": 272970544,
+   "start": 0.0
+  },
+  {
+   "obsId": 397068093,
+   "start": 0.0
+  }
+ ],
+ "galah": [
+  {
+   "obsId": 77154981,
+   "start": 0.0
+  },
+  {
+   "obsId": 101496873,
+   "start": 0.0
+  },
+  {
+   "obsId": 65800728,
+   "start": 0.0
+  }
+ ],
+ "little-corella": [
+  {
+   "obsId": 129641625,
+   "start": 12.0
+  },
+  {
+   "obsId": 140467038,
+   "start": 0.0
+  },
+  {
+   "obsId": 334587381,
+   "start": 0.0
+  }
+ ],
+ "yellow-tailed-black-cockatoo": [
+  {
+   "obsId": 274149144,
+   "start": 81.0
+  },
+  {
+   "obsId": 112123219,
+   "start": 0.0
+  },
+  {
+   "obsId": 181900574,
+   "start": 0.0
+  }
+ ],
+ "rainbow-lorikeet": [
+  {
+   "obsId": 206038249,
+   "start": 0.0
+  },
+  {
+   "obsId": 395144335,
+   "start": 0.0
+  },
+  {
+   "obsId": 347443337,
+   "start": 0.0
+  }
+ ],
+ "crimson-rosella": [
+  {
+   "obsId": 241247010,
+   "start": 0.0
+  },
+  {
+   "obsId": 109008850,
+   "start": 0.0
+  }
+ ],
+ "eastern-rosella": [
+  {
+   "obsId": 382807527,
+   "start": 0.0
+  }
+ ],
+ "australian-king-parrot": [
+  {
+   "obsId": 398953698,
+   "start": 0.0
+  },
+  {
+   "obsId": 195228638,
+   "start": 0.0
+  },
+  {
+   "obsId": 396850875,
+   "start": 0.0
+  }
+ ],
+ "noisy-miner": [
+  {
+   "obsId": 327470405,
+   "start": 48.0
+  },
+  {
+   "obsId": 202102959,
+   "start": 0.0
+  },
+  {
+   "obsId": 93563952,
+   "start": 0.0
+  }
+ ],
+ "red-wattlebird": [
+  {
+   "obsId": 290863531,
+   "start": 0.0
+  },
+  {
+   "obsId": 67419963,
+   "start": 45.0
+  }
+ ],
+ "little-wattlebird": [
+  {
+   "obsId": 280845789,
+   "start": 0.0
+  },
+  {
+   "obsId": 100809338,
+   "start": 0.0
+  },
+  {
+   "obsId": 211429781,
+   "start": 0.0
+  }
+ ],
+ "new-holland-honeyeater": [
+  {
+   "obsId": 195647781,
+   "start": 0.0
+  },
+  {
+   "obsId": 120290061,
+   "start": 18.0
+  },
+  {
+   "obsId": 99432223,
+   "start": 3.0
+  }
+ ],
+ "eastern-spinebill": [
+  {
+   "obsId": 278333294,
+   "start": 0.0
+  },
+  {
+   "obsId": 145041293,
+   "start": 0.0
+  },
+  {
+   "obsId": 359136381,
+   "start": 0.0
+  }
+ ],
+ "pied-currawong": [
+  {
+   "obsId": 84150599,
+   "start": 0.0
+  },
+  {
+   "obsId": 61523414,
+   "start": 0.0
+  },
+  {
+   "obsId": 386809286,
+   "start": 0.0
+  }
+ ],
+ "australian-raven": [
+  {
+   "obsId": 291402751,
+   "start": 0.0
+  },
+  {
+   "obsId": 43271447,
+   "start": 0.0
+  },
+  {
+   "obsId": 158480002,
+   "start": 0.0
+  }
+ ],
+ "magpie-lark": [
+  {
+   "obsId": 148926419,
+   "start": 0.0
+  },
+  {
+   "obsId": 359698317,
+   "start": 0.0
+  },
+  {
+   "obsId": 42787685,
+   "start": 0.0
+  }
+ ],
+ "grey-butcherbird": [
+  {
+   "obsId": 210635788,
+   "start": 6.0
+  },
+  {
+   "obsId": 209866792,
+   "start": 0.0
+  },
+  {
+   "obsId": 341052405,
+   "start": 0.0
+  }
+ ],
+ "willie-wagtail": [
+  {
+   "obsId": 98472919,
+   "start": 6.0
+  },
+  {
+   "obsId": 321403850,
+   "start": 15.0
+  },
+  {
+   "obsId": 54240654,
+   "start": 0.0
+  }
+ ],
+ "spotted-dove": [
+  {
+   "obsId": 62146659,
+   "start": 24.0
+  },
+  {
+   "obsId": 33119748,
+   "start": 0.0
+  },
+  {
+   "obsId": 137903288,
+   "start": 15.0
+  }
+ ],
+ "crested-pigeon": [
+  {
+   "obsId": 327574117,
+   "start": 9.0
+  },
+  {
+   "obsId": 100659644,
+   "start": 0.0
+  },
+  {
+   "obsId": 236455482,
+   "start": 0.0
+  }
+ ],
+ "common-myna": [
+  {
+   "obsId": 309669408,
+   "start": 0.0
+  },
+  {
+   "obsId": 257323672,
+   "start": 0.0
+  }
+ ],
+ "red-whiskered-bulbul": [
+  {
+   "obsId": 98962050,
+   "start": 0.0
+  },
+  {
+   "obsId": 391605314,
+   "start": 0.0
+  },
+  {
+   "obsId": 137905549,
+   "start": 6.0
+  }
+ ],
+ "superb-fairywren": [
+  {
+   "obsId": 308340020,
+   "start": 0.0
+  },
+  {
+   "obsId": 193511601,
+   "start": 6.0
+  },
+  {
+   "obsId": 328245123,
+   "start": 0.0
+  }
+ ],
+ "welcome-swallow": [
+  {
+   "obsId": 204467018,
+   "start": 6.0
+  }
+ ],
+ "silvereye": [
+  {
+   "obsId": 61456049,
+   "start": 0.0
+  },
+  {
+   "obsId": 67181273,
+   "start": 9.0
+  },
+  {
+   "obsId": 195326729,
+   "start": 0.0
+  }
+ ],
+ "grey-fantail": [
+  {
+   "obsId": 338727766,
+   "start": 21.0
+  },
+  {
+   "obsId": 217844699,
+   "start": 0.0
+  },
+  {
+   "obsId": 326150223,
+   "start": 0.0
+  }
+ ],
+ "spotted-pardalote": [
+  {
+   "obsId": 104620307,
+   "start": 0.0
+  },
+  {
+   "obsId": 135309244,
+   "start": 0.0
+  },
+  {
+   "obsId": 324410126,
+   "start": 0.0
+  }
+ ],
+ "eastern-yellow-robin": [
+  {
+   "obsId": 265929353,
+   "start": 6.0
+  },
+  {
+   "obsId": 315170009,
+   "start": 0.0
+  },
+  {
+   "obsId": 192272844,
+   "start": 0.0
+  }
+ ],
+ "golden-whistler": [
+  {
+   "obsId": 200970226,
+   "start": 0.0
+  },
+  {
+   "obsId": 144518011,
+   "start": 9.0
+  },
+  {
+   "obsId": 193832619,
+   "start": 3.0
+  }
+ ],
+ "eastern-whipbird": [
+  {
+   "obsId": 141225122,
+   "start": 0.0
+  },
+  {
+   "obsId": 192570534,
+   "start": 18.0
+  },
+  {
+   "obsId": 278169251,
+   "start": 0.0
+  }
+ ],
+ "eastern-koel": [
+  {
+   "obsId": 329297422,
+   "start": 21.0
+  },
+  {
+   "obsId": 104623014,
+   "start": 9.0
+  },
+  {
+   "obsId": 194213316,
+   "start": 0.0
+  }
+ ],
+ "channel-billed-cuckoo": [
+  {
+   "obsId": 186058444,
+   "start": 0.0
+  },
+  {
+   "obsId": 140845614,
+   "start": 0.0
+  },
+  {
+   "obsId": 192009974,
+   "start": 0.0
+  }
+ ],
+ "black-faced-cuckooshrike": [
+  {
+   "obsId": 243867601,
+   "start": 0.0
+  },
+  {
+   "obsId": 274231678,
+   "start": 0.0
+  },
+  {
+   "obsId": 368767747,
+   "start": 15.0
+  }
+ ],
+ "tawny-frogmouth": [
+  {
+   "obsId": 247452562,
+   "start": 21.0
+  },
+  {
+   "obsId": 151246257,
+   "start": 0.0
+  },
+  {
+   "obsId": 198131279,
+   "start": 0.0
+  }
+ ],
+ "southern-boobook": [
+  {
+   "obsId": 347479094,
+   "start": 0.0
+  },
+  {
+   "obsId": 392614340,
+   "start": 0.0
+  },
+  {
+   "obsId": 194645760,
+   "start": 39.0
+  }
+ ],
+ "australian-white-ibis": [
+  {
+   "obsId": 96510685,
+   "start": 0.0
+  },
+  {
+   "obsId": 363507874,
+   "start": 0.0
+  }
+ ],
+ "masked-lapwing": [
+  {
+   "obsId": 306671714,
+   "start": 0.0
+  },
+  {
+   "obsId": 137391477,
+   "start": 0.0
+  },
+  {
+   "obsId": 366277829,
+   "start": 0.0
+  }
+ ],
+ "australian-brushturkey": [
+  {
+   "obsId": 204329555,
+   "start": 0.0
+  }
+ ],
+ "superb-lyrebird": [
+  {
+   "obsId": 360545227,
+   "start": 0.0
+  },
+  {
+   "obsId": 80563955,
+   "start": 90.0
+  },
+  {
+   "obsId": 213889816,
+   "start": 27.0
+  }
+ ],
+ "satin-bowerbird": [
+  {
+   "obsId": 138653850,
+   "start": 24.0
+  },
+  {
+   "obsId": 338726820,
+   "start": 0.0
+  },
+  {
+   "obsId": 104092120,
+   "start": 39.0
+  }
+ ],
+ "silver-gull": [
+  {
+   "obsId": 192038605,
+   "start": 15.0
+  },
+  {
+   "obsId": 377068486,
+   "start": 9.0
+  },
+  {
+   "obsId": 406207960,
+   "start": 9.0
+  }
+ ],
+ "pacific-black-duck": [
+  {
+   "obsId": 95722962,
+   "start": 0.0
+  },
+  {
+   "obsId": 401352879,
+   "start": 0.0
+  },
+  {
+   "obsId": 289745265,
+   "start": 3.0
+  }
+ ],
+ "australian-wood-duck": [
+  {
+   "obsId": 338528061,
+   "start": 0.0
+  },
+  {
+   "obsId": 369508281,
+   "start": 0.0
+  }
+ ],
+ "dusky-moorhen": [
+  {
+   "obsId": 338528121,
+   "start": 0.0
+  },
+  {
+   "obsId": 65199064,
+   "start": 0.0
+  }
+ ],
+ "australasian-swamphen": [
+  {
+   "obsId": 374207800,
+   "start": 6.0
+  }
+ ],
+ "australian-pelican": [],
+ "little-pied-cormorant": [],
+ "white-bellied-sea-eagle": [
+  {
+   "obsId": 304603933,
+   "start": 21.0
+  },
+  {
+   "obsId": 168180116,
+   "start": 21.0
+  },
+  {
+   "obsId": 285207607,
+   "start": 0.0
+  }
+ ]
+}

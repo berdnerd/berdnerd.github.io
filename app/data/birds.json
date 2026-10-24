@@ -1,0 +1,2910 @@
+[
+ {
+  "id": "australian-magpie",
+  "name": "Australian Magpie",
+  "sci": "Gymnorhina tibicen",
+  "group": "black-white",
+  "tip": "Black and white with a white nape and a pale, black-tipped bill. Famous rich, warbling carol.",
+  "taxonId": 8575,
+  "photos": [
+   {
+    "src": "media/photos/australian-magpie-224604446.jpg",
+    "obsId": 224604446,
+    "credit": "(c) Nathan Ruser, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/224604446"
+   },
+   {
+    "src": "media/photos/australian-magpie-10284.jpg",
+    "obsId": 10284,
+    "credit": "(c) msr, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "http://www.inaturalist.org/observations/10284"
+   },
+   {
+    "src": "media/photos/australian-magpie-220181431.jpg",
+    "obsId": 220181431,
+    "credit": "(c) paulmc001, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/220181431"
+   },
+   {
+    "src": "media/photos/australian-magpie-276496111.jpg",
+    "obsId": 276496111,
+    "credit": "(c) Austen Armstrong, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/276496111"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/australian-magpie-186067849.mp3",
+    "obsId": 186067849,
+    "credit": "(c) Aunty Do, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/186067849"
+   },
+   {
+    "src": "media/calls/australian-magpie-274517309.mp3",
+    "obsId": 274517309,
+    "credit": "(c) M. Dear, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/274517309"
+   },
+   {
+    "src": "media/calls/australian-magpie-127728759.mp3",
+    "obsId": 127728759,
+    "credit": "no rights reserved",
+    "licence": "cc0",
+    "url": "https://www.inaturalist.org/observations/127728759"
+   }
+  ]
+ },
+ {
+  "id": "laughing-kookaburra",
+  "name": "Laughing Kookaburra",
+  "sci": "Dacelo novaeguineae",
+  "group": "ground",
+  "tip": "Big kingfisher with a heavy bill and dark eye-stripe. The laughing 'koo-koo-kaa-kaa' chorus at dawn and dusk.",
+  "taxonId": 2413,
+  "photos": [
+   {
+    "src": "media/photos/laughing-kookaburra-144208395.jpg",
+    "obsId": 144208395,
+    "credit": "(c) Gunter Maywald, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/144208395"
+   },
+   {
+    "src": "media/photos/laughing-kookaburra-330444135.jpg",
+    "obsId": 330444135,
+    "credit": "(c) Jordan schnell, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/330444135"
+   },
+   {
+    "src": "media/photos/laughing-kookaburra-243909548.jpg",
+    "obsId": 243909548,
+    "credit": "(c) dirkvdl16, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/243909548"
+   },
+   {
+    "src": "media/photos/laughing-kookaburra-145386109.jpg",
+    "obsId": 145386109,
+    "credit": "(c) inagreyplace, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/145386109"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/laughing-kookaburra-38290038.mp3",
+    "obsId": 38290038,
+    "credit": "(c) David, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/38290038"
+   },
+   {
+    "src": "media/calls/laughing-kookaburra-84053613.mp3",
+    "obsId": 84053613,
+    "credit": "(c) lifeisamazing, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/84053613"
+   },
+   {
+    "src": "media/calls/laughing-kookaburra-383887969.mp3",
+    "obsId": 383887969,
+    "credit": "(c) skyflower2, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/383887969"
+   }
+  ]
+ },
+ {
+  "id": "sulphur-crested-cockatoo",
+  "name": "Sulphur-crested Cockatoo",
+  "sci": "Cacatua galerita",
+  "group": "cockatoo",
+  "tip": "Large white cockatoo with a yellow crest. Ear-splitting harsh screech.",
+  "taxonId": 116834,
+  "photos": [
+   {
+    "src": "media/photos/sulphur-crested-cockatoo-220854777.jpg",
+    "obsId": 220854777,
+    "credit": "(c) thecolossus, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/220854777"
+   },
+   {
+    "src": "media/photos/sulphur-crested-cockatoo-364602876.jpg",
+    "obsId": 364602876,
+    "credit": "(c) Martin Bennett, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/364602876"
+   },
+   {
+    "src": "media/photos/sulphur-crested-cockatoo-283066029.jpg",
+    "obsId": 283066029,
+    "credit": "(c) Austen Armstrong, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/283066029"
+   },
+   {
+    "src": "media/photos/sulphur-crested-cockatoo-304838820.jpg",
+    "obsId": 304838820,
+    "credit": "(c) annina09, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/304838820"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/sulphur-crested-cockatoo-99524722.mp3",
+    "obsId": 99524722,
+    "credit": "(c) jen_w1, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/99524722"
+   },
+   {
+    "src": "media/calls/sulphur-crested-cockatoo-272970544.mp3",
+    "obsId": 272970544,
+    "credit": "(c) MJ Dear, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/272970544"
+   },
+   {
+    "src": "media/calls/sulphur-crested-cockatoo-397068093.mp3",
+    "obsId": 397068093,
+    "credit": "(c) and17euphs, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/397068093"
+   }
+  ]
+ },
+ {
+  "id": "galah",
+  "name": "Galah",
+  "sci": "Eolophus roseicapilla",
+  "group": "cockatoo",
+  "tip": "Pink chest and face, grey back, pale crown. Often feeds on lawns in flocks; high 'chet' calls.",
+  "taxonId": 144560,
+  "photos": [
+   {
+    "src": "media/photos/galah-75390014.jpg",
+    "obsId": 75390014,
+    "credit": "(c) diana_shang, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/75390014"
+   },
+   {
+    "src": "media/photos/galah-156982261.jpg",
+    "obsId": 156982261,
+    "credit": "(c) Proteros, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/156982261"
+   },
+   {
+    "src": "media/photos/galah-221032861.jpg",
+    "obsId": 221032861,
+    "credit": "(c) beepboop177, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/221032861"
+   },
+   {
+    "src": "media/photos/galah-369270214.jpg",
+    "obsId": 369270214,
+    "credit": "(c) Lucas Scott de Marcos, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/369270214"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/galah-77154981.mp3",
+    "obsId": 77154981,
+    "credit": "(c) supapuffin, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/77154981"
+   },
+   {
+    "src": "media/calls/galah-101496873.mp3",
+    "obsId": 101496873,
+    "credit": "(c) Rosie Steinberg, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/101496873"
+   },
+   {
+    "src": "media/calls/galah-65800728.mp3",
+    "obsId": 65800728,
+    "credit": "no rights reserved",
+    "licence": "cc0",
+    "url": "https://www.inaturalist.org/observations/65800728"
+   }
+  ]
+ },
+ {
+  "id": "little-corella",
+  "name": "Little Corella",
+  "sci": "Cacatua sanguinea",
+  "group": "cockatoo",
+  "tip": "Smaller white cockatoo with a short crest, bare bluish eye-ring and a pinkish smudge between eye and bill.",
+  "taxonId": 116838,
+  "photos": [
+   {
+    "src": "media/photos/little-corella-320820668.jpg",
+    "obsId": 320820668,
+    "credit": "(c) Kelly Nash, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/320820668"
+   },
+   {
+    "src": "media/photos/little-corella-70191916.jpg",
+    "obsId": 70191916,
+    "credit": "(c) andrewpavlov, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/70191916"
+   },
+   {
+    "src": "media/photos/little-corella-104697719.jpg",
+    "obsId": 104697719,
+    "credit": "(c) Taylor, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/104697719"
+   },
+   {
+    "src": "media/photos/little-corella-69287069.jpg",
+    "obsId": 69287069,
+    "credit": "(c) Thomas Mesaglio, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/69287069"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/little-corella-129641625.mp3",
+    "obsId": 129641625,
+    "credit": "(c) Greg Rossington, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/129641625"
+   },
+   {
+    "src": "media/calls/little-corella-140467038.mp3",
+    "obsId": 140467038,
+    "credit": "(c) dirtandsol, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/140467038"
+   },
+   {
+    "src": "media/calls/little-corella-334587381.mp3",
+    "obsId": 334587381,
+    "credit": "(c) Jordan H, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/334587381"
+   }
+  ]
+ },
+ {
+  "id": "yellow-tailed-black-cockatoo",
+  "name": "Yellow-tailed Black-Cockatoo",
+  "sci": "Zanda funerea",
+  "group": "cockatoo",
+  "tip": "Large black cockatoo with yellow cheek patch and yellow tail panels. Slow, floppy flight; wailing 'wee-la' call.",
+  "taxonId": 1432688,
+  "photos": [
+   {
+    "src": "media/photos/yellow-tailed-black-cockatoo-176081365.jpg",
+    "obsId": 176081365,
+    "credit": "no rights reserved",
+    "licence": "cc0",
+    "url": "https://www.inaturalist.org/observations/176081365"
+   },
+   {
+    "src": "media/photos/yellow-tailed-black-cockatoo-132521471.jpg",
+    "obsId": 132521471,
+    "credit": "(c) Taylor, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/132521471"
+   },
+   {
+    "src": "media/photos/yellow-tailed-black-cockatoo-369954642.jpg",
+    "obsId": 369954642,
+    "credit": "(c) Lucas Scott de Marcos, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/369954642"
+   },
+   {
+    "src": "media/photos/yellow-tailed-black-cockatoo-266473940.jpg",
+    "obsId": 266473940,
+    "credit": "(c) paulmc001, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/266473940"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/yellow-tailed-black-cockatoo-274149144.mp3",
+    "obsId": 274149144,
+    "credit": "(c) soumali, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/274149144"
+   },
+   {
+    "src": "media/calls/yellow-tailed-black-cockatoo-112123219.mp3",
+    "obsId": 112123219,
+    "credit": "(c) currowar, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/112123219"
+   },
+   {
+    "src": "media/calls/yellow-tailed-black-cockatoo-181900574.mp3",
+    "obsId": 181900574,
+    "credit": "(c) Christophe Turcotte-van de Rydt, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/181900574"
+   }
+  ]
+ },
+ {
+  "id": "rainbow-lorikeet",
+  "name": "Rainbow Lorikeet",
+  "sci": "Trichoglossus moluccanus",
+  "group": "parrot",
+  "tip": "Blue head, red bill, orange-red chest, green back. Noisy, fast-flying flocks with screeching calls.",
+  "taxonId": 980095,
+  "photos": [
+   {
+    "src": "media/photos/rainbow-lorikeet-148012363.jpg",
+    "obsId": 148012363,
+    "credit": "(c) Nathan Ruser, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/148012363"
+   },
+   {
+    "src": "media/photos/rainbow-lorikeet-41513467.jpg",
+    "obsId": 41513467,
+    "credit": "(c) Antonella, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/41513467"
+   },
+   {
+    "src": "media/photos/rainbow-lorikeet-258994326.jpg",
+    "obsId": 258994326,
+    "credit": "(c) campc, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/258994326"
+   },
+   {
+    "src": "media/photos/rainbow-lorikeet-273634.jpg",
+    "obsId": 273634,
+    "credit": "(c) Kristiina Hurme, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "http://www.inaturalist.org/observations/273634"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/rainbow-lorikeet-206038249.mp3",
+    "obsId": 206038249,
+    "credit": "(c) Carl Ramirez, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/206038249"
+   },
+   {
+    "src": "media/calls/rainbow-lorikeet-395144335.mp3",
+    "obsId": 395144335,
+    "credit": "(c) helen_y, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/395144335"
+   },
+   {
+    "src": "media/calls/rainbow-lorikeet-347443337.mp3",
+    "obsId": 347443337,
+    "credit": "(c) robiology, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/347443337"
+   }
+  ]
+ },
+ {
+  "id": "crimson-rosella",
+  "name": "Crimson Rosella",
+  "sci": "Platycercus elegans",
+  "group": "parrot",
+  "tip": "Deep crimson with blue cheeks and blue wings. Young birds are mostly green. Bell-like whistles.",
+  "taxonId": 18921,
+  "photos": [
+   {
+    "src": "media/photos/crimson-rosella-311850836.jpg",
+    "obsId": 311850836,
+    "credit": "(c) David C. Simon, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/311850836"
+   },
+   {
+    "src": "media/photos/crimson-rosella-144060732.jpg",
+    "obsId": 144060732,
+    "credit": "(c) Taylor, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/144060732"
+   },
+   {
+    "src": "media/photos/crimson-rosella-109542898.jpg",
+    "obsId": 109542898,
+    "credit": "(c) lilia100108, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/109542898"
+   },
+   {
+    "src": "media/photos/crimson-rosella-267627361.jpg",
+    "obsId": 267627361,
+    "credit": "(c) rolfpersoonia, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/267627361"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/crimson-rosella-241247010.mp3",
+    "obsId": 241247010,
+    "credit": "(c) Reiner Richter, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/241247010"
+   },
+   {
+    "src": "media/calls/crimson-rosella-109008850.mp3",
+    "obsId": 109008850,
+    "credit": "(c) nancyauerbach, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/109008850"
+   }
+  ]
+ },
+ {
+  "id": "eastern-rosella",
+  "name": "Eastern Rosella",
+  "sci": "Platycercus eximius",
+  "group": "parrot",
+  "tip": "Red head and chest with white cheeks, yellow belly, scalloped back. Compare Crimson Rosella's blue cheeks.",
+  "taxonId": 18920,
+  "photos": [
+   {
+    "src": "media/photos/eastern-rosella-4504143.jpg",
+    "obsId": 4504143,
+    "credit": "(c) Jenny Donald, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "http://www.inaturalist.org/observations/4504143"
+   },
+   {
+    "src": "media/photos/eastern-rosella-64586757.jpg",
+    "obsId": 64586757,
+    "credit": "(c) moonabah_kate, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/64586757"
+   },
+   {
+    "src": "media/photos/eastern-rosella-91247339.jpg",
+    "obsId": 91247339,
+    "credit": "(c) Mary Bell, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/91247339"
+   },
+   {
+    "src": "media/photos/eastern-rosella-53335524.jpg",
+    "obsId": 53335524,
+    "credit": "(c) Tim, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/53335524"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/eastern-rosella-382807527.mp3",
+    "obsId": 382807527,
+    "credit": "(c) skyflower2, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/382807527"
+   }
+  ]
+ },
+ {
+  "id": "australian-king-parrot",
+  "name": "Australian King-Parrot",
+  "sci": "Alisterus scapularis",
+  "group": "parrot",
+  "tip": "Male has an all-red head and chest with green wings; female has a green head. Shrill 'carrack' call.",
+  "taxonId": 19196,
+  "photos": [
+   {
+    "src": "media/photos/australian-king-parrot-4525504.jpg",
+    "obsId": 4525504,
+    "credit": "(c) Jenny Donald, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "http://www.inaturalist.org/observations/4525504"
+   },
+   {
+    "src": "media/photos/australian-king-parrot-247068639.jpg",
+    "obsId": 247068639,
+    "credit": "(c) ian_mcallan, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/247068639"
+   },
+   {
+    "src": "media/photos/australian-king-parrot-149449365.jpg",
+    "obsId": 149449365,
+    "credit": "(c) Bradley J., some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/149449365"
+   },
+   {
+    "src": "media/photos/australian-king-parrot-9630281.jpg",
+    "obsId": 9630281,
+    "credit": "(c) Carole Riley, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/9630281"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/australian-king-parrot-398953698.mp3",
+    "obsId": 398953698,
+    "credit": "(c) helen_y, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/398953698"
+   },
+   {
+    "src": "media/calls/australian-king-parrot-195228638.mp3",
+    "obsId": 195228638,
+    "credit": "(c) Mark Richman, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/195228638"
+   },
+   {
+    "src": "media/calls/australian-king-parrot-396850875.mp3",
+    "obsId": 396850875,
+    "credit": "(c) TJ Jones, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/396850875"
+   }
+  ]
+ },
+ {
+  "id": "noisy-miner",
+  "name": "Noisy Miner",
+  "sci": "Manorina melanocephala",
+  "group": "honeyeater",
+  "tip": "Native grey honeyeater with a yellow bill, yellow patch behind the eye and black crown. Very noisy and aggressive.",
+  "taxonId": 12231,
+  "photos": [
+   {
+    "src": "media/photos/noisy-miner-272635066.jpg",
+    "obsId": 272635066,
+    "credit": "(c) miiralee, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/272635066"
+   },
+   {
+    "src": "media/photos/noisy-miner-235020916.jpg",
+    "obsId": 235020916,
+    "credit": "(c) Michael Long, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/235020916"
+   },
+   {
+    "src": "media/photos/noisy-miner-196010908.jpg",
+    "obsId": 196010908,
+    "credit": "(c) Sutthikhun Phaengphongsai, some rights reserved (CC BY-NC-SA)",
+    "licence": "cc-by-nc-sa",
+    "url": "https://www.inaturalist.org/observations/196010908"
+   },
+   {
+    "src": "media/photos/noisy-miner-10406663.jpg",
+    "obsId": 10406663,
+    "credit": "(c) reedwarbler, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/10406663"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/noisy-miner-327470405.mp3",
+    "obsId": 327470405,
+    "credit": "(c) Parker Salvatore, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/327470405"
+   },
+   {
+    "src": "media/calls/noisy-miner-202102959.mp3",
+    "obsId": 202102959,
+    "credit": "(c) Mononymous, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/202102959"
+   },
+   {
+    "src": "media/calls/noisy-miner-93563952.mp3",
+    "obsId": 93563952,
+    "credit": "(c) Sandy, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/93563952"
+   }
+  ]
+ },
+ {
+  "id": "red-wattlebird",
+  "name": "Red Wattlebird",
+  "sci": "Anthochaera carunculata",
+  "group": "honeyeater",
+  "tip": "Large streaky brown honeyeater with a small red wattle on the cheek and yellow belly. Harsh coughing 'chock' call.",
+  "taxonId": 12622,
+  "photos": [
+   {
+    "src": "media/photos/red-wattlebird-348676913.jpg",
+    "obsId": 348676913,
+    "credit": "(c) Julie Brodie, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/348676913"
+   },
+   {
+    "src": "media/photos/red-wattlebird-143704172.jpg",
+    "obsId": 143704172,
+    "credit": "(c) Proteros, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/143704172"
+   },
+   {
+    "src": "media/photos/red-wattlebird-99193460.jpg",
+    "obsId": 99193460,
+    "credit": "(c) Ilya Fomin, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/99193460"
+   },
+   {
+    "src": "media/photos/red-wattlebird-233687927.jpg",
+    "obsId": 233687927,
+    "credit": "(c) rosewise, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/233687927"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/red-wattlebird-290863531.mp3",
+    "obsId": 290863531,
+    "credit": "(c) Jordan H, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/290863531"
+   },
+   {
+    "src": "media/calls/red-wattlebird-67419963.mp3",
+    "obsId": 67419963,
+    "credit": "no rights reserved",
+    "licence": "cc0",
+    "url": "https://www.inaturalist.org/observations/67419963"
+   }
+  ]
+ },
+ {
+  "id": "little-wattlebird",
+  "name": "Little Wattlebird",
+  "sci": "Anthochaera chrysoptera",
+  "group": "honeyeater",
+  "tip": "Streaky brown honeyeater with no red wattle and a rufous wing patch in flight. Raucous cackling calls.",
+  "taxonId": 12626,
+  "photos": [
+   {
+    "src": "media/photos/little-wattlebird-156000563.jpg",
+    "obsId": 156000563,
+    "credit": "(c) Brad Yee, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/156000563"
+   },
+   {
+    "src": "media/photos/little-wattlebird-184489050.jpg",
+    "obsId": 184489050,
+    "credit": "(c) Tom V, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/184489050"
+   },
+   {
+    "src": "media/photos/little-wattlebird-311850838.jpg",
+    "obsId": 311850838,
+    "credit": "(c) David C. Simon, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/311850838"
+   },
+   {
+    "src": "media/photos/little-wattlebird-336041721.jpg",
+    "obsId": 336041721,
+    "credit": "(c) Ran Fuchs, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/336041721"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/little-wattlebird-280845789.mp3",
+    "obsId": 280845789,
+    "credit": "(c) HUGO DAVID CAVERZASI, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/280845789"
+   },
+   {
+    "src": "media/calls/little-wattlebird-100809338.mp3",
+    "obsId": 100809338,
+    "credit": "(c) katyw, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/100809338"
+   },
+   {
+    "src": "media/calls/little-wattlebird-211429781.mp3",
+    "obsId": 211429781,
+    "credit": "(c) kalimata, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/211429781"
+   }
+  ]
+ },
+ {
+  "id": "new-holland-honeyeater",
+  "name": "New Holland Honeyeater",
+  "sci": "Phylidonyris novaehollandiae",
+  "group": "honeyeater",
+  "tip": "Black and white streaks, bright yellow wing panels, white eye. Busy in grevilleas and banksias.",
+  "taxonId": 12632,
+  "photos": [
+   {
+    "src": "media/photos/new-holland-honeyeater-330187040.jpg",
+    "obsId": 330187040,
+    "credit": "(c) Andrew Thomas, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/330187040"
+   },
+   {
+    "src": "media/photos/new-holland-honeyeater-106702030.jpg",
+    "obsId": 106702030,
+    "credit": "(c) Taylor, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/106702030"
+   },
+   {
+    "src": "media/photos/new-holland-honeyeater-250164911.jpg",
+    "obsId": 250164911,
+    "credit": "(c) lillypollard, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/250164911"
+   },
+   {
+    "src": "media/photos/new-holland-honeyeater-99038537.jpg",
+    "obsId": 99038537,
+    "credit": "(c) ronavery, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/99038537"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/new-holland-honeyeater-195647781.mp3",
+    "obsId": 195647781,
+    "credit": "(c) Mark Richman, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/195647781"
+   },
+   {
+    "src": "media/calls/new-holland-honeyeater-120290061.mp3",
+    "obsId": 120290061,
+    "credit": "(c) dugie, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/120290061"
+   },
+   {
+    "src": "media/calls/new-holland-honeyeater-99432223.mp3",
+    "obsId": 99432223,
+    "credit": "(c) jen_w1, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/99432223"
+   }
+  ]
+ },
+ {
+  "id": "eastern-spinebill",
+  "name": "Eastern Spinebill",
+  "sci": "Acanthorhynchus tenuirostris",
+  "group": "honeyeater",
+  "tip": "Small honeyeater with a long, fine curved bill, rufous throat and black crescents on the chest. Hovers at flowers.",
+  "taxonId": 12238,
+  "photos": [
+   {
+    "src": "media/photos/eastern-spinebill-174226667.jpg",
+    "obsId": 174226667,
+    "credit": "(c) Jonno Downes, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/174226667"
+   },
+   {
+    "src": "media/photos/eastern-spinebill-51873222.jpg",
+    "obsId": 51873222,
+    "credit": "(c) Stephen Snow, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/51873222"
+   },
+   {
+    "src": "media/photos/eastern-spinebill-175896999.jpg",
+    "obsId": 175896999,
+    "credit": "(c) andrewpavlov, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/175896999"
+   },
+   {
+    "src": "media/photos/eastern-spinebill-334476978.jpg",
+    "obsId": 334476978,
+    "credit": "(c) Eric Wille, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/334476978"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/eastern-spinebill-278333294.mp3",
+    "obsId": 278333294,
+    "credit": "(c) wishin-i-was-birbin, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/278333294"
+   },
+   {
+    "src": "media/calls/eastern-spinebill-145041293.mp3",
+    "obsId": 145041293,
+    "credit": "(c) Bronwyn, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/145041293"
+   },
+   {
+    "src": "media/calls/eastern-spinebill-359136381.mp3",
+    "obsId": 359136381,
+    "credit": "(c) In2n.com.au, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/359136381"
+   }
+  ]
+ },
+ {
+  "id": "pied-currawong",
+  "name": "Pied Currawong",
+  "sci": "Strepera graculina",
+  "group": "black-white",
+  "tip": "Black with a yellow eye, white tail tip and white wing patch. Heavy hooked bill; ringing 'curra-wong' call.",
+  "taxonId": 8423,
+  "photos": [
+   {
+    "src": "media/photos/pied-currawong-190906867.jpg",
+    "obsId": 190906867,
+    "credit": "(c) David J Barton, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/190906867"
+   },
+   {
+    "src": "media/photos/pied-currawong-55475102.jpg",
+    "obsId": 55475102,
+    "credit": "(c) Thomas Mesaglio, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/55475102"
+   },
+   {
+    "src": "media/photos/pied-currawong-115533157.jpg",
+    "obsId": 115533157,
+    "credit": "(c) mshema, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/115533157"
+   },
+   {
+    "src": "media/photos/pied-currawong-204525843.jpg",
+    "obsId": 204525843,
+    "credit": "(c) donglerthrongler, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/204525843"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/pied-currawong-84150599.mp3",
+    "obsId": 84150599,
+    "credit": "(c) floralou, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/84150599"
+   },
+   {
+    "src": "media/calls/pied-currawong-61523414.mp3",
+    "obsId": 61523414,
+    "credit": "(c) Rosie Steinberg, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/61523414"
+   },
+   {
+    "src": "media/calls/pied-currawong-386809286.mp3",
+    "obsId": 386809286,
+    "credit": "(c) MrGrandWildlife, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/386809286"
+   }
+  ]
+ },
+ {
+  "id": "australian-raven",
+  "name": "Australian Raven",
+  "sci": "Corvus coronoides",
+  "group": "black-white",
+  "tip": "All glossy black with a white eye and shaggy throat hackles. Slow, wailing 'aah-aah-aaaah'.",
+  "taxonId": 8040,
+  "photos": [
+   {
+    "src": "media/photos/australian-raven-293295401.jpg",
+    "obsId": 293295401,
+    "credit": "(c) James K. Douch, some rights reserved (CC BY-SA)",
+    "licence": "cc-by-sa",
+    "url": "https://www.inaturalist.org/observations/293295401"
+   },
+   {
+    "src": "media/photos/australian-raven-335476816.jpg",
+    "obsId": 335476816,
+    "credit": "(c) Tim, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/335476816"
+   },
+   {
+    "src": "media/photos/australian-raven-225891610.jpg",
+    "obsId": 225891610,
+    "credit": "(c) Taylor, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/225891610"
+   },
+   {
+    "src": "media/photos/australian-raven-288036604.jpg",
+    "obsId": 288036604,
+    "credit": "(c) Patrick Palines, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/288036604"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/australian-raven-291402751.mp3",
+    "obsId": 291402751,
+    "credit": "(c) Bronte-Maye, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/291402751"
+   },
+   {
+    "src": "media/calls/australian-raven-43271447.mp3",
+    "obsId": 43271447,
+    "credit": "(c) Jessica, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/43271447"
+   },
+   {
+    "src": "media/calls/australian-raven-158480002.mp3",
+    "obsId": 158480002,
+    "credit": "(c) James K. Douch, some rights reserved (CC BY-SA)",
+    "licence": "cc-by-sa",
+    "url": "https://www.inaturalist.org/observations/158480002"
+   }
+  ]
+ },
+ {
+  "id": "magpie-lark",
+  "name": "Magpie-lark",
+  "sci": "Grallina cyanoleuca",
+  "group": "black-white",
+  "tip": "Small, slim black-and-white bird with a pale bill. Often walks on lawns. Pairs duet 'pee-wee'.",
+  "taxonId": 8583,
+  "photos": [
+   {
+    "src": "media/photos/magpie-lark-107892452.jpg",
+    "obsId": 107892452,
+    "credit": "(c) Žilvinas Pūtys, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/107892452"
+   },
+   {
+    "src": "media/photos/magpie-lark-38822930.jpg",
+    "obsId": 38822930,
+    "credit": "(c) Thomas Mesaglio, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/38822930"
+   },
+   {
+    "src": "media/photos/magpie-lark-182818766.jpg",
+    "obsId": 182818766,
+    "credit": "(c) Roxanne Lazarus, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/182818766"
+   },
+   {
+    "src": "media/photos/magpie-lark-153557214.jpg",
+    "obsId": 153557214,
+    "credit": "(c) David C. Simon, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/153557214"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/magpie-lark-148926419.mp3",
+    "obsId": 148926419,
+    "credit": "(c) cardasv, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/148926419"
+   },
+   {
+    "src": "media/calls/magpie-lark-359698317.mp3",
+    "obsId": 359698317,
+    "credit": "(c) galactic_gandalf, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/359698317"
+   },
+   {
+    "src": "media/calls/magpie-lark-42787685.mp3",
+    "obsId": 42787685,
+    "credit": "(c) Jessica, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/42787685"
+   }
+  ]
+ },
+ {
+  "id": "grey-butcherbird",
+  "name": "Grey Butcherbird",
+  "sci": "Cracticus torquatus",
+  "group": "black-white",
+  "tip": "Grey back, black cap, white throat and a hooked, blue-grey bill. Beautiful piping, mellow song.",
+  "taxonId": 204497,
+  "photos": [
+   {
+    "src": "media/photos/grey-butcherbird-200709544.jpg",
+    "obsId": 200709544,
+    "credit": "(c) Kevin Yonando, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/200709544"
+   },
+   {
+    "src": "media/photos/grey-butcherbird-301747797.jpg",
+    "obsId": 301747797,
+    "credit": "(c) Ethan Beaver, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/301747797"
+   },
+   {
+    "src": "media/photos/grey-butcherbird-195652884.jpg",
+    "obsId": 195652884,
+    "credit": "(c) Nathan Ruser, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/195652884"
+   },
+   {
+    "src": "media/photos/grey-butcherbird-127330402.jpg",
+    "obsId": 127330402,
+    "credit": "(c) andrewpavlov, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/127330402"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/grey-butcherbird-210635788.mp3",
+    "obsId": 210635788,
+    "credit": "(c) Franco Giacon, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/210635788"
+   },
+   {
+    "src": "media/calls/grey-butcherbird-209866792.mp3",
+    "obsId": 209866792,
+    "credit": "(c) currawong1975, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/209866792"
+   },
+   {
+    "src": "media/calls/grey-butcherbird-341052405.mp3",
+    "obsId": 341052405,
+    "credit": "(c) fire_at_sea_parks, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/341052405"
+   }
+  ]
+ },
+ {
+  "id": "willie-wagtail",
+  "name": "Willie Wagtail",
+  "sci": "Rhipidura leucophrys",
+  "group": "black-white",
+  "tip": "Small black-and-white fantail with a black throat and white eyebrow. Constantly wags its tail side to side.",
+  "taxonId": 8143,
+  "photos": [
+   {
+    "src": "media/photos/willie-wagtail-131974489.jpg",
+    "obsId": 131974489,
+    "credit": "(c) jpshahady, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/131974489"
+   },
+   {
+    "src": "media/photos/willie-wagtail-263221619.jpg",
+    "obsId": 263221619,
+    "credit": "(c) Christine Margaret Lynch, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/263221619"
+   },
+   {
+    "src": "media/photos/willie-wagtail-104911193.jpg",
+    "obsId": 104911193,
+    "credit": "(c) Taylor, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/104911193"
+   },
+   {
+    "src": "media/photos/willie-wagtail-63538783.jpg",
+    "obsId": 63538783,
+    "credit": "(c) Patricia, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/63538783"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/willie-wagtail-98472919.mp3",
+    "obsId": 98472919,
+    "credit": "(c) Julia, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/98472919"
+   },
+   {
+    "src": "media/calls/willie-wagtail-321403850.mp3",
+    "obsId": 321403850,
+    "credit": "(c) mivista, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/321403850"
+   },
+   {
+    "src": "media/calls/willie-wagtail-54240654.mp3",
+    "obsId": 54240654,
+    "credit": "(c) Rosie Steinberg, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/54240654"
+   }
+  ]
+ },
+ {
+  "id": "spotted-dove",
+  "name": "Spotted Dove",
+  "sci": "Spilopelia chinensis",
+  "group": "pigeon",
+  "tip": "Introduced. Pinkish-brown dove with a black collar full of white spots. Soft 'coo-coo-croo'.",
+  "taxonId": 1455918,
+  "photos": [
+   {
+    "src": "media/photos/spotted-dove-270960863.jpg",
+    "obsId": 270960863,
+    "credit": "(c) cuckoobrains, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/270960863"
+   },
+   {
+    "src": "media/photos/spotted-dove-323109826.jpg",
+    "obsId": 323109826,
+    "credit": "(c) Rock Merjudio, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/323109826"
+   },
+   {
+    "src": "media/photos/spotted-dove-188751164.jpg",
+    "obsId": 188751164,
+    "credit": "(c) Bradley J., some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/188751164"
+   },
+   {
+    "src": "media/photos/spotted-dove-83561027.jpg",
+    "obsId": 83561027,
+    "credit": "(c) kaz_dives, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/83561027"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/spotted-dove-62146659.mp3",
+    "obsId": 62146659,
+    "credit": "no rights reserved",
+    "licence": "cc0",
+    "url": "https://www.inaturalist.org/observations/62146659"
+   },
+   {
+    "src": "media/calls/spotted-dove-33119748.mp3",
+    "obsId": 33119748,
+    "credit": "(c) Nathan Odgers, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/33119748"
+   },
+   {
+    "src": "media/calls/spotted-dove-137903288.mp3",
+    "obsId": 137903288,
+    "credit": "(c) Greg Rossington, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/137903288"
+   }
+  ]
+ },
+ {
+  "id": "crested-pigeon",
+  "name": "Crested Pigeon",
+  "sci": "Ocyphaps lophotes",
+  "group": "pigeon",
+  "tip": "Grey-brown pigeon with an upright, spiky black crest. Wings whistle when it takes off.",
+  "taxonId": 3681,
+  "photos": [
+   {
+    "src": "media/photos/crested-pigeon-108499616.jpg",
+    "obsId": 108499616,
+    "credit": "(c) Jonno Downes, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/108499616"
+   },
+   {
+    "src": "media/photos/crested-pigeon-63451715.jpg",
+    "obsId": 63451715,
+    "credit": "(c) Jens Sommer-Knudsen, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/63451715"
+   },
+   {
+    "src": "media/photos/crested-pigeon-184214686.jpg",
+    "obsId": 184214686,
+    "credit": "(c) tianamilo, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/184214686"
+   },
+   {
+    "src": "media/photos/crested-pigeon-42072426.jpg",
+    "obsId": 42072426,
+    "credit": "(c) laurelrf, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/42072426"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/crested-pigeon-327574117.mp3",
+    "obsId": 327574117,
+    "credit": "(c) Antoinette Beckwith, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/327574117"
+   },
+   {
+    "src": "media/calls/crested-pigeon-100659644.mp3",
+    "obsId": 100659644,
+    "credit": "(c) jen_w1, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/100659644"
+   },
+   {
+    "src": "media/calls/crested-pigeon-236455482.mp3",
+    "obsId": 236455482,
+    "credit": "(c) deborod, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/236455482"
+   }
+  ]
+ },
+ {
+  "id": "common-myna",
+  "name": "Common Myna",
+  "sci": "Acridotheres tristis",
+  "group": "ground",
+  "tip": "Introduced. Brown body, black head, yellow bill, eye-skin and legs; white wing patches in flight. Compare Noisy Miner.",
+  "taxonId": 204454,
+  "photos": [
+   {
+    "src": "media/photos/common-myna-186286515.jpg",
+    "obsId": 186286515,
+    "credit": "(c) Tom V, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/186286515"
+   },
+   {
+    "src": "media/photos/common-myna-289483603.jpg",
+    "obsId": 289483603,
+    "credit": "(c) Andrew O'Farrell, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/289483603"
+   },
+   {
+    "src": "media/photos/common-myna-9617896.jpg",
+    "obsId": 9617896,
+    "credit": "(c) Wnature, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/9617896"
+   },
+   {
+    "src": "media/photos/common-myna-266352230.jpg",
+    "obsId": 266352230,
+    "credit": "(c) Rock Merjudio, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/266352230"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/common-myna-309669408.mp3",
+    "obsId": 309669408,
+    "credit": "(c) matthewmo, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/309669408"
+   },
+   {
+    "src": "media/calls/common-myna-257323672.mp3",
+    "obsId": 257323672,
+    "credit": "(c) climate_action_now, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/257323672"
+   }
+  ]
+ },
+ {
+  "id": "red-whiskered-bulbul",
+  "name": "Red-whiskered Bulbul",
+  "sci": "Pycnonotus jocosus",
+  "group": "small",
+  "tip": "Introduced. Brown above, white below, tall black crest, red cheek patch and red under the tail.",
+  "taxonId": 14591,
+  "photos": [
+   {
+    "src": "media/photos/red-whiskered-bulbul-19945647.jpg",
+    "obsId": 19945647,
+    "credit": "(c) diana_shang, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/19945647"
+   },
+   {
+    "src": "media/photos/red-whiskered-bulbul-299677111.jpg",
+    "obsId": 299677111,
+    "credit": "(c) Gerold Morrison, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/299677111"
+   },
+   {
+    "src": "media/photos/red-whiskered-bulbul-361205612.jpg",
+    "obsId": 361205612,
+    "credit": "(c) Andrew, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/361205612"
+   },
+   {
+    "src": "media/photos/red-whiskered-bulbul-45568277.jpg",
+    "obsId": 45568277,
+    "credit": "(c) kalimata, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/45568277"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/red-whiskered-bulbul-98962050.mp3",
+    "obsId": 98962050,
+    "credit": "(c) Thomas Mesaglio, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/98962050"
+   },
+   {
+    "src": "media/calls/red-whiskered-bulbul-391605314.mp3",
+    "obsId": 391605314,
+    "credit": "(c) Jordan H, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/391605314"
+   },
+   {
+    "src": "media/calls/red-whiskered-bulbul-137905549.mp3",
+    "obsId": 137905549,
+    "credit": "(c) Greg Rossington, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/137905549"
+   }
+  ]
+ },
+ {
+  "id": "superb-fairywren",
+  "name": "Superb Fairywren",
+  "sci": "Malurus cyaneus",
+  "group": "small",
+  "tip": "Tiny with a cocked tail. Breeding male bright blue and black; females brown with a reddish eye area. Reeling trill.",
+  "taxonId": 12065,
+  "photos": [
+   {
+    "src": "media/photos/superb-fairywren-130055783.jpg",
+    "obsId": 130055783,
+    "credit": "(c) Ben Holmes Photography, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/130055783"
+   },
+   {
+    "src": "media/photos/superb-fairywren-119107217.jpg",
+    "obsId": 119107217,
+    "credit": "(c) Michael Hawk, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/119107217"
+   },
+   {
+    "src": "media/photos/superb-fairywren-389599973.jpg",
+    "obsId": 389599973,
+    "credit": "(c) Daniel Liepack, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/389599973"
+   },
+   {
+    "src": "media/photos/superb-fairywren-46656336.jpg",
+    "obsId": 46656336,
+    "credit": "(c) andrewpavlov, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/46656336"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/superb-fairywren-308340020.mp3",
+    "obsId": 308340020,
+    "credit": "(c) Jordan H, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/308340020"
+   },
+   {
+    "src": "media/calls/superb-fairywren-193511601.mp3",
+    "obsId": 193511601,
+    "credit": "(c) eddiesull, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/193511601"
+   },
+   {
+    "src": "media/calls/superb-fairywren-328245123.mp3",
+    "obsId": 328245123,
+    "credit": "(c) Coen, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/328245123"
+   }
+  ]
+ },
+ {
+  "id": "welcome-swallow",
+  "name": "Welcome Swallow",
+  "sci": "Hirundo neoxena",
+  "group": "small",
+  "tip": "Glossy blue-black back, rusty-orange throat and forehead, long forked tail. Swoops low over grass and water.",
+  "taxonId": 11882,
+  "photos": [
+   {
+    "src": "media/photos/welcome-swallow-214940157.jpg",
+    "obsId": 214940157,
+    "credit": "(c) Proteros, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/214940157"
+   },
+   {
+    "src": "media/photos/welcome-swallow-214732255.jpg",
+    "obsId": 214732255,
+    "credit": "(c) Anthony Katon, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/214732255"
+   },
+   {
+    "src": "media/photos/welcome-swallow-172966613.jpg",
+    "obsId": 172966613,
+    "credit": "(c) jimchurches, some rights reserved (CC BY-NC-SA)",
+    "licence": "cc-by-nc-sa",
+    "url": "https://www.inaturalist.org/observations/172966613"
+   },
+   {
+    "src": "media/photos/welcome-swallow-348487581.jpg",
+    "obsId": 348487581,
+    "credit": "(c) Andrew, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/348487581"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/welcome-swallow-204467018.mp3",
+    "obsId": 204467018,
+    "credit": "(c) Nick Lambert, some rights reserved (CC BY-NC-SA)",
+    "licence": "cc-by-nc-sa",
+    "url": "https://www.inaturalist.org/observations/204467018"
+   }
+  ]
+ },
+ {
+  "id": "silvereye",
+  "name": "Silvereye",
+  "sci": "Zosterops lateralis",
+  "group": "small",
+  "tip": "Tiny olive-green bird with a bright white eye-ring and grey back. Moves in chattering flocks.",
+  "taxonId": 202505,
+  "photos": [
+   {
+    "src": "media/photos/silvereye-297245848.jpg",
+    "obsId": 297245848,
+    "credit": "(c) andrewpavlov, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/297245848"
+   },
+   {
+    "src": "media/photos/silvereye-178355669.jpg",
+    "obsId": 178355669,
+    "credit": "(c) Nathan Ruser, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/178355669"
+   },
+   {
+    "src": "media/photos/silvereye-368216487.jpg",
+    "obsId": 368216487,
+    "credit": "(c) Kevin Green, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/368216487"
+   },
+   {
+    "src": "media/photos/silvereye-164931166.jpg",
+    "obsId": 164931166,
+    "credit": "(c) Anthony Katon, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/164931166"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/silvereye-61456049.mp3",
+    "obsId": 61456049,
+    "credit": "(c) kalimata, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/61456049"
+   },
+   {
+    "src": "media/calls/silvereye-67181273.mp3",
+    "obsId": 67181273,
+    "credit": "no rights reserved",
+    "licence": "cc0",
+    "url": "https://www.inaturalist.org/observations/67181273"
+   },
+   {
+    "src": "media/calls/silvereye-195326729.mp3",
+    "obsId": 195326729,
+    "credit": "(c) Alexandra, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/195326729"
+   }
+  ]
+ },
+ {
+  "id": "grey-fantail",
+  "name": "Grey Fantail",
+  "sci": "Rhipidura albiscapa",
+  "group": "small",
+  "tip": "Small grey bird with a long tail fanned open, white eyebrow and throat. Flits acrobatically after insects.",
+  "taxonId": 144737,
+  "photos": [
+   {
+    "src": "media/photos/grey-fantail-345645970.jpg",
+    "obsId": 345645970,
+    "credit": "(c) Mandy, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/345645970"
+   },
+   {
+    "src": "media/photos/grey-fantail-219048590.jpg",
+    "obsId": 219048590,
+    "credit": "(c) ian_mcallan, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/219048590"
+   },
+   {
+    "src": "media/photos/grey-fantail-348676386.jpg",
+    "obsId": 348676386,
+    "credit": "(c) Julie Brodie, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/348676386"
+   },
+   {
+    "src": "media/photos/grey-fantail-22271246.jpg",
+    "obsId": 22271246,
+    "credit": "(c) Corey McWhinnie, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/22271246"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/grey-fantail-338727766.mp3",
+    "obsId": 338727766,
+    "credit": "(c) Zachi Mihai, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/338727766"
+   },
+   {
+    "src": "media/calls/grey-fantail-217844699.mp3",
+    "obsId": 217844699,
+    "credit": "(c) Alex Pintsen JIN, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/217844699"
+   },
+   {
+    "src": "media/calls/grey-fantail-326150223.mp3",
+    "obsId": 326150223,
+    "credit": "(c) Alan Sheehan, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/326150223"
+   }
+  ]
+ },
+ {
+  "id": "spotted-pardalote",
+  "name": "Spotted Pardalote",
+  "sci": "Pardalotus punctatus",
+  "group": "small",
+  "tip": "Tiny with white spots on a black crown and wings, yellow throat. Repeated 'sleep, ba-by' whistle from the canopy.",
+  "taxonId": 13531,
+  "photos": [
+   {
+    "src": "media/photos/spotted-pardalote-145164812.jpg",
+    "obsId": 145164812,
+    "credit": "(c) ianhearn, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/145164812"
+   },
+   {
+    "src": "media/photos/spotted-pardalote-178658273.jpg",
+    "obsId": 178658273,
+    "credit": "(c) andrewpavlov, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/178658273"
+   },
+   {
+    "src": "media/photos/spotted-pardalote-299677713.jpg",
+    "obsId": 299677713,
+    "credit": "(c) Gerold Morrison, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/299677713"
+   },
+   {
+    "src": "media/photos/spotted-pardalote-368294164.jpg",
+    "obsId": 368294164,
+    "credit": "(c) Lore, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/368294164"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/spotted-pardalote-104620307.mp3",
+    "obsId": 104620307,
+    "credit": "(c) Tim, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/104620307"
+   },
+   {
+    "src": "media/calls/spotted-pardalote-135309244.mp3",
+    "obsId": 135309244,
+    "credit": "(c) keithaweir, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/135309244"
+   },
+   {
+    "src": "media/calls/spotted-pardalote-324410126.mp3",
+    "obsId": 324410126,
+    "credit": "(c) birdman_australia, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/324410126"
+   }
+  ]
+ },
+ {
+  "id": "eastern-yellow-robin",
+  "name": "Eastern Yellow Robin",
+  "sci": "Eopsaltria australis",
+  "group": "small",
+  "tip": "Grey back, bright yellow underparts. Clings sideways to tree trunks watching the ground.",
+  "taxonId": 14153,
+  "photos": [
+   {
+    "src": "media/photos/eastern-yellow-robin-167816216.jpg",
+    "obsId": 167816216,
+    "credit": "(c) ecoem22, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/167816216"
+   },
+   {
+    "src": "media/photos/eastern-yellow-robin-261096703.jpg",
+    "obsId": 261096703,
+    "credit": "(c) Jenny Donald, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/261096703"
+   },
+   {
+    "src": "media/photos/eastern-yellow-robin-395653762.jpg",
+    "obsId": 395653762,
+    "credit": "(c) Cameron Briggs, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/395653762"
+   },
+   {
+    "src": "media/photos/eastern-yellow-robin-324454448.jpg",
+    "obsId": 324454448,
+    "credit": "(c) Peter de Jongh, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/324454448"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/eastern-yellow-robin-265929353.mp3",
+    "obsId": 265929353,
+    "credit": "(c) dinaht, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/265929353"
+   },
+   {
+    "src": "media/calls/eastern-yellow-robin-315170009.mp3",
+    "obsId": 315170009,
+    "credit": "(c) In2n.com.au, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/315170009"
+   },
+   {
+    "src": "media/calls/eastern-yellow-robin-192272844.mp3",
+    "obsId": 192272844,
+    "credit": "(c) Nature_Lover, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/192272844"
+   }
+  ]
+ },
+ {
+  "id": "golden-whistler",
+  "name": "Australian Golden Whistler",
+  "sci": "Pachycephala pectoralis",
+  "group": "small",
+  "tip": "Male has a black head, white throat with black band and golden-yellow chest. Loud whistle ending in a whip-crack.",
+  "taxonId": 506043,
+  "photos": [
+   {
+    "src": "media/photos/golden-whistler-149380420.jpg",
+    "obsId": 149380420,
+    "credit": "no rights reserved",
+    "licence": "cc0",
+    "url": "https://www.inaturalist.org/observations/149380420"
+   },
+   {
+    "src": "media/photos/golden-whistler-250198936.jpg",
+    "obsId": 250198936,
+    "credit": "(c) lillypollard, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/250198936"
+   },
+   {
+    "src": "media/photos/golden-whistler-85316573.jpg",
+    "obsId": 85316573,
+    "credit": "(c) andrewpavlov, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/85316573"
+   },
+   {
+    "src": "media/photos/golden-whistler-166393421.jpg",
+    "obsId": 166393421,
+    "credit": "(c) Bay Amelia, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/166393421"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/golden-whistler-200970226.mp3",
+    "obsId": 200970226,
+    "credit": "(c) lescormack, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/200970226"
+   },
+   {
+    "src": "media/calls/golden-whistler-144518011.mp3",
+    "obsId": 144518011,
+    "credit": "(c) Philip Rae, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/144518011"
+   },
+   {
+    "src": "media/calls/golden-whistler-193832619.mp3",
+    "obsId": 193832619,
+    "credit": "(c) larahen, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/193832619"
+   }
+  ]
+ },
+ {
+  "id": "eastern-whipbird",
+  "name": "Eastern Whipbird",
+  "sci": "Psophodes olivaceus",
+  "group": "ground",
+  "tip": "Olive-green with a black head, crest and white cheek patch. Unmistakable whip-crack call, often answered by its mate.",
+  "taxonId": 117077,
+  "photos": [
+   {
+    "src": "media/photos/eastern-whipbird-243579605.jpg",
+    "obsId": 243579605,
+    "credit": "(c) Nicole Haigh, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/243579605"
+   },
+   {
+    "src": "media/photos/eastern-whipbird-160899261.jpg",
+    "obsId": 160899261,
+    "credit": "(c) adam1982, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/160899261"
+   },
+   {
+    "src": "media/photos/eastern-whipbird-75524543.jpg",
+    "obsId": 75524543,
+    "credit": "(c) Tim, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/75524543"
+   },
+   {
+    "src": "media/photos/eastern-whipbird-145474239.jpg",
+    "obsId": 145474239,
+    "credit": "(c) Taylor, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/145474239"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/eastern-whipbird-141225122.mp3",
+    "obsId": 141225122,
+    "credit": "(c) Mary Bell, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/141225122"
+   },
+   {
+    "src": "media/calls/eastern-whipbird-192570534.mp3",
+    "obsId": 192570534,
+    "credit": "(c) Macie, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/192570534"
+   },
+   {
+    "src": "media/calls/eastern-whipbird-278169251.mp3",
+    "obsId": 278169251,
+    "credit": "(c) ankysaurus, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/278169251"
+   }
+  ]
+ },
+ {
+  "id": "eastern-koel",
+  "name": "Eastern Koel",
+  "sci": "Eudynamys orientalis",
+  "group": "cuckoo-night",
+  "tip": "Male glossy black with a red eye; female brown and spotted. Summer visitor with a rising 'coo-eee' all night.",
+  "taxonId": 100695,
+  "photos": [
+   {
+    "src": "media/photos/eastern-koel-406532790.jpg",
+    "obsId": 406532790,
+    "credit": "(c) Linda Rodriguez, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/406532790"
+   },
+   {
+    "src": "media/photos/eastern-koel-195835918.jpg",
+    "obsId": 195835918,
+    "credit": "(c) jameslambo, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/195835918"
+   },
+   {
+    "src": "media/photos/eastern-koel-63451714.jpg",
+    "obsId": 63451714,
+    "credit": "(c) Jens Sommer-Knudsen, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/63451714"
+   },
+   {
+    "src": "media/photos/eastern-koel-39688468.jpg",
+    "obsId": 39688468,
+    "credit": "(c) kalimata, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/39688468"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/eastern-koel-329297422.mp3",
+    "obsId": 329297422,
+    "credit": "(c) bjlily, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/329297422"
+   },
+   {
+    "src": "media/calls/eastern-koel-104623014.mp3",
+    "obsId": 104623014,
+    "credit": "(c) krissy_lorrakeet, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/104623014"
+   },
+   {
+    "src": "media/calls/eastern-koel-194213316.mp3",
+    "obsId": 194213316,
+    "credit": "(c) Gerrit van den Bergh, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/194213316"
+   }
+  ]
+ },
+ {
+  "id": "channel-billed-cuckoo",
+  "name": "Channel-billed Cuckoo",
+  "sci": "Scythrops novaehollandiae",
+  "group": "cuckoo-night",
+  "tip": "Huge grey cuckoo with an enormous pale bill and long tail. Loud, raucous screams in spring.",
+  "taxonId": 1940,
+  "photos": [
+   {
+    "src": "media/photos/channel-billed-cuckoo-301679001.jpg",
+    "obsId": 301679001,
+    "credit": "(c) Lee J, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/301679001"
+   },
+   {
+    "src": "media/photos/channel-billed-cuckoo-63453131.jpg",
+    "obsId": 63453131,
+    "credit": "(c) Jens Sommer-Knudsen, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/63453131"
+   },
+   {
+    "src": "media/photos/channel-billed-cuckoo-243513785.jpg",
+    "obsId": 243513785,
+    "credit": "(c) plemas, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/243513785"
+   },
+   {
+    "src": "media/photos/channel-billed-cuckoo-330190710.jpg",
+    "obsId": 330190710,
+    "credit": "(c) Catherine Grenfell, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/330190710"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/channel-billed-cuckoo-186058444.mp3",
+    "obsId": 186058444,
+    "credit": "(c) lifeisamazing, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/186058444"
+   },
+   {
+    "src": "media/calls/channel-billed-cuckoo-140845614.mp3",
+    "obsId": 140845614,
+    "credit": "(c) Bradley W. Jones, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/140845614"
+   },
+   {
+    "src": "media/calls/channel-billed-cuckoo-192009974.mp3",
+    "obsId": 192009974,
+    "credit": "(c) jimchurches, some rights reserved (CC BY-SA)",
+    "licence": "cc-by-sa",
+    "url": "https://www.inaturalist.org/observations/192009974"
+   }
+  ]
+ },
+ {
+  "id": "black-faced-cuckooshrike",
+  "name": "Black-faced Cuckooshrike",
+  "sci": "Coracina novaehollandiae",
+  "group": "cuckoo-night",
+  "tip": "Soft grey with a black face and throat. Shuffles its wings after landing.",
+  "taxonId": 7990,
+  "photos": [
+   {
+    "src": "media/photos/black-faced-cuckooshrike-236237197.jpg",
+    "obsId": 236237197,
+    "credit": "(c) ian_mcallan, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/236237197"
+   },
+   {
+    "src": "media/photos/black-faced-cuckooshrike-364216052.jpg",
+    "obsId": 364216052,
+    "credit": "(c) R.Rodrigues, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/364216052"
+   },
+   {
+    "src": "media/photos/black-faced-cuckooshrike-170979157.jpg",
+    "obsId": 170979157,
+    "credit": "(c) John Bromilow, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/170979157"
+   },
+   {
+    "src": "media/photos/black-faced-cuckooshrike-364537247.jpg",
+    "obsId": 364537247,
+    "credit": "(c) Kevin Green, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/364537247"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/black-faced-cuckooshrike-243867601.mp3",
+    "obsId": 243867601,
+    "credit": "(c) vickipowys, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/243867601"
+   },
+   {
+    "src": "media/calls/black-faced-cuckooshrike-274231678.mp3",
+    "obsId": 274231678,
+    "credit": "(c) Nina, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/274231678"
+   },
+   {
+    "src": "media/calls/black-faced-cuckooshrike-368767747.mp3",
+    "obsId": 368767747,
+    "credit": "(c) hlogie, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/368767747"
+   }
+  ]
+ },
+ {
+  "id": "tawny-frogmouth",
+  "name": "Tawny Frogmouth",
+  "sci": "Podargus strigoides",
+  "group": "cuckoo-night",
+  "tip": "Grey, bark-patterned nightbird with a wide, frog-like bill. Roosts by day on branches pretending to be a stick. Low 'oom-oom-oom'.",
+  "taxonId": 19721,
+  "photos": [
+   {
+    "src": "media/photos/tawny-frogmouth-69298729.jpg",
+    "obsId": 69298729,
+    "credit": "(c) tobyyy, some rights reserved (CC BY-SA)",
+    "licence": "cc-by-sa",
+    "url": "https://www.inaturalist.org/observations/69298729"
+   },
+   {
+    "src": "media/photos/tawny-frogmouth-159992522.jpg",
+    "obsId": 159992522,
+    "credit": "(c) Liz Carregarian, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/159992522"
+   },
+   {
+    "src": "media/photos/tawny-frogmouth-25495098.jpg",
+    "obsId": 25495098,
+    "credit": "(c) janetgrevillea, some rights reserved (CC BY-NC-SA)",
+    "licence": "cc-by-nc-sa",
+    "url": "https://www.inaturalist.org/observations/25495098"
+   },
+   {
+    "src": "media/photos/tawny-frogmouth-263559798.jpg",
+    "obsId": 263559798,
+    "credit": "(c) ashntim, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/263559798"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/tawny-frogmouth-247452562.mp3",
+    "obsId": 247452562,
+    "credit": "(c) nancyfoster, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/247452562"
+   },
+   {
+    "src": "media/calls/tawny-frogmouth-151246257.mp3",
+    "obsId": 151246257,
+    "credit": "(c) Joanne, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/151246257"
+   },
+   {
+    "src": "media/calls/tawny-frogmouth-198131279.mp3",
+    "obsId": 198131279,
+    "credit": "(c) stroinik, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/198131279"
+   }
+  ]
+ },
+ {
+  "id": "southern-boobook",
+  "name": "Southern Boobook",
+  "sci": "Ninox boobook",
+  "group": "cuckoo-night",
+  "tip": "Small brown owl with pale spots and dark eye patches. The classic 'boo-book' night call.",
+  "taxonId": 979816,
+  "photos": [
+   {
+    "src": "media/photos/southern-boobook-281200218.jpg",
+    "obsId": 281200218,
+    "credit": "(c) David Lochlin, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/281200218"
+   },
+   {
+    "src": "media/photos/southern-boobook-87952732.jpg",
+    "obsId": 87952732,
+    "credit": "(c) Stephen Snow, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/87952732"
+   },
+   {
+    "src": "media/photos/southern-boobook-140967007.jpg",
+    "obsId": 140967007,
+    "credit": "(c) Sofia Zvolanek, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/140967007"
+   },
+   {
+    "src": "media/photos/southern-boobook-349237274.jpg",
+    "obsId": 349237274,
+    "credit": "(c) A. Benjamin, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/349237274"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/southern-boobook-347479094.mp3",
+    "obsId": 347479094,
+    "credit": "(c) bushgrubs, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/347479094"
+   },
+   {
+    "src": "media/calls/southern-boobook-392614340.mp3",
+    "obsId": 392614340,
+    "credit": "(c) Sofia Zvolanek, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/392614340"
+   },
+   {
+    "src": "media/calls/southern-boobook-194645760.mp3",
+    "obsId": 194645760,
+    "credit": "(c) dkaysmith, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/194645760"
+   }
+  ]
+ },
+ {
+  "id": "australian-white-ibis",
+  "name": "Australian White Ibis",
+  "sci": "Threskiornis molucca",
+  "group": "water",
+  "tip": "Big white bird with a bare black head and long down-curved bill. The 'bin chicken'.",
+  "taxonId": 3740,
+  "photos": [
+   {
+    "src": "media/photos/australian-white-ibis-60982230.jpg",
+    "obsId": 60982230,
+    "credit": "(c) Tim, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/60982230"
+   },
+   {
+    "src": "media/photos/australian-white-ibis-33696932.jpg",
+    "obsId": 33696932,
+    "credit": "(c) Mark Kriedemann, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/33696932"
+   },
+   {
+    "src": "media/photos/australian-white-ibis-59987626.jpg",
+    "obsId": 59987626,
+    "credit": "no rights reserved",
+    "licence": "cc0",
+    "url": "https://www.inaturalist.org/observations/59987626"
+   },
+   {
+    "src": "media/photos/australian-white-ibis-340657264.jpg",
+    "obsId": 340657264,
+    "credit": "(c) greyone, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/340657264"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/australian-white-ibis-96510685.mp3",
+    "obsId": 96510685,
+    "credit": "no rights reserved",
+    "licence": "cc0",
+    "url": "https://www.inaturalist.org/observations/96510685"
+   },
+   {
+    "src": "media/calls/australian-white-ibis-363507874.mp3",
+    "obsId": 363507874,
+    "credit": "(c) The Japanese Titer, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/363507874"
+   }
+  ]
+ },
+ {
+  "id": "masked-lapwing",
+  "name": "Masked Lapwing",
+  "sci": "Vanellus miles",
+  "group": "ground",
+  "tip": "Brown back, white below, large yellow face wattles. Loud rattling alarm; swoops in breeding season.",
+  "taxonId": 4872,
+  "photos": [
+   {
+    "src": "media/photos/masked-lapwing-287859443.jpg",
+    "obsId": 287859443,
+    "credit": "no rights reserved",
+    "licence": "cc0",
+    "url": "https://www.inaturalist.org/observations/287859443"
+   },
+   {
+    "src": "media/photos/masked-lapwing-125410409.jpg",
+    "obsId": 125410409,
+    "credit": "(c) Taylor, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/125410409"
+   },
+   {
+    "src": "media/photos/masked-lapwing-217382443.jpg",
+    "obsId": 217382443,
+    "credit": "(c) jamigg, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/217382443"
+   },
+   {
+    "src": "media/photos/masked-lapwing-145387429.jpg",
+    "obsId": 145387429,
+    "credit": "(c) Owen Konopka, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/145387429"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/masked-lapwing-306671714.mp3",
+    "obsId": 306671714,
+    "credit": "(c) Jess Fox, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/306671714"
+   },
+   {
+    "src": "media/calls/masked-lapwing-137391477.mp3",
+    "obsId": 137391477,
+    "credit": "(c) vinci1000, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/137391477"
+   },
+   {
+    "src": "media/calls/masked-lapwing-366277829.mp3",
+    "obsId": 366277829,
+    "credit": "(c) Jordan H, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/366277829"
+   }
+  ]
+ },
+ {
+  "id": "australian-brushturkey",
+  "name": "Australian Brushturkey",
+  "sci": "Alectura lathami",
+  "group": "ground",
+  "tip": "Large black bird with a bare red head and yellow (male) neck wattle. Rakes up huge mounds of leaf litter.",
+  "taxonId": 2038,
+  "photos": [
+   {
+    "src": "media/photos/australian-brushturkey-325269412.jpg",
+    "obsId": 325269412,
+    "credit": "(c) ian_mcallan, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/325269412"
+   },
+   {
+    "src": "media/photos/australian-brushturkey-329771984.jpg",
+    "obsId": 329771984,
+    "credit": "(c) SkippingShoe, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/329771984"
+   },
+   {
+    "src": "media/photos/australian-brushturkey-35520603.jpg",
+    "obsId": 35520603,
+    "credit": "(c) djglore, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/35520603"
+   },
+   {
+    "src": "media/photos/australian-brushturkey-261375606.jpg",
+    "obsId": 261375606,
+    "credit": "(c) David, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/261375606"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/australian-brushturkey-204329555.mp3",
+    "obsId": 204329555,
+    "credit": "(c) brooks70, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/204329555"
+   }
+  ]
+ },
+ {
+  "id": "superb-lyrebird",
+  "name": "Superb Lyrebird",
+  "sci": "Menura novaehollandiae",
+  "group": "ground",
+  "tip": "Large brown ground bird; the male has a spectacular lyre-shaped tail. Master mimic of other birds' calls.",
+  "taxonId": 12700,
+  "photos": [
+   {
+    "src": "media/photos/superb-lyrebird-170988060.jpg",
+    "obsId": 170988060,
+    "credit": "(c) Scott Penfold, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/170988060"
+   },
+   {
+    "src": "media/photos/superb-lyrebird-263955993.jpg",
+    "obsId": 263955993,
+    "credit": "(c) Martin, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/263955993"
+   },
+   {
+    "src": "media/photos/superb-lyrebird-389270977.jpg",
+    "obsId": 389270977,
+    "credit": "(c) Beckie Gee, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/389270977"
+   },
+   {
+    "src": "media/photos/superb-lyrebird-67440159.jpg",
+    "obsId": 67440159,
+    "credit": "(c) haruspex, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/67440159"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/superb-lyrebird-360545227.mp3",
+    "obsId": 360545227,
+    "credit": "(c) MJ Dear, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/360545227"
+   },
+   {
+    "src": "media/calls/superb-lyrebird-80563955.mp3",
+    "obsId": 80563955,
+    "credit": "(c) bobcorr, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/80563955"
+   },
+   {
+    "src": "media/calls/superb-lyrebird-213889816.mp3",
+    "obsId": 213889816,
+    "credit": "(c) Bradley W. Jones, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/213889816"
+   }
+  ]
+ },
+ {
+  "id": "satin-bowerbird",
+  "name": "Satin Bowerbird",
+  "sci": "Ptilonorhynchus violaceus",
+  "group": "ground",
+  "tip": "Adult male glossy blue-black with violet eyes; females and young are green with scalloped undersides. Builds a bower decorated with blue objects.",
+  "taxonId": 14539,
+  "photos": [
+   {
+    "src": "media/photos/satin-bowerbird-250346130.jpg",
+    "obsId": 250346130,
+    "credit": "(c) Litty and Philipp, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/250346130"
+   },
+   {
+    "src": "media/photos/satin-bowerbird-253074972.jpg",
+    "obsId": 253074972,
+    "credit": "(c) jervisbaygirl, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/253074972"
+   },
+   {
+    "src": "media/photos/satin-bowerbird-149710285.jpg",
+    "obsId": 149710285,
+    "credit": "(c) andrewpavlov, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/149710285"
+   },
+   {
+    "src": "media/photos/satin-bowerbird-110936196.jpg",
+    "obsId": 110936196,
+    "credit": "(c) Taylor, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/110936196"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/satin-bowerbird-138653850.mp3",
+    "obsId": 138653850,
+    "credit": "(c) katyw, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/138653850"
+   },
+   {
+    "src": "media/calls/satin-bowerbird-338726820.mp3",
+    "obsId": 338726820,
+    "credit": "(c) Zachi Mihai, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/338726820"
+   },
+   {
+    "src": "media/calls/satin-bowerbird-104092120.mp3",
+    "obsId": 104092120,
+    "credit": "(c) dkaysmith, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/104092120"
+   }
+  ]
+ },
+ {
+  "id": "silver-gull",
+  "name": "Silver Gull",
+  "sci": "Chroicocephalus novaehollandiae",
+  "group": "water",
+  "tip": "Small white gull with grey wings, red bill and red legs. The everyday beach and chip-stealing gull.",
+  "taxonId": 144507,
+  "photos": [
+   {
+    "src": "media/photos/silver-gull-301661725.jpg",
+    "obsId": 301661725,
+    "credit": "(c) sowadart, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/301661725"
+   },
+   {
+    "src": "media/photos/silver-gull-142614830.jpg",
+    "obsId": 142614830,
+    "credit": "(c) Tony Iwane, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/142614830"
+   },
+   {
+    "src": "media/photos/silver-gull-216029199.jpg",
+    "obsId": 216029199,
+    "credit": "(c) stevennoyes, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/216029199"
+   },
+   {
+    "src": "media/photos/silver-gull-341630335.jpg",
+    "obsId": 341630335,
+    "credit": "(c) Jenny Donald, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/341630335"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/silver-gull-192038605.mp3",
+    "obsId": 192038605,
+    "credit": "(c) WashingtonDC, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/192038605"
+   },
+   {
+    "src": "media/calls/silver-gull-377068486.mp3",
+    "obsId": 377068486,
+    "credit": "(c) Sequoia Janirella Wrens, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/377068486"
+   },
+   {
+    "src": "media/calls/silver-gull-406207960.mp3",
+    "obsId": 406207960,
+    "credit": "(c) Parker Salvatore, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/406207960"
+   }
+  ]
+ },
+ {
+  "id": "pacific-black-duck",
+  "name": "Pacific Black Duck",
+  "sci": "Anas superciliosa",
+  "group": "water",
+  "tip": "Mottled brown duck with a striped face (dark line through the eye) and green wing patch.",
+  "taxonId": 6987,
+  "photos": [
+   {
+    "src": "media/photos/pacific-black-duck-344878007.jpg",
+    "obsId": 344878007,
+    "credit": "(c) Amber Brodie, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/344878007"
+   },
+   {
+    "src": "media/photos/pacific-black-duck-53122837.jpg",
+    "obsId": 53122837,
+    "credit": "(c) Tim, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/53122837"
+   },
+   {
+    "src": "media/photos/pacific-black-duck-376081862.jpg",
+    "obsId": 376081862,
+    "credit": "(c) Jordan H, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/376081862"
+   },
+   {
+    "src": "media/photos/pacific-black-duck-63445162.jpg",
+    "obsId": 63445162,
+    "credit": "(c) Jens Sommer-Knudsen, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/63445162"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/pacific-black-duck-95722962.mp3",
+    "obsId": 95722962,
+    "credit": "(c) lachimolala, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/95722962"
+   },
+   {
+    "src": "media/calls/pacific-black-duck-401352879.mp3",
+    "obsId": 401352879,
+    "credit": "(c) Ariella Whaley, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/401352879"
+   },
+   {
+    "src": "media/calls/pacific-black-duck-289745265.mp3",
+    "obsId": 289745265,
+    "credit": "(c) deborod, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/289745265"
+   }
+  ]
+ },
+ {
+  "id": "australian-wood-duck",
+  "name": "Australian Wood Duck",
+  "sci": "Chenonetta jubata",
+  "group": "water",
+  "tip": "Goose-like grey duck often grazing on lawns. Male has a dark brown head; female has two white face stripes.",
+  "taxonId": 7176,
+  "photos": [
+   {
+    "src": "media/photos/australian-wood-duck-56524616.jpg",
+    "obsId": 56524616,
+    "credit": "no rights reserved",
+    "licence": "cc0",
+    "url": "https://www.inaturalist.org/observations/56524616"
+   },
+   {
+    "src": "media/photos/australian-wood-duck-67118236.jpg",
+    "obsId": 67118236,
+    "credit": "(c) Ashley M Bradford, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/67118236"
+   },
+   {
+    "src": "media/photos/australian-wood-duck-293995650.jpg",
+    "obsId": 293995650,
+    "credit": "(c) Paul Taillie, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/293995650"
+   },
+   {
+    "src": "media/photos/australian-wood-duck-40072944.jpg",
+    "obsId": 40072944,
+    "credit": "(c) Taylor, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/40072944"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/australian-wood-duck-338528061.mp3",
+    "obsId": 338528061,
+    "credit": "(c) Alexandra, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/338528061"
+   },
+   {
+    "src": "media/calls/australian-wood-duck-369508281.mp3",
+    "obsId": 369508281,
+    "credit": "(c) hlogie, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/369508281"
+   }
+  ]
+ },
+ {
+  "id": "dusky-moorhen",
+  "name": "Dusky Moorhen",
+  "sci": "Gallinula tenebrosa",
+  "group": "water",
+  "tip": "Dark grey waterbird with a red forehead shield and yellow-tipped red bill. Flicks its tail showing white sides.",
+  "taxonId": 357,
+  "photos": [
+   {
+    "src": "media/photos/dusky-moorhen-28123119.jpg",
+    "obsId": 28123119,
+    "credit": "(c) Melinda J. Thompson, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/28123119"
+   },
+   {
+    "src": "media/photos/dusky-moorhen-28979602.jpg",
+    "obsId": 28979602,
+    "credit": "(c) David Gil, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/28979602"
+   },
+   {
+    "src": "media/photos/dusky-moorhen-316880445.jpg",
+    "obsId": 316880445,
+    "credit": "(c) Andrew O'Farrell, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/316880445"
+   },
+   {
+    "src": "media/photos/dusky-moorhen-304652792.jpg",
+    "obsId": 304652792,
+    "credit": "(c) gillbsydney, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/304652792"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/dusky-moorhen-338528121.mp3",
+    "obsId": 338528121,
+    "credit": "(c) Alexandra, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/338528121"
+   },
+   {
+    "src": "media/calls/dusky-moorhen-65199064.mp3",
+    "obsId": 65199064,
+    "credit": "(c) kalimata, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/65199064"
+   }
+  ]
+ },
+ {
+  "id": "australasian-swamphen",
+  "name": "Australasian Swamphen",
+  "sci": "Porphyrio melanotus",
+  "group": "water",
+  "tip": "Large purple-blue waterbird with a heavy red bill and forehead shield and long red legs.",
+  "taxonId": 418530,
+  "photos": [
+   {
+    "src": "media/photos/australasian-swamphen-178071104.jpg",
+    "obsId": 178071104,
+    "credit": "(c) James K. Douch, some rights reserved (CC BY-SA)",
+    "licence": "cc-by-sa",
+    "url": "https://www.inaturalist.org/observations/178071104"
+   },
+   {
+    "src": "media/photos/australasian-swamphen-57905415.jpg",
+    "obsId": 57905415,
+    "credit": "(c) Taylor, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/57905415"
+   },
+   {
+    "src": "media/photos/australasian-swamphen-107551588.jpg",
+    "obsId": 107551588,
+    "credit": "(c) Žilvinas Pūtys, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/107551588"
+   },
+   {
+    "src": "media/photos/australasian-swamphen-102912029.jpg",
+    "obsId": 102912029,
+    "credit": "(c) Joel Poyitt, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/102912029"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/australasian-swamphen-374207800.mp3",
+    "obsId": 374207800,
+    "credit": "(c) Jared Shorma, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/374207800"
+   }
+  ]
+ },
+ {
+  "id": "australian-pelican",
+  "name": "Australian Pelican",
+  "sci": "Pelecanus conspicillatus",
+  "group": "water",
+  "tip": "Huge white-and-black waterbird with an enormous pink bill and throat pouch.",
+  "taxonId": 4326,
+  "photos": [
+   {
+    "src": "media/photos/australian-pelican-150786794.jpg",
+    "obsId": 150786794,
+    "credit": "(c) supremesturgeon3, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/150786794"
+   },
+   {
+    "src": "media/photos/australian-pelican-5462924.jpg",
+    "obsId": 5462924,
+    "credit": "(c) Ryan McMinds, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/5462924"
+   },
+   {
+    "src": "media/photos/australian-pelican-310382179.jpg",
+    "obsId": 310382179,
+    "credit": "(c) Dom, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/310382179"
+   },
+   {
+    "src": "media/photos/australian-pelican-28489300.jpg",
+    "obsId": 28489300,
+    "credit": "(c) wingspanner, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/28489300"
+   }
+  ],
+  "calls": []
+ },
+ {
+  "id": "little-pied-cormorant",
+  "name": "Little Pied Cormorant",
+  "sci": "Microcarbo melanoleucos",
+  "group": "water",
+  "tip": "Small black-and-white cormorant with a short yellow bill. Often perches drying its wings by the water.",
+  "taxonId": 370351,
+  "photos": [
+   {
+    "src": "media/photos/little-pied-cormorant-19304383.jpg",
+    "obsId": 19304383,
+    "credit": "(c) rbhadury, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/19304383"
+   },
+   {
+    "src": "media/photos/little-pied-cormorant-332753523.jpg",
+    "obsId": 332753523,
+    "credit": "(c) Anaëlle FRANCIA, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/332753523"
+   },
+   {
+    "src": "media/photos/little-pied-cormorant-339163297.jpg",
+    "obsId": 339163297,
+    "credit": "(c) Bird Explorers, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/339163297"
+   },
+   {
+    "src": "media/photos/little-pied-cormorant-234846938.jpg",
+    "obsId": 234846938,
+    "credit": "(c) margo smith, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/234846938"
+   }
+  ],
+  "calls": []
+ },
+ {
+  "id": "white-bellied-sea-eagle",
+  "name": "White-bellied Sea-Eagle",
+  "sci": "Haliaeetus leucogaster",
+  "group": "water",
+  "tip": "Huge raptor with a white head and body and grey wings, soaring over harbours with wings in a shallow V.",
+  "taxonId": 1505653,
+  "photos": [
+   {
+    "src": "media/photos/white-bellied-sea-eagle-106474559.jpg",
+    "obsId": 106474559,
+    "credit": "(c) Will Cornwell, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/106474559"
+   },
+   {
+    "src": "media/photos/white-bellied-sea-eagle-355151096.jpg",
+    "obsId": 355151096,
+    "credit": "(c) charnts, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/355151096"
+   },
+   {
+    "src": "media/photos/white-bellied-sea-eagle-263957944.jpg",
+    "obsId": 263957944,
+    "credit": "(c) Bradley J., some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/263957944"
+   },
+   {
+    "src": "media/photos/white-bellied-sea-eagle-209029336.jpg",
+    "obsId": 209029336,
+    "credit": "(c) ian_mcallan, some rights reserved (CC BY)",
+    "licence": "cc-by",
+    "url": "https://www.inaturalist.org/observations/209029336"
+   }
+  ],
+  "calls": [
+   {
+    "src": "media/calls/white-bellied-sea-eagle-304603933.mp3",
+    "obsId": 304603933,
+    "credit": "(c) ellabeetle8, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/304603933"
+   },
+   {
+    "src": "media/calls/white-bellied-sea-eagle-168180116.mp3",
+    "obsId": 168180116,
+    "credit": "(c) suecee, some rights reserved (CC BY-NC)",
+    "licence": "cc-by-nc",
+    "url": "https://www.inaturalist.org/observations/168180116"
+   },
+   {
+    "src": "media/calls/white-bellied-sea-eagle-285207607.mp3",
+    "obsId": 285207607,
+    "credit": "no rights reserved",
+    "licence": "cc0",
+    "url": "https://www.inaturalist.org/observations/285207607"
+   }
+  ]
+ }
+]
