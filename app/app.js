@@ -104,6 +104,7 @@ function pickOptions(target, pool, n) {
 
 // ---------- Screens ----------
 function home() {
+  if (updateReady) return location.reload();
   stopAudio();
   const seen = BIRDS.filter(b => status(b.id) !== 'new').length;
   const mastered = BIRDS.filter(b => status(b.id) === 'mastered').length;
@@ -428,6 +429,24 @@ async function start() {
     return;
   }
   home();
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+  if ('serviceWorker' in navigator) watchForUpdates();
+}
+
+// When a new version of the app is published, switch to it: straight away on the home
+// screen, otherwise next time the home screen is shown (so a quiz round isn't lost).
+let updateReady = false;
+function watchForUpdates() {
+  const hadController = !!navigator.serviceWorker.controller;
+  navigator.serviceWorker.register('sw.js').then(reg => {
+    // Phones often resume the app from memory rather than restarting it, so check again on return.
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') reg.update().catch(() => {});
+    });
+  }).catch(() => {});
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (!hadController) return; // first install, nothing to update
+    updateReady = true;
+    if ($main.querySelector('.hero')) location.reload();
+  });
 }
 start();

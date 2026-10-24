@@ -1,5 +1,5 @@
 // Bump VERSION whenever app files change so phones pick up the update.
-const VERSION = 'v6';
+const VERSION = 'v7';
 const SHELL_CACHE = `sydney-birds-shell-${VERSION}`;
 const MEDIA_CACHE = 'sydney-birds-media';
 const SHELL = [
@@ -31,8 +31,10 @@ self.addEventListener('fetch', event => {
   }
 
   // App files: try the network so updates arrive, fall back to the saved copy offline.
+  // 'no-cache' makes the browser check with the server instead of reusing its own
+  // short-term copy (GitHub Pages lets browsers keep files for 10 minutes unchecked).
   event.respondWith(
-    fetch(event.request)
+    fetch(event.request.url, { cache: 'no-cache', credentials: 'same-origin' })
       .then(res => {
         if (res.ok) {
           const copy = res.clone();
