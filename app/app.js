@@ -97,14 +97,18 @@ function pickTarget(pool, recent) {
   }
   return candidates[candidates.length - 1];
 }
+// Wrong answers: first the birds this one is actually confused with (and any you have mixed it up
+// with yourself), then birds of the same family, then anything.
 function pickOptions(target, pool, n) {
   const others = shuffle(pool.filter(b => b.id !== target.id));
-  let chosen = [];
-  if (settings.lookalikes) chosen = others.filter(b => b.group === target.group).slice(0, n - 1);
-  for (const b of others) {
-    if (chosen.length >= n - 1) break;
-    if (!chosen.includes(b)) chosen.push(b);
+  const chosen = [];
+  const add = b => { if (b && !chosen.includes(b) && chosen.length < n - 1) chosen.push(b); };
+  if (settings.lookalikes) {
+    const mine = Object.entries(stats[target.id]?.mixedWith || {}).sort((a, b) => b[1] - a[1]).map(([id]) => id);
+    [...mine, ...(target.confusedWith || [])].forEach(id => add(others.find(b => b.id === id)));
+    others.filter(b => b.family === target.family).forEach(add);
   }
+  others.forEach(add);
   return shuffle([target, ...chosen]);
 }
 

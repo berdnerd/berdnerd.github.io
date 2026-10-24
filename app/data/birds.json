@@ -3,7 +3,14 @@
   "id": "australian-magpie",
   "name": "Australian Magpie",
   "sci": "Gymnorhina tibicen",
-  "group": "black-white",
+  "family": "black-white",
+  "status": "native",
+  "confusedWith": [
+   "magpie-lark",
+   "pied-currawong",
+   "grey-butcherbird",
+   "australian-raven"
+  ],
   "tip": "Black and white with a white nape and a pale, black-tipped bill. Famous rich, warbling carol.",
   "taxonId": 8575,
   "photos": [
@@ -64,7 +71,13 @@
   "id": "laughing-kookaburra",
   "name": "Laughing Kookaburra",
   "sci": "Dacelo novaeguineae",
-  "group": "ground",
+  "family": "ground",
+  "status": "native",
+  "confusedWith": [
+   "tawny-frogmouth",
+   "grey-butcherbird",
+   "southern-boobook"
+  ],
   "tip": "Big kingfisher with a heavy bill and dark eye-stripe. The laughing 'koo-koo-kaa-kaa' chorus at dawn and dusk.",
   "taxonId": 2413,
   "photos": [
@@ -125,7 +138,12 @@
   "id": "sulphur-crested-cockatoo",
   "name": "Sulphur-crested Cockatoo",
   "sci": "Cacatua galerita",
-  "group": "cockatoo",
+  "family": "parrots",
+  "status": "native",
+  "confusedWith": [
+   "little-corella",
+   "galah"
+  ],
   "tip": "Large white cockatoo with a yellow crest. Ear-splitting harsh screech.",
   "taxonId": 116834,
   "photos": [
@@ -186,7 +204,13 @@
   "id": "galah",
   "name": "Galah",
   "sci": "Eolophus roseicapilla",
-  "group": "cockatoo",
+  "family": "parrots",
+  "status": "native",
+  "confusedWith": [
+   "little-corella",
+   "sulphur-crested-cockatoo",
+   "crested-pigeon"
+  ],
   "tip": "Pink chest and face, grey back, pale crown. Often feeds on lawns in flocks; high 'chet' calls.",
   "taxonId": 144560,
   "photos": [
@@ -247,7 +271,12 @@
   "id": "little-corella",
   "name": "Little Corella",
   "sci": "Cacatua sanguinea",
-  "group": "cockatoo",
+  "family": "parrots",
+  "status": "native",
+  "confusedWith": [
+   "sulphur-crested-cockatoo",
+   "galah"
+  ],
   "tip": "Smaller white cockatoo with a short crest, bare bluish eye-ring and a pinkish smudge between eye and bill.",
   "taxonId": 116838,
   "photos": [
@@ -308,7 +337,13 @@
   "id": "yellow-tailed-black-cockatoo",
   "name": "Yellow-tailed Black-Cockatoo",
   "sci": "Zanda funerea",
-  "group": "cockatoo",
+  "family": "parrots",
+  "status": "native",
+  "confusedWith": [
+   "australian-raven",
+   "pied-currawong",
+   "channel-billed-cuckoo"
+  ],
   "tip": "Large black cockatoo with yellow cheek patch and yellow tail panels. Slow, floppy flight; wailing 'wee-la' call.",
   "taxonId": 1432688,
   "photos": [
@@ -369,7 +404,13 @@
   "id": "rainbow-lorikeet",
   "name": "Rainbow Lorikeet",
   "sci": "Trichoglossus moluccanus",
-  "group": "parrot",
+  "family": "parrots",
+  "status": "native",
+  "confusedWith": [
+   "crimson-rosella",
+   "eastern-rosella",
+   "australian-king-parrot"
+  ],
   "tip": "Blue head, red bill, orange-red chest, green back. Noisy, fast-flying flocks with screeching calls.",
   "taxonId": 980095,
   "photos": [
@@ -430,7 +471,13 @@
   "id": "crimson-rosella",
   "name": "Crimson Rosella",
   "sci": "Platycercus elegans",
-  "group": "parrot",
+  "family": "parrots",
+  "status": "native",
+  "confusedWith": [
+   "eastern-rosella",
+   "australian-king-parrot",
+   "rainbow-lorikeet"
+  ],
   "tip": "Deep crimson with blue cheeks and blue wings. Young birds are mostly green. Bell-like whistles.",
   "taxonId": 18921,
   "photos": [
@@ -491,7 +538,13 @@
   "id": "eastern-rosella",
   "name": "Eastern Rosella",
   "sci": "Platycercus eximius",
-  "group": "parrot",
+  "family": "parrots",
+  "status": "native",
+  "confusedWith": [
+   "crimson-rosella",
+   "rainbow-lorikeet",
+   "australian-king-parrot"
+  ],
   "tip": "Red head and chest with white cheeks, yellow belly, scalloped back. Compare Crimson Rosella's blue cheeks.",
   "taxonId": 18920,
   "photos": [
@@ -552,7 +605,13 @@
   "id": "australian-king-parrot",
   "name": "Australian King-Parrot",
   "sci": "Alisterus scapularis",
-  "group": "parrot",
+  "family": "parrots",
+  "status": "native",
+  "confusedWith": [
+   "crimson-rosella",
+   "eastern-rosella",
+   "rainbow-lorikeet"
+  ],
   "tip": "Male has an all-red head and chest with green wings; female has a green head. Shrill 'carrack' call.",
   "taxonId": 19196,
   "photos": [
@@ -613,7 +672,13 @@
   "id": "noisy-miner",
   "name": "Noisy Miner",
   "sci": "Manorina melanocephala",
-  "group": "honeyeater",
+  "family": "honeyeaters",
+  "status": "native",
+  "confusedWith": [
+   "common-myna",
+   "little-wattlebird",
+   "red-wattlebird"
+  ],
   "tip": "Native grey honeyeater with a yellow bill, yellow patch behind the eye and black crown. Very noisy and aggressive.",
   "taxonId": 12231,
   "photos": [
@@ -674,7 +739,13 @@
   "id": "red-wattlebird",
   "name": "Red Wattlebird",
   "sci": "Anthochaera carunculata",
-  "group": "honeyeater",
+  "family": "honeyeaters",
+  "status": "native",
+  "confusedWith": [
+   "little-wattlebird",
+   "noisy-miner",
+   "new-holland-honeyeater"
+  ],
   "tip": "Large streaky brown honeyeater with a small red wattle on the cheek and yellow belly. Harsh coughing 'chock' call.",
   "taxonId": 12622,
   "photos": [
@@ -735,7 +806,13 @@
   "id": "little-wattlebird",
   "name": "Little Wattlebird",
   "sci": "Anthochaera chrysoptera",
-  "group": "honeyeater",
+  "family": "honeyeaters",
+  "status": "native",
+  "confusedWith": [
+   "red-wattlebird",
+   "noisy-miner",
+   "new-holland-honeyeater"
+  ],
   "tip": "Streaky brown honeyeater with no red wattle and a rufous wing patch in flight. Raucous cackling calls.",
   "taxonId": 12626,
   "photos": [
@@ -796,7 +873,13 @@
   "id": "new-holland-honeyeater",
   "name": "New Holland Honeyeater",
   "sci": "Phylidonyris novaehollandiae",
-  "group": "honeyeater",
+  "family": "honeyeaters",
+  "status": "native",
+  "confusedWith": [
+   "eastern-spinebill",
+   "little-wattlebird",
+   "spotted-pardalote"
+  ],
   "tip": "Black and white streaks, bright yellow wing panels, white eye. Busy in grevilleas and banksias.",
   "taxonId": 12632,
   "photos": [
@@ -857,7 +940,12 @@
   "id": "eastern-spinebill",
   "name": "Eastern Spinebill",
   "sci": "Acanthorhynchus tenuirostris",
-  "group": "honeyeater",
+  "family": "honeyeaters",
+  "status": "native",
+  "confusedWith": [
+   "new-holland-honeyeater",
+   "superb-fairywren"
+  ],
   "tip": "Small honeyeater with a long, fine curved bill, rufous throat and black crescents on the chest. Hovers at flowers.",
   "taxonId": 12238,
   "photos": [
@@ -918,7 +1006,13 @@
   "id": "pied-currawong",
   "name": "Pied Currawong",
   "sci": "Strepera graculina",
-  "group": "black-white",
+  "family": "black-white",
+  "status": "native",
+  "confusedWith": [
+   "australian-raven",
+   "australian-magpie",
+   "grey-butcherbird"
+  ],
   "tip": "Black with a yellow eye, white tail tip and white wing patch. Heavy hooked bill; ringing 'curra-wong' call.",
   "taxonId": 8423,
   "photos": [
@@ -979,7 +1073,13 @@
   "id": "australian-raven",
   "name": "Australian Raven",
   "sci": "Corvus coronoides",
-  "group": "black-white",
+  "family": "black-white",
+  "status": "native",
+  "confusedWith": [
+   "pied-currawong",
+   "australian-magpie",
+   "eastern-koel"
+  ],
   "tip": "All glossy black with a white eye and shaggy throat hackles. Slow, wailing 'aah-aah-aaaah'.",
   "taxonId": 8040,
   "photos": [
@@ -1040,7 +1140,13 @@
   "id": "magpie-lark",
   "name": "Magpie-lark",
   "sci": "Grallina cyanoleuca",
-  "group": "black-white",
+  "family": "black-white",
+  "status": "native",
+  "confusedWith": [
+   "australian-magpie",
+   "willie-wagtail",
+   "grey-butcherbird"
+  ],
   "tip": "Small, slim black-and-white bird with a pale bill. Often walks on lawns. Pairs duet 'pee-wee'.",
   "taxonId": 8583,
   "photos": [
@@ -1101,7 +1207,14 @@
   "id": "grey-butcherbird",
   "name": "Grey Butcherbird",
   "sci": "Cracticus torquatus",
-  "group": "black-white",
+  "family": "black-white",
+  "status": "native",
+  "confusedWith": [
+   "australian-magpie",
+   "magpie-lark",
+   "black-faced-cuckooshrike",
+   "pied-currawong"
+  ],
   "tip": "Grey back, black cap, white throat and a hooked, blue-grey bill. Beautiful piping, mellow song.",
   "taxonId": 204497,
   "photos": [
@@ -1162,7 +1275,12 @@
   "id": "willie-wagtail",
   "name": "Willie Wagtail",
   "sci": "Rhipidura leucophrys",
-  "group": "black-white",
+  "family": "black-white",
+  "status": "native",
+  "confusedWith": [
+   "grey-fantail",
+   "magpie-lark"
+  ],
   "tip": "Small black-and-white fantail with a black throat and white eyebrow. Constantly wags its tail side to side.",
   "taxonId": 8143,
   "photos": [
@@ -1223,7 +1341,12 @@
   "id": "spotted-dove",
   "name": "Spotted Dove",
   "sci": "Spilopelia chinensis",
-  "group": "pigeon",
+  "family": "introduced",
+  "status": "introduced",
+  "confusedWith": [
+   "crested-pigeon",
+   "common-myna"
+  ],
   "tip": "Introduced. Pinkish-brown dove with a black collar full of white spots. Soft 'coo-coo-croo'.",
   "taxonId": 1455918,
   "photos": [
@@ -1284,7 +1407,12 @@
   "id": "crested-pigeon",
   "name": "Crested Pigeon",
   "sci": "Ocyphaps lophotes",
-  "group": "pigeon",
+  "family": "ground",
+  "status": "native",
+  "confusedWith": [
+   "spotted-dove",
+   "galah"
+  ],
   "tip": "Grey-brown pigeon with an upright, spiky black crest. Wings whistle when it takes off.",
   "taxonId": 3681,
   "photos": [
@@ -1345,7 +1473,12 @@
   "id": "common-myna",
   "name": "Common Myna",
   "sci": "Acridotheres tristis",
-  "group": "ground",
+  "family": "introduced",
+  "status": "introduced",
+  "confusedWith": [
+   "noisy-miner",
+   "red-whiskered-bulbul"
+  ],
   "tip": "Introduced. Brown body, black head, yellow bill, eye-skin and legs; white wing patches in flight. Compare Noisy Miner.",
   "taxonId": 204454,
   "photos": [
@@ -1406,7 +1539,12 @@
   "id": "red-whiskered-bulbul",
   "name": "Red-whiskered Bulbul",
   "sci": "Pycnonotus jocosus",
-  "group": "small",
+  "family": "introduced",
+  "status": "introduced",
+  "confusedWith": [
+   "common-myna",
+   "crested-pigeon"
+  ],
   "tip": "Introduced. Brown above, white below, tall black crest, red cheek patch and red under the tail.",
   "taxonId": 14591,
   "photos": [
@@ -1467,7 +1605,13 @@
   "id": "superb-fairywren",
   "name": "Superb Fairywren",
   "sci": "Malurus cyaneus",
-  "group": "small",
+  "family": "bush",
+  "status": "native",
+  "confusedWith": [
+   "silvereye",
+   "eastern-spinebill",
+   "grey-fantail"
+  ],
   "tip": "Tiny with a cocked tail. Breeding male bright blue and black; females brown with a reddish eye area. Reeling trill.",
   "taxonId": 12065,
   "photos": [
@@ -1528,7 +1672,13 @@
   "id": "welcome-swallow",
   "name": "Welcome Swallow",
   "sci": "Hirundo neoxena",
-  "group": "small",
+  "family": "bush",
+  "status": "native",
+  "confusedWith": [
+   "grey-fantail",
+   "willie-wagtail",
+   "superb-fairywren"
+  ],
   "tip": "Glossy blue-black back, rusty-orange throat and forehead, long forked tail. Swoops low over grass and water.",
   "taxonId": 11882,
   "photos": [
@@ -1589,7 +1739,13 @@
   "id": "silvereye",
   "name": "Silvereye",
   "sci": "Zosterops lateralis",
-  "group": "small",
+  "family": "bush",
+  "status": "native",
+  "confusedWith": [
+   "superb-fairywren",
+   "spotted-pardalote",
+   "grey-fantail"
+  ],
   "tip": "Tiny olive-green bird with a bright white eye-ring and grey back. Moves in chattering flocks.",
   "taxonId": 202505,
   "photos": [
@@ -1650,7 +1806,12 @@
   "id": "grey-fantail",
   "name": "Grey Fantail",
   "sci": "Rhipidura albiscapa",
-  "group": "small",
+  "family": "bush",
+  "status": "native",
+  "confusedWith": [
+   "willie-wagtail",
+   "silvereye"
+  ],
   "tip": "Small grey bird with a long tail fanned open, white eyebrow and throat. Flits acrobatically after insects.",
   "taxonId": 144737,
   "photos": [
@@ -1711,7 +1872,13 @@
   "id": "spotted-pardalote",
   "name": "Spotted Pardalote",
   "sci": "Pardalotus punctatus",
-  "group": "small",
+  "family": "bush",
+  "status": "native",
+  "confusedWith": [
+   "silvereye",
+   "new-holland-honeyeater",
+   "superb-fairywren"
+  ],
   "tip": "Tiny with white spots on a black crown and wings, yellow throat. Repeated 'sleep, ba-by' whistle from the canopy.",
   "taxonId": 13531,
   "photos": [
@@ -1772,7 +1939,12 @@
   "id": "eastern-yellow-robin",
   "name": "Eastern Yellow Robin",
   "sci": "Eopsaltria australis",
-  "group": "small",
+  "family": "bush",
+  "status": "native",
+  "confusedWith": [
+   "golden-whistler",
+   "silvereye"
+  ],
   "tip": "Grey back, bright yellow underparts. Clings sideways to tree trunks watching the ground.",
   "taxonId": 14153,
   "photos": [
@@ -1833,7 +2005,12 @@
   "id": "golden-whistler",
   "name": "Australian Golden Whistler",
   "sci": "Pachycephala pectoralis",
-  "group": "small",
+  "family": "bush",
+  "status": "native",
+  "confusedWith": [
+   "eastern-yellow-robin",
+   "eastern-whipbird"
+  ],
   "tip": "Male has a black head, white throat with black band and golden-yellow chest. Loud whistle ending in a whip-crack.",
   "taxonId": 506043,
   "photos": [
@@ -1894,7 +2071,12 @@
   "id": "eastern-whipbird",
   "name": "Eastern Whipbird",
   "sci": "Psophodes olivaceus",
-  "group": "ground",
+  "family": "bush",
+  "status": "native",
+  "confusedWith": [
+   "golden-whistler",
+   "satin-bowerbird"
+  ],
   "tip": "Olive-green with a black head, crest and white cheek patch. Unmistakable whip-crack call, often answered by its mate.",
   "taxonId": 117077,
   "photos": [
@@ -1955,7 +2137,13 @@
   "id": "eastern-koel",
   "name": "Eastern Koel",
   "sci": "Eudynamys orientalis",
-  "group": "cuckoo-night",
+  "family": "night-cuckoos",
+  "status": "native",
+  "confusedWith": [
+   "australian-raven",
+   "channel-billed-cuckoo",
+   "satin-bowerbird"
+  ],
   "tip": "Male glossy black with a red eye; female brown and spotted. Summer visitor with a rising 'coo-eee' all night.",
   "taxonId": 100695,
   "photos": [
@@ -2016,7 +2204,13 @@
   "id": "channel-billed-cuckoo",
   "name": "Channel-billed Cuckoo",
   "sci": "Scythrops novaehollandiae",
-  "group": "cuckoo-night",
+  "family": "night-cuckoos",
+  "status": "native",
+  "confusedWith": [
+   "eastern-koel",
+   "yellow-tailed-black-cockatoo",
+   "black-faced-cuckooshrike"
+  ],
   "tip": "Huge grey cuckoo with an enormous pale bill and long tail. Loud, raucous screams in spring.",
   "taxonId": 1940,
   "photos": [
@@ -2077,7 +2271,13 @@
   "id": "black-faced-cuckooshrike",
   "name": "Black-faced Cuckooshrike",
   "sci": "Coracina novaehollandiae",
-  "group": "cuckoo-night",
+  "family": "bush",
+  "status": "native",
+  "confusedWith": [
+   "grey-butcherbird",
+   "channel-billed-cuckoo",
+   "magpie-lark"
+  ],
   "tip": "Soft grey with a black face and throat. Shuffles its wings after landing.",
   "taxonId": 7990,
   "photos": [
@@ -2138,7 +2338,12 @@
   "id": "tawny-frogmouth",
   "name": "Tawny Frogmouth",
   "sci": "Podargus strigoides",
-  "group": "cuckoo-night",
+  "family": "night-cuckoos",
+  "status": "native",
+  "confusedWith": [
+   "southern-boobook",
+   "laughing-kookaburra"
+  ],
   "tip": "Grey, bark-patterned nightbird with a wide, frog-like bill. Roosts by day on branches pretending to be a stick. Low 'oom-oom-oom'.",
   "taxonId": 19721,
   "photos": [
@@ -2199,7 +2404,12 @@
   "id": "southern-boobook",
   "name": "Southern Boobook",
   "sci": "Ninox boobook",
-  "group": "cuckoo-night",
+  "family": "night-cuckoos",
+  "status": "native",
+  "confusedWith": [
+   "tawny-frogmouth",
+   "laughing-kookaburra"
+  ],
   "tip": "Small brown owl with pale spots and dark eye patches. The classic 'boo-book' night call.",
   "taxonId": 979816,
   "photos": [
@@ -2260,7 +2470,13 @@
   "id": "australian-white-ibis",
   "name": "Australian White Ibis",
   "sci": "Threskiornis molucca",
-  "group": "water",
+  "family": "water",
+  "status": "native",
+  "confusedWith": [
+   "australian-pelican",
+   "little-pied-cormorant",
+   "silver-gull"
+  ],
   "tip": "Big white bird with a bare black head and long down-curved bill. The 'bin chicken'.",
   "taxonId": 3740,
   "photos": [
@@ -2321,7 +2537,13 @@
   "id": "masked-lapwing",
   "name": "Masked Lapwing",
   "sci": "Vanellus miles",
-  "group": "ground",
+  "family": "ground",
+  "status": "native",
+  "confusedWith": [
+   "magpie-lark",
+   "crested-pigeon",
+   "dusky-moorhen"
+  ],
   "tip": "Brown back, white below, large yellow face wattles. Loud rattling alarm; swoops in breeding season.",
   "taxonId": 4872,
   "photos": [
@@ -2382,7 +2604,13 @@
   "id": "australian-brushturkey",
   "name": "Australian Brushturkey",
   "sci": "Alectura lathami",
-  "group": "ground",
+  "family": "ground",
+  "status": "native",
+  "confusedWith": [
+   "superb-lyrebird",
+   "australasian-swamphen",
+   "dusky-moorhen"
+  ],
   "tip": "Large black bird with a bare red head and yellow (male) neck wattle. Rakes up huge mounds of leaf litter.",
   "taxonId": 2038,
   "photos": [
@@ -2436,7 +2664,13 @@
   "id": "superb-lyrebird",
   "name": "Superb Lyrebird",
   "sci": "Menura novaehollandiae",
-  "group": "ground",
+  "family": "ground",
+  "status": "native",
+  "confusedWith": [
+   "australian-brushturkey",
+   "satin-bowerbird",
+   "eastern-whipbird"
+  ],
   "tip": "Large brown ground bird; the male has a spectacular lyre-shaped tail. Master mimic of other birds' calls.",
   "taxonId": 12700,
   "photos": [
@@ -2497,7 +2731,13 @@
   "id": "satin-bowerbird",
   "name": "Satin Bowerbird",
   "sci": "Ptilonorhynchus violaceus",
-  "group": "ground",
+  "family": "ground",
+  "status": "native",
+  "confusedWith": [
+   "eastern-koel",
+   "superb-lyrebird",
+   "eastern-whipbird"
+  ],
   "tip": "Adult male glossy blue-black with violet eyes; females and young are green with scalloped undersides. Builds a bower decorated with blue objects.",
   "taxonId": 14539,
   "photos": [
@@ -2558,7 +2798,13 @@
   "id": "silver-gull",
   "name": "Silver Gull",
   "sci": "Chroicocephalus novaehollandiae",
-  "group": "water",
+  "family": "water",
+  "status": "native",
+  "confusedWith": [
+   "little-pied-cormorant",
+   "australian-white-ibis",
+   "australian-pelican"
+  ],
   "tip": "Small white gull with grey wings, red bill and red legs. The everyday beach and chip-stealing gull.",
   "taxonId": 144507,
   "photos": [
@@ -2619,7 +2865,12 @@
   "id": "pacific-black-duck",
   "name": "Pacific Black Duck",
   "sci": "Anas superciliosa",
-  "group": "water",
+  "family": "water",
+  "status": "native",
+  "confusedWith": [
+   "australian-wood-duck",
+   "dusky-moorhen"
+  ],
   "tip": "Mottled brown duck with a striped face (dark line through the eye) and green wing patch.",
   "taxonId": 6987,
   "photos": [
@@ -2680,7 +2931,12 @@
   "id": "australian-wood-duck",
   "name": "Australian Wood Duck",
   "sci": "Chenonetta jubata",
-  "group": "water",
+  "family": "water",
+  "status": "native",
+  "confusedWith": [
+   "pacific-black-duck",
+   "dusky-moorhen"
+  ],
   "tip": "Goose-like grey duck often grazing on lawns. Male has a dark brown head; female has two white face stripes.",
   "taxonId": 7176,
   "photos": [
@@ -2741,7 +2997,13 @@
   "id": "dusky-moorhen",
   "name": "Dusky Moorhen",
   "sci": "Gallinula tenebrosa",
-  "group": "water",
+  "family": "water",
+  "status": "native",
+  "confusedWith": [
+   "australasian-swamphen",
+   "pacific-black-duck",
+   "australian-wood-duck"
+  ],
   "tip": "Dark grey waterbird with a red forehead shield and yellow-tipped red bill. Flicks its tail showing white sides.",
   "taxonId": 357,
   "photos": [
@@ -2802,7 +3064,12 @@
   "id": "australasian-swamphen",
   "name": "Australasian Swamphen",
   "sci": "Porphyrio melanotus",
-  "group": "water",
+  "family": "water",
+  "status": "native",
+  "confusedWith": [
+   "dusky-moorhen",
+   "australian-brushturkey"
+  ],
   "tip": "Large purple-blue waterbird with a heavy red bill and forehead shield and long red legs.",
   "taxonId": 418530,
   "photos": [
@@ -2863,7 +3130,13 @@
   "id": "australian-pelican",
   "name": "Australian Pelican",
   "sci": "Pelecanus conspicillatus",
-  "group": "water",
+  "family": "water",
+  "status": "native",
+  "confusedWith": [
+   "australian-white-ibis",
+   "silver-gull",
+   "little-pied-cormorant"
+  ],
   "tip": "Huge white-and-black waterbird with an enormous pink bill and throat pouch.",
   "taxonId": 4326,
   "photos": [
@@ -2902,7 +3175,13 @@
   "id": "little-pied-cormorant",
   "name": "Little Pied Cormorant",
   "sci": "Microcarbo melanoleucos",
-  "group": "water",
+  "family": "water",
+  "status": "native",
+  "confusedWith": [
+   "silver-gull",
+   "australian-white-ibis",
+   "magpie-lark"
+  ],
   "tip": "Small black-and-white cormorant with a short yellow bill. Often perches drying its wings by the water.",
   "taxonId": 370351,
   "photos": [
@@ -2941,7 +3220,13 @@
   "id": "white-bellied-sea-eagle",
   "name": "White-bellied Sea-Eagle",
   "sci": "Haliaeetus leucogaster",
-  "group": "water",
+  "family": "water",
+  "status": "native",
+  "confusedWith": [
+   "australian-pelican",
+   "silver-gull",
+   "yellow-tailed-black-cockatoo"
+  ],
   "tip": "Huge raptor with a white head and body and grey wings, soaring over harbours with wings in a shallow V.",
   "taxonId": 1505653,
   "photos": [
