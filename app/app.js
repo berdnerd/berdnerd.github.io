@@ -436,7 +436,8 @@ async function start() {
 // screen, otherwise next time the home screen is shown (so a quiz round isn't lost).
 let updateReady = false;
 function watchForUpdates() {
-  const hadController = !!navigator.serviceWorker.controller;
+  // On a first visit the offline layer takes over part-way through; only later changes are updates.
+  let controlled = !!navigator.serviceWorker.controller;
   navigator.serviceWorker.register('sw.js').then(reg => {
     // Phones often resume the app from memory rather than restarting it, so check again on return.
     document.addEventListener('visibilitychange', () => {
@@ -444,7 +445,7 @@ function watchForUpdates() {
     });
   }).catch(() => {});
   navigator.serviceWorker.addEventListener('controllerchange', () => {
-    if (!hadController) return; // first install, nothing to update
+    if (!controlled) { controlled = true; return; }
     updateReady = true;
     if ($main.querySelector('.hero')) location.reload();
   });
