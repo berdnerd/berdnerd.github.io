@@ -222,6 +222,10 @@ function home() {
       <div class="emoji">${icon('facts')}</div>
       <div><h3>Knowledge quiz</h3><p>What they eat, what else they're called, and more.</p></div>
     </button>` : ''}
+    ${Object.keys(SEASONS.birds).length >= 8 ? `<button class="mode seasons" data-go="seasons">
+      <div class="emoji">${icon('seasons')}</div>
+      <div><h3>Seasons quiz</h3><p>Who visits for summer, who's about all year.</p></div>
+    </button>` : ''}
     <button class="mode browse" data-go="browse">
       <div class="emoji">${icon('browse')}</div>
       <div><h3>Field guide</h3><p>Browse all the birds, photos and calls.</p></div>
@@ -236,6 +240,7 @@ function home() {
     else if (go === 'browse') browse();
     else if (go === 'learn') learnFamilies();
     else if (go === 'facts') startKnowledge();
+    else if (go === 'seasons') startSeasons();
     else settingsScreen();
   });
   const unlock = $main.querySelector('[data-unlock]');
@@ -439,7 +444,8 @@ function results() {
     <button class="btn block" data-again>Play again</button>
     <button class="btn block secondary" data-home>Home</button>`;
   wireBack();
-  $main.querySelector('[data-again]').onclick = () => round.mode === 'facts' ? startKnowledge() : startRound(round.mode, round.birds);
+  $main.querySelector('[data-again]').onclick = () =>
+    round.mode === 'facts' ? startKnowledge() : round.mode === 'seasons' ? startSeasons() : startRound(round.mode, round.birds);
   $main.querySelector('[data-home]').onclick = home;
   $main.querySelectorAll('[data-bird]').forEach(el => el.onclick = () => birdDetail(el.dataset.bird, results));
 }
@@ -546,6 +552,125 @@ function renderFactQuestion(answeredId) {
   $main.querySelector('.feedback')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
+// ---------- Seasons quiz ----------
+// data/seasonality.json: for each bird, how often it is reported around Sydney month by month
+// (Atlas of Living Australia records, normalised against all bird records), plus a hand label.
+let SEASONS = { birds: {} };
+const MONTH_LETTERS = 'JFMAMJJASOND'.split('');
+const seasonOf = id => SEASONS.birds[id] || null;
+const seasonLabel = id => seasonOf(id)?.label || 'resident';
+const SEASON_TEXT = {
+  'migrant-summer': 'Summer visitor: here from about September to March, then gone',
+  'winter-influx': 'Here all year, but noticeably more in autumn and winter',
+  'spring-summer': 'Here all year, but commoner in spring and summer',
+  'heard-winter': 'Resident; heard and seen most in winter',
+  'heard-spring': 'Resident; heard and seen most in spring',
+  resident: 'Resident all year round',
+};
+const seasonBirds = (...labels) => BIRDS.filter(b => seasonOf(b.id) && labels.includes(seasonLabel(b.id)));
+
+function sparkline(id) {
+  const s = seasonOf(id);
+  if (!s) return '';
+  const max = Math.max(...s.index, 1);
+  const w = 20, h = 44;
+  return `<svg class="spark" viewBox="0 0 ${12 * w} ${h + 14}" aria-label="Reports by month">
+    ${s.index.map((v, i) => { const bh = Math.max(2, Math.round(h * v / max)); return `<rect x="${i * w + 3}" y="${h - bh}" width="${w - 6}" height="${bh}" rx="2"/>`; }).join('')}
+    ${MONTH_LETTERS.map((m, i) => `<text x="${i * w + w / 2}" y="${h + 12}" text-anchor="middle">${m}</text>`).join('')}
+  </svg>`;
+}
+
+function startSeasons() {
+  const pool = BIRDS.filter(b => seasonOf(b.id));
+  if (pool.length < 8) return;
+  round = { mode: 'seasons', pool, index: 0, score: 0, recent: [], missed: [], birds: pool };
+  nextSeasonQuestion();
+}
+
+function makeSeasonQuestion(recent) {
+  const residents = seasonBirds('resident');
+  const seasonal = BIRDS.filter(b => seasonOf(b.id) && seasonLabel(b.id) !== 'resident');
+  // Prefer birds not asked about recently, but never run out.
+  const fresh = list => { const f = list.filter(b => !recent.includes(b.id)); return f.length ? f : list; };
+  const names = birds => birds.map(b => ({ id: b.id, text: b.name }));
+  const kind = rand(['summer', 'winter', 'allyear', 'when', 'when', 'heard']);
+  if (kind === 'summer') {
+    const target = rand(fresh(seasonBirds('migrant-summer')));
+    return { target, prompt: 'Which of these is a <b>summer visitor</b> to Sydney, gone for the winter?', options: shuffle(names([target, ...shuffle(residents).slice(0, 3)])) };
+  }
+  if (kind === 'winter') {
+    const target = rand(fresh(seasonBirds('winter-influx')));
+    return { target, prompt: 'Which of these is <b>easier to find in winter</b> in Sydney than in summer?', options: shuffle(names([target, ...shuffle(residents).slice(0, 3)])) };
+  }
+  if (kind === 'allyear') {
+    const target = rand(fresh(residents));
+    return { target, prompt: 'Which of these is around Sydney <b>all year</b>, much the same in every season?', options: shuffle(names([target, ...shuffle(seasonal).slice(0, 3)])) };
+  }
+  if (kind === 'heard') {
+    const target = rand(fresh(seasonBirds('heard-winter', 'heard-spring', 'migrant-summer')));
+    const label = seasonLabel(target.id);
+    const answers = { 'heard-winter': 'Winter', 'heard-spring': 'Spring', 'migrant-summer': 'Spring and summer' };
+    const pool = ['Winter', 'Spring', 'Spring and summer', 'Autumn'];
+    return { target, prompt: `When do you <b>hear</b> the ${esc(target.name)} most in Sydney?`,
+      options: shuffle(pool.map(t => ({ id: t === answers[label] ? target.id : 'x-' + t, text: t }))) };
+  }
+  // 'when': which season pattern fits this bird
+  const target = rand(fresh(BIRDS.filter(b => seasonOf(b.id) && ['migrant-summer', 'winter-influx', 'spring-summer', 'resident'].includes(seasonLabel(b.id)))));
+  const label = seasonLabel(target.id);
+  const answers = {
+    'migrant-summer': 'Spring and summer only',
+    'winter-influx': 'All year, but more in autumn and winter',
+    'spring-summer': 'All year, but more in spring and summer',
+    resident: 'All year, much the same',
+  };
+  return { target, prompt: `When are you likely to see a ${esc(target.name)} around Sydney?`,
+    options: shuffle(Object.entries(answers).map(([k, t]) => ({ id: k === label ? target.id : 'x-' + k, text: t }))) };
+}
+
+function nextSeasonQuestion() {
+  stopAudio();
+  if (round.index >= settings.roundLength) return results();
+  round.q = makeSeasonQuestion(round.recent);
+  round.recent = [...round.recent, round.q.target.id].slice(-8);
+  round.q.photo = rand(round.q.target.photos);
+  renderSeasonQuestion();
+}
+
+function renderSeasonQuestion(answeredId) {
+  const { target, prompt, options, photo } = round.q;
+  const answered = answeredId !== undefined;
+  const correct = answeredId === target.id;
+  const cls = o => !answered ? '' : o.id === target.id ? 'right' : o.id === answeredId ? 'wrong' : 'dim';
+  const s = seasonOf(target.id);
+  $main.innerHTML = `
+    ${topBar(`<div class="progress" role="progressbar" aria-valuenow="${round.index}" aria-valuemax="${settings.roundLength}"><span></span></div><span class="score-pill" aria-label="Score">${round.score}</span>`)}
+    <h2 class="question">${prompt}</h2>
+    ${/the |a /.test(prompt) && !/Which of these/.test(prompt) ? `<div class="media small-media"><img src="${esc(photo.src)}" alt="${esc(target.name)}"></div>` : ''}
+    <div class="choices names">${options.map(o => `
+      <button data-id="${o.id}" class="${cls(o)}" ${answered ? 'disabled' : ''}>${esc(o.text)}</button>`).join('')}</div>
+    ${answered ? `
+      <div class="feedback ${correct ? 'good' : 'bad'}" aria-live="polite">
+        <h3>${correct ? 'Correct!' : `It's the ${esc(target.name)}`}</h3>
+        <div class="compare">
+          <img src="${esc(photo.src)}" alt="">
+          <div><b>${esc(target.name)}</b><div class="sub">${esc(s.note || SEASON_TEXT[seasonLabel(target.id)])}</div></div>
+        </div>
+        ${sparkline(target.id)}
+        <p class="muted small">Reports around Sydney by month, from Atlas of Living Australia records.</p>
+      </div>
+      <div class="dock"><button class="btn block" data-next>${round.index + 1 >= settings.roundLength ? 'See results' : 'Next'}</button></div>` : ''}`;
+  $main.querySelector('.progress > span').style.width = `${100 * round.index / settings.roundLength}%`;
+  wireBack(home);
+  $main.querySelectorAll('.choices button:not(:disabled)').forEach(btn => btn.onclick = () => {
+    const ok = btn.dataset.id === target.id;
+    if (ok) round.score++; else { if (!round.missed.includes(target.id)) round.missed.push(target.id); navigator.vibrate?.(120); }
+    renderSeasonQuestion(btn.dataset.id);
+  });
+  const next = $main.querySelector('[data-next]');
+  if (next) next.onclick = () => { round.index++; nextSeasonQuestion(); };
+  $main.querySelector('.feedback')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
 const plural = name => /s$/.test(name) ? name : /y$/.test(name) && !/[aeiou]y$/.test(name) ? name.replace(/y$/, 'ies') : name + 's';
 
 // ---------- Field guide ----------
@@ -596,6 +721,16 @@ function birdDetail(id, back) {
         <div class="credit">${shortCredit(p)} · ${esc(licenceLabel(p.licence))}</div></div>`).join('')}</div>
     <p class="muted small">${b.photos.length > 1 ? 'Swipe for more photos · ' : ''}<i>${esc(b.sci)}</i></p>
     <div class="tip">${esc(b.tip)}</div>
+    ${seasonOf(id) ? `<div class="season-box">
+      <b>Through the year in Sydney</b>
+      ${sparkline(id)}
+      <div class="sub">${esc(seasonOf(id).note || SEASON_TEXT[seasonLabel(id)])}</div>
+    </div>` : ''}
+    ${FACTS[id] ? `<div class="facts-box">
+      ${FACTS[id].diet ? `<p><b>Eats:</b> ${esc(FACTS[id].diet)}.</p>` : ''}
+      ${FACTS[id].names?.length ? `<p><b>Also called:</b> ${esc(FACTS[id].names.join(', '))}.</p>` : ''}
+      <p><b>Did you know?</b> It ${esc(FACTS[id].fact)}. <a href="${esc(FACTS[id].source.url)}" target="_blank" rel="noopener">Source</a></p>
+    </div>` : ''}
     ${b.calls.length ? `<h3>Calls</h3><div class="calls">${b.calls.map((c, i) => `
       <div class="call-row">
         <button class="icon-btn" data-call="${i}" aria-label="Play call ${i + 1}">▶</button>
@@ -701,6 +836,10 @@ function credits() {
     <p class="muted small">Changes made: photos are resized and cropped; recordings are trimmed to about 20 seconds and their volume evened out.
       Where an original is ShareAlike, our changed copy is available under that same licence.
       This app is free and non-commercial.</p>
+    <p class="muted small">Month-by-month charts come from <a href="https://www.ala.org.au" target="_blank" rel="noopener">Atlas of Living Australia</a> occurrence records
+      within 100 km of Sydney (accessed ${esc(SEASONS._about?.accessed || '2026')}), contributed by eBird Australia, NSW BioNet Atlas, iNaturalist Australia, BirdLife Australia and others,
+      normalised against all bird records for each month. Facts in the knowledge quiz were checked against the
+      <a href="https://en.wikipedia.org" target="_blank" rel="noopener">Wikipedia</a> article linked with each one (text CC BY-SA 4.0).</p>
     <div class="credits">
       <h3>App icon</h3>
       <ul>${item('Kookaburra photo', ICON_CREDIT)}</ul>
@@ -716,6 +855,7 @@ async function start() {
   try {
     BIRDS = await (await fetch('data/birds.json')).json();
     FACTS = await fetch('data/facts.json').then(r => r.ok ? r.json() : {}).catch(() => ({}));
+    SEASONS = await fetch('data/seasonality.json').then(r => r.ok ? r.json() : { birds: {} }).catch(() => ({ birds: {} }));
   } catch {
     $main.innerHTML = '<p>Could not load the bird list. Check your connection and reopen the app.</p>';
     return;

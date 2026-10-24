@@ -1,0 +1,1004 @@
+{
+ "_about": {
+  "source": "Atlas of Living Australia occurrence records within 100 km of Sydney, normalised against all bird records per month",
+  "accessed": "2026-10-24",
+  "providers": "eBird Australia, NSW BioNet Atlas, iNaturalist Australia, BirdLife Australia and others",
+  "index": "percentage of the species’ own 12-month mean reporting rate, January first"
+ },
+ "birds": {
+  "australian-magpie": {
+   "records": 263376,
+   "index": [
+    95,
+    100,
+    110,
+    100,
+    95,
+    97,
+    96,
+    93,
+    106,
+    111,
+    99,
+    98
+   ],
+   "ratio": 1.2,
+   "auto": "resident"
+  },
+  "laughing-kookaburra": {
+   "records": 185121,
+   "index": [
+    105,
+    102,
+    98,
+    92,
+    86,
+    90,
+    101,
+    114,
+    107,
+    91,
+    100,
+    114
+   ],
+   "ratio": 1.3,
+   "auto": "resident"
+  },
+  "sulphur-crested-cockatoo": {
+   "records": 221090,
+   "index": [
+    102,
+    104,
+    103,
+    102,
+    97,
+    99,
+    101,
+    104,
+    98,
+    92,
+    92,
+    106
+   ],
+   "ratio": 1.2,
+   "auto": "resident"
+  },
+  "galah": {
+   "records": 94092,
+   "index": [
+    92,
+    85,
+    88,
+    87,
+    90,
+    93,
+    105,
+    119,
+    119,
+    112,
+    108,
+    102
+   ],
+   "ratio": 1.4,
+   "auto": "resident"
+  },
+  "little-corella": {
+   "records": 57847,
+   "index": [
+    109,
+    113,
+    108,
+    98,
+    86,
+    84,
+    85,
+    93,
+    94,
+    114,
+    107,
+    110
+   ],
+   "ratio": 1.4,
+   "auto": "resident"
+  },
+  "yellow-tailed-black-cockatoo": {
+   "records": 47368,
+   "index": [
+    101,
+    116,
+    121,
+    123,
+    117,
+    117,
+    111,
+    96,
+    80,
+    69,
+    70,
+    79
+   ],
+   "ratio": 1.8,
+   "auto": "autumn",
+   "label": "winter-influx",
+   "note": "Flocks move to the coast in autumn and winter."
+  },
+  "rainbow-lorikeet": {
+   "records": 338351,
+   "index": [
+    98,
+    100,
+    104,
+    100,
+    101,
+    111,
+    112,
+    99,
+    88,
+    85,
+    96,
+    105
+   ],
+   "ratio": 1.3,
+   "auto": "resident"
+  },
+  "crimson-rosella": {
+   "records": 86358,
+   "index": [
+    94,
+    99,
+    107,
+    106,
+    99,
+    102,
+    103,
+    108,
+    105,
+    93,
+    89,
+    95
+   ],
+   "ratio": 1.2,
+   "auto": "resident"
+  },
+  "eastern-rosella": {
+   "records": 65913,
+   "index": [
+    92,
+    97,
+    96,
+    95,
+    102,
+    101,
+    106,
+    110,
+    110,
+    97,
+    96,
+    96
+   ],
+   "ratio": 1.2,
+   "auto": "resident"
+  },
+  "australian-king-parrot": {
+   "records": 77383,
+   "index": [
+    108,
+    107,
+    104,
+    102,
+    95,
+    96,
+    92,
+    101,
+    104,
+    96,
+    87,
+    108
+   ],
+   "ratio": 1.2,
+   "auto": "resident"
+  },
+  "noisy-miner": {
+   "records": 270665,
+   "index": [
+    95,
+    102,
+    104,
+    104,
+    100,
+    97,
+    99,
+    100,
+    105,
+    103,
+    98,
+    93
+   ],
+   "ratio": 1.1,
+   "auto": "resident"
+  },
+  "red-wattlebird": {
+   "records": 122568,
+   "index": [
+    77,
+    80,
+    87,
+    98,
+    114,
+    119,
+    118,
+    119,
+    112,
+    106,
+    89,
+    82
+   ],
+   "ratio": 1.5,
+   "auto": "winter",
+   "label": "winter-influx",
+   "note": "Follows banksia and eucalypt flowering; winter flocks."
+  },
+  "little-wattlebird": {
+   "records": 107685,
+   "index": [
+    91,
+    102,
+    102,
+    96,
+    98,
+    101,
+    102,
+    114,
+    113,
+    104,
+    89,
+    87
+   ],
+   "ratio": 1.3,
+   "auto": "resident"
+  },
+  "new-holland-honeyeater": {
+   "records": 94601,
+   "index": [
+    76,
+    97,
+    104,
+    106,
+    103,
+    123,
+    122,
+    123,
+    107,
+    91,
+    75,
+    71
+   ],
+   "ratio": 1.7,
+   "auto": "winter",
+   "label": "winter-influx",
+   "note": "More obvious in winter when banksias flower."
+  },
+  "eastern-spinebill": {
+   "records": 122807,
+   "index": [
+    82,
+    86,
+    97,
+    114,
+    122,
+    125,
+    113,
+    114,
+    94,
+    84,
+    81,
+    88
+   ],
+   "ratio": 1.5,
+   "auto": "winter",
+   "label": "winter-influx",
+   "note": "More in gardens in autumn and winter as birds leave higher country."
+  },
+  "pied-currawong": {
+   "records": 191371,
+   "index": [
+    82,
+    86,
+    99,
+    110,
+    107,
+    107,
+    112,
+    110,
+    103,
+    104,
+    96,
+    84
+   ],
+   "ratio": 1.4,
+   "auto": "resident",
+   "label": "winter-influx",
+   "note": "Some move down from the ranges to the lowlands in winter."
+  },
+  "australian-raven": {
+   "records": 228548,
+   "index": [
+    93,
+    99,
+    106,
+    107,
+    108,
+    107,
+    105,
+    104,
+    101,
+    96,
+    88,
+    87
+   ],
+   "ratio": 1.2,
+   "auto": "resident"
+  },
+  "magpie-lark": {
+   "records": 178476,
+   "index": [
+    105,
+    107,
+    112,
+    104,
+    102,
+    97,
+    96,
+    98,
+    95,
+    94,
+    92,
+    98
+   ],
+   "ratio": 1.2,
+   "auto": "resident"
+  },
+  "grey-butcherbird": {
+   "records": 157165,
+   "index": [
+    101,
+    117,
+    125,
+    118,
+    103,
+    95,
+    99,
+    99,
+    86,
+    86,
+    82,
+    89
+   ],
+   "ratio": 1.5,
+   "auto": "autumn",
+   "label": "resident",
+   "note": "Resident."
+  },
+  "willie-wagtail": {
+   "records": 137236,
+   "index": [
+    108,
+    103,
+    106,
+    105,
+    102,
+    97,
+    93,
+    94,
+    104,
+    96,
+    94,
+    99
+   ],
+   "ratio": 1.2,
+   "auto": "resident"
+  },
+  "spotted-dove": {
+   "records": 107205,
+   "index": [
+    116,
+    112,
+    106,
+    96,
+    93,
+    91,
+    97,
+    102,
+    98,
+    91,
+    91,
+    108
+   ],
+   "ratio": 1.3,
+   "auto": "resident"
+  },
+  "crested-pigeon": {
+   "records": 114766,
+   "index": [
+    112,
+    108,
+    113,
+    102,
+    94,
+    94,
+    97,
+    99,
+    96,
+    93,
+    92,
+    100
+   ],
+   "ratio": 1.2,
+   "auto": "resident"
+  },
+  "common-myna": {
+   "records": 165638,
+   "index": [
+    124,
+    115,
+    102,
+    87,
+    91,
+    94,
+    91,
+    89,
+    88,
+    90,
+    105,
+    123
+   ],
+   "ratio": 1.4,
+   "auto": "resident"
+  },
+  "red-whiskered-bulbul": {
+   "records": 71815,
+   "index": [
+    127,
+    108,
+    83,
+    83,
+    95,
+    95,
+    88,
+    92,
+    97,
+    107,
+    107,
+    118
+   ],
+   "ratio": 1.5,
+   "auto": "summer",
+   "label": "resident",
+   "note": "Resident."
+  },
+  "superb-fairywren": {
+   "records": 179717,
+   "index": [
+    104,
+    102,
+    90,
+    92,
+    104,
+    105,
+    105,
+    106,
+    104,
+    102,
+    94,
+    93
+   ],
+   "ratio": 1.2,
+   "auto": "resident"
+  },
+  "welcome-swallow": {
+   "records": 184351,
+   "index": [
+    94,
+    93,
+    99,
+    112,
+    108,
+    99,
+    95,
+    107,
+    103,
+    102,
+    94,
+    94
+   ],
+   "ratio": 1.2,
+   "auto": "resident",
+   "label": "resident",
+   "note": "Migratory further south, but present in Sydney all year."
+  },
+  "silvereye": {
+   "records": 118138,
+   "index": [
+    84,
+    82,
+    86,
+    130,
+    136,
+    127,
+    120,
+    108,
+    95,
+    83,
+    72,
+    78
+   ],
+   "ratio": 1.9,
+   "auto": "autumn",
+   "label": "winter-influx",
+   "note": "Tasmanian birds cross Bass Strait to winter in NSW, forming large flocks."
+  },
+  "grey-fantail": {
+   "records": 117619,
+   "index": [
+    85,
+    86,
+    107,
+    131,
+    118,
+    108,
+    97,
+    107,
+    114,
+    85,
+    79,
+    83
+   ],
+   "ratio": 1.7,
+   "auto": "autumn",
+   "label": "winter-influx",
+   "note": "Birds pass through and arrive from the south in autumn."
+  },
+  "spotted-pardalote": {
+   "records": 91870,
+   "index": [
+    50,
+    68,
+    97,
+    128,
+    130,
+    121,
+    123,
+    131,
+    116,
+    96,
+    81,
+    59
+   ],
+   "ratio": 2.6,
+   "auto": "winter",
+   "label": "winter-influx",
+   "note": "Moves down from higher ground in the cooler months."
+  },
+  "eastern-yellow-robin": {
+   "records": 108686,
+   "index": [
+    97,
+    106,
+    106,
+    106,
+    101,
+    101,
+    102,
+    107,
+    97,
+    91,
+    92,
+    93
+   ],
+   "ratio": 1.2,
+   "auto": "resident"
+  },
+  "golden-whistler": {
+   "records": 39510,
+   "index": [
+    55,
+    72,
+    113,
+    151,
+    143,
+    123,
+    109,
+    112,
+    94,
+    80,
+    84,
+    65
+   ],
+   "ratio": 2.7,
+   "auto": "autumn",
+   "label": "winter-influx",
+   "note": "Many move down from the ranges in autumn and winter, so Sydney gardens see more of them then."
+  },
+  "eastern-whipbird": {
+   "records": 105441,
+   "index": [
+    101,
+    96,
+    101,
+    90,
+    78,
+    80,
+    99,
+    121,
+    114,
+    109,
+    106,
+    103
+   ],
+   "ratio": 1.6,
+   "auto": "winter",
+   "label": "heard-spring",
+   "note": "Resident; the whip-crack duet is most frequent in spring."
+  },
+  "eastern-koel": {
+   "records": 44098,
+   "index": [
+    205,
+    91,
+    28,
+    5,
+    1,
+    1,
+    1,
+    3,
+    53,
+    234,
+    286,
+    292
+   ],
+   "ratio": 292,
+   "auto": "strong summer",
+   "label": "migrant-summer",
+   "note": "Arrives from the north around September, breeds over summer and leaves by about March."
+  },
+  "channel-billed-cuckoo": {
+   "records": 32573,
+   "index": [
+    195,
+    77,
+    18,
+    3,
+    2,
+    1,
+    1,
+    5,
+    137,
+    235,
+    253,
+    273
+   ],
+   "ratio": 273,
+   "auto": "strong summer",
+   "label": "migrant-summer",
+   "note": "Arrives August to October, gone again by about March."
+  },
+  "black-faced-cuckooshrike": {
+   "records": 85234,
+   "index": [
+    116,
+    94,
+    90,
+    94,
+    88,
+    79,
+    80,
+    87,
+    108,
+    119,
+    123,
+    122
+   ],
+   "ratio": 1.6,
+   "auto": "spring",
+   "label": "spring-summer",
+   "note": "Here all year but noticeably commoner in spring and summer."
+  },
+  "tawny-frogmouth": {
+   "records": 36197,
+   "index": [
+    97,
+    102,
+    118,
+    104,
+    95,
+    81,
+    70,
+    78,
+    87,
+    114,
+    141,
+    112
+   ],
+   "ratio": 2,
+   "auto": "spring",
+   "label": "resident",
+   "note": "Resident; more reports in spring and summer when fledglings sit out in the open."
+  },
+  "southern-boobook": {
+   "records": 6829,
+   "index": [
+    95,
+    97,
+    122,
+    88,
+    58,
+    50,
+    64,
+    113,
+    135,
+    122,
+    118,
+    139
+   ],
+   "ratio": 2.8,
+   "auto": "summer",
+   "label": "heard-spring",
+   "note": "Resident; calls most in spring."
+  },
+  "australian-white-ibis": {
+   "records": 144961,
+   "index": [
+    104,
+    102,
+    99,
+    102,
+    99,
+    101,
+    105,
+    100,
+    99,
+    98,
+    92,
+    99
+   ],
+   "ratio": 1.1,
+   "auto": "resident"
+  },
+  "masked-lapwing": {
+   "records": 137078,
+   "index": [
+    99,
+    105,
+    109,
+    101,
+    101,
+    102,
+    103,
+    105,
+    101,
+    92,
+    91,
+    91
+   ],
+   "ratio": 1.2,
+   "auto": "resident"
+  },
+  "australian-brushturkey": {
+   "records": 54465,
+   "index": [
+    90,
+    88,
+    86,
+    124,
+    126,
+    74,
+    84,
+    98,
+    132,
+    105,
+    92,
+    99
+   ],
+   "ratio": 1.8,
+   "auto": "spring",
+   "label": "resident",
+   "note": "Resident; mound-building in spring and summer."
+  },
+  "superb-lyrebird": {
+   "records": 31553,
+   "index": [
+    93,
+    94,
+    112,
+    98,
+    121,
+    142,
+    107,
+    78,
+    84,
+    87,
+    95,
+    89
+   ],
+   "ratio": 1.8,
+   "auto": "winter",
+   "label": "heard-winter",
+   "note": "Resident; the male sings and displays most in winter."
+  },
+  "satin-bowerbird": {
+   "records": 72243,
+   "index": [
+    107,
+    104,
+    93,
+    90,
+    90,
+    89,
+    93,
+    104,
+    102,
+    102,
+    113,
+    114
+   ],
+   "ratio": 1.3,
+   "auto": "resident"
+  },
+  "silver-gull": {
+   "records": 164861,
+   "index": [
+    88,
+    89,
+    88,
+    79,
+    92,
+    88,
+    91,
+    91,
+    101,
+    129,
+    176,
+    90
+   ],
+   "ratio": 2.2,
+   "auto": "spring",
+   "label": "resident",
+   "note": "Resident; the spring spike in records is a dataset artefact."
+  },
+  "pacific-black-duck": {
+   "records": 124282,
+   "index": [
+    110,
+    110,
+    106,
+    103,
+    101,
+    99,
+    95,
+    92,
+    96,
+    97,
+    94,
+    96
+   ],
+   "ratio": 1.2,
+   "auto": "resident"
+  },
+  "australian-wood-duck": {
+   "records": 95922,
+   "index": [
+    98,
+    97,
+    91,
+    88,
+    92,
+    103,
+    112,
+    120,
+    111,
+    98,
+    95,
+    96
+   ],
+   "ratio": 1.4,
+   "auto": "resident"
+  },
+  "dusky-moorhen": {
+   "records": 96245,
+   "index": [
+    102,
+    102,
+    103,
+    107,
+    106,
+    102,
+    103,
+    99,
+    97,
+    99,
+    90,
+    89
+   ],
+   "ratio": 1.2,
+   "auto": "resident"
+  },
+  "australasian-swamphen": {
+   "records": 65654,
+   "index": [
+    114,
+    107,
+    102,
+    103,
+    105,
+    105,
+    102,
+    98,
+    94,
+    92,
+    87,
+    92
+   ],
+   "ratio": 1.3,
+   "auto": "resident"
+  },
+  "australian-pelican": {
+   "records": 79080,
+   "index": [
+    115,
+    112,
+    106,
+    95,
+    93,
+    99,
+    103,
+    100,
+    89,
+    89,
+    92,
+    106
+   ],
+   "ratio": 1.3,
+   "auto": "resident"
+  },
+  "little-pied-cormorant": {
+   "records": 103034,
+   "index": [
+    100,
+    108,
+    108,
+    106,
+    109,
+    113,
+    109,
+    101,
+    90,
+    83,
+    83,
+    89
+   ],
+   "ratio": 1.4,
+   "auto": "resident"
+  },
+  "white-bellied-sea-eagle": {
+   "records": 28931,
+   "index": [
+    81,
+    90,
+    98,
+    113,
+    122,
+    146,
+    129,
+    105,
+    80,
+    74,
+    76,
+    87
+   ],
+   "ratio": 2,
+   "auto": "winter",
+   "label": "heard-winter",
+   "note": "Resident pairs; most vocal and visible around winter breeding."
+  }
+ }
+}
