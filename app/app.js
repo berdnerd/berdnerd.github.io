@@ -173,12 +173,10 @@ function renderQuestion(answeredId) {
   const answered = answeredId !== undefined;
   const pct = 100 * round.index / settings.roundLength;
 
+  // The call quiz's play button lives in the bottom dock, within thumb reach.
   const prompt = round.mode === 'photo'
     ? `<div class="media"><img src="${esc(photo.src)}" alt="Mystery bird"><div class="credit">${shortCredit(photo)} · ${esc(licenceLabel(photo.licence))}</div></div>`
-    : `<div class="media listen">
-         <button class="play" aria-label="Play call">▶</button>
-         <p class="muted small">Tap to play again · ${shortCredit(call)}</p>
-       </div>`;
+    : '';
 
   const showPhotos = round.mode === 'call' && settings.callAnswer === 'photos';
   const choiceClass = (o) => {
@@ -208,16 +206,26 @@ function renderQuestion(answeredId) {
         <h3>${correct ? `Correct, ${/^[AEIOU]/.test(target.name) ? 'an' : 'a'} ${esc(target.name)}!` : `It was the ${esc(target.name)}`}</h3>
         ${seePhoto}
         <p>${esc(target.tip)}</p>
+        ${round.mode === 'call' ? `<p class="muted small">Recording: ${shortCredit(call)} · ${esc(licenceLabel(call.licence))}</p>` : ''}
         ${extra ? `<div class="actions">${extra}</div>` : ''}
-      </div>
-      <button class="btn block sticky-next" data-next>${round.index + 1 >= settings.roundLength ? 'See results' : 'Next'}</button>`;
+      </div>`;
   }
+
+  const nextButton = answered
+    ? `<button class="btn block" data-next>${round.index + 1 >= settings.roundLength ? 'See results' : 'Next'}</button>` : '';
+  const dock = round.mode === 'call'
+    ? `<div class="dock">
+         <button class="play" aria-label="Play call">▶</button>
+         ${answered ? nextButton : '<div class="dock-text"><b>Play the call</b><span>Tap to hear it again</span></div>'}
+       </div>`
+    : answered ? `<div class="dock">${nextButton}</div>` : '';
 
   $main.innerHTML = `
     ${topBar(`<div class="progress"><span style="width:${pct}%"></span></div><span class="score-pill" aria-label="Score">${round.score}</span>`)}
     ${prompt}
     ${choices}
-    ${feedback}`;
+    ${feedback}
+    ${dock}`;
   wireBack(() => { stopAudio(); home(); });
 
   const play = $main.querySelector('.play');
@@ -226,10 +234,8 @@ function renderQuestion(answeredId) {
   const hear = $main.querySelector('[data-hear]');
   if (hear) hear.onclick = () => playClip(rand(target.calls).src);
   const next = $main.querySelector('[data-next]');
-  if (next) {
-    next.onclick = () => { round.index++; nextQuestion(); };
-    next.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  }
+  if (next) next.onclick = () => { round.index++; nextQuestion(); };
+  $main.querySelector('.feedback')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
 function answer(id) {

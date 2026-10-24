@@ -1,5 +1,5 @@
 // Bump VERSION whenever app files change so phones pick up the update.
-const VERSION = 'v4';
+const VERSION = 'v5';
 const SHELL_CACHE = `sydney-birds-shell-${VERSION}`;
 const MEDIA_CACHE = 'sydney-birds-media';
 const SHELL = [
