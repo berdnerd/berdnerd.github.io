@@ -21,6 +21,8 @@ const store = {
 const savedSettings = store.get('settings', {});
 const settings = Object.assign(
   { photoChoices: 4, callChoices: 4, lookalikes: true, roundLength: 10, callAnswer: 'photos', palette: 'standard' },
+  // People who were already quizzing before the starter pack existed keep all 50 birds.
+  Object.keys(store.get('stats', {})).length ? { scope: 'all' } : { scope: 'starter' },
   // Earlier versions had one "choices" setting for both quizzes.
   savedSettings.choices ? { photoChoices: savedSettings.choices, callChoices: savedSettings.choices } : {},
   savedSettings);
@@ -99,6 +101,11 @@ const FAMILIES = [
   ['water', 'Water & shore'], ['introduced', 'Introduced birds'],
 ];
 const familyName = key => FAMILIES.find(([k]) => k === key)?.[1] || key;
+// Twelve birds almost everyone in Sydney meets, to learn first.
+const STARTER = ['australian-magpie', 'laughing-kookaburra', 'sulphur-crested-cockatoo', 'galah', 'rainbow-lorikeet', 'noisy-miner',
+  'pied-currawong', 'australian-raven', 'magpie-lark', 'australian-white-ibis', 'silver-gull', 'australian-wood-duck'];
+const inScope = b => settings.scope !== 'starter' || STARTER.includes(b.id);
+const starterDone = () => STARTER.filter(id => (stats[id]?.box ?? 0) >= 2).length;
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const rand = arr => arr[Math.floor(Math.random() * arr.length)];
 function shuffle(arr) {
@@ -193,6 +200,16 @@ function home() {
       <div class="stat"><b>${seen ? due : BIRDS.length}</b><span>${seen ? 'due for review' : 'to meet'}</span></div>
       <div class="stat"><b>${accuracy}</b><span>accuracy</span></div>
     </div>
+    ${settings.scope === 'starter' ? `<div class="banner">
+      <b>Starter pack: ${starterDone()} of ${STARTER.length} birds learnt.</b>
+      ${starterDone() >= 9
+        ? '<span>Nice work. Ready for all 50?</span><button class="btn" data-unlock>Unlock all 50</button>'
+        : '<span>Quizzes use 12 everyday birds until you know them. Change this in Settings.</span>'}
+    </div>` : ''}
+    <button class="mode learn" data-go="learn">
+      <div class="emoji">${icon('learn')}</div>
+      <div><h3>Learn</h3><p>Meet the birds family by family, no scores.</p></div>
+    </button>
     <button class="mode photo" data-go="photo">
       <div class="emoji">${icon('photo')}</div>
       <div><h3>Photo quiz</h3><p>See a bird, pick its name.</p></div>
@@ -213,8 +230,64 @@ function home() {
     const go = btn.dataset.go;
     if (go === 'photo' || go === 'call') startRound(go);
     else if (go === 'browse') browse();
+    else if (go === 'learn') learnFamilies();
     else settingsScreen();
   });
+  const unlock = $main.querySelector('[data-unlock]');
+  if (unlock) unlock.onclick = () => { settings.scope = 'all'; saveSettings(); home(); };
+}
+
+// ---------- Learn: flashcards by family ----------
+function learnFamilies() {
+  stopAudio();
+  $main.innerHTML = `
+    ${topBar('<h2 class="grow">Learn</h2>')}
+    <p class="muted">Pick a family. Each card shows the bird, its name, what to look for and its call.</p>
+    <div class="families">${FAMILIES.map(([key, label]) => {
+      const birds = BIRDS.filter(b => b.family === key);
+      const known = birds.filter(b => status(b.id) === 'mastered').length;
+      return `<button class="row" data-family="${key}">
+        <img src="${esc(birds[0].photos[0]?.src)}" alt="">
+        <div class="grow"><b>${label}</b><div class="sub">${birds.length} birds${known ? ` · ${known} mastered` : ''}</div></div>
+        <span class="chev">›</span>
+      </button>`;
+    }).join('')}</div>`;
+  wireBack();
+  $main.querySelectorAll('[data-family]').forEach(el => el.onclick = () => learnCards(el.dataset.family, 0));
+}
+
+function learnCards(family, index) {
+  stopAudio();
+  const birds = BIRDS.filter(b => b.family === family);
+  const b = birds[index];
+  const photo = b.photos[0];
+  $main.innerHTML = `
+    ${topBar(`<h2 class="grow">${familyName(family)}</h2><span class="score-pill">${index + 1}/${birds.length}</span>`)}
+    <div class="card">
+      <div class="media"><img src="${esc(photo.src)}" alt="${esc(b.name)}"><div class="credit">${shortCredit(photo)} · ${esc(licenceLabel(photo.licence))}</div></div>
+      <div class="card-body">
+        <h2>${esc(b.name)}</h2>
+        <p class="muted small"><i>${esc(b.sci)}</i>${b.status === 'introduced' ? ' · introduced' : ''}</p>
+        <p>${esc(b.tip)}</p>
+        ${b.confusedWith?.length ? `<p class="muted small">Often confused with ${b.confusedWith.map(id => esc(byId(id).name)).join(', ')}.</p>` : ''}
+        <div class="actions">
+          ${b.calls.length ? '<button class="btn secondary" data-hear>🔊 Hear its call</button>' : ''}
+          <button class="btn secondary" data-more>More photos</button>
+        </div>
+      </div>
+    </div>
+    <div class="dock">
+      <button class="btn secondary" data-prev ${index === 0 ? 'disabled' : ''}>‹ Back</button>
+      ${index + 1 < birds.length
+        ? '<button class="btn block" data-next>Next bird ›</button>'
+        : '<button class="btn block" data-quiz>Quiz me on these</button>'}
+    </div>`;
+  wireBack(learnFamilies);
+  $main.querySelector('[data-hear]')?.addEventListener('click', e => playClip(rand(b.calls).src, e.currentTarget));
+  $main.querySelector('[data-more]').onclick = () => birdDetail(b.id, () => learnCards(family, index));
+  $main.querySelector('[data-prev]').onclick = () => learnCards(family, index - 1);
+  $main.querySelector('[data-next]')?.addEventListener('click', () => learnCards(family, index + 1));
+  $main.querySelector('[data-quiz]')?.addEventListener('click', () => startRound('photo', birds));
 }
 
 function topBar(inner = '') {
@@ -227,9 +300,9 @@ function wireBack(fn = home) {
 // ---------- Quiz ----------
 let round;
 
-function startRound(mode) {
-  const pool = mode === 'call' ? BIRDS.filter(b => b.calls.length) : BIRDS.filter(b => b.photos.length);
-  round = { mode, pool, index: 0, score: 0, recent: [], missed: [] };
+function startRound(mode, birds = BIRDS.filter(inScope)) {
+  const pool = mode === 'call' ? birds.filter(b => b.calls.length) : birds.filter(b => b.photos.length);
+  round = { mode, pool, index: 0, score: 0, recent: [], missed: [], birds };
   nextQuestion();
 }
 
@@ -361,7 +434,7 @@ function results() {
     <button class="btn block" data-again>Play again</button>
     <button class="btn block secondary" data-home>Home</button>`;
   wireBack();
-  $main.querySelector('[data-again]').onclick = () => startRound(round.mode);
+  $main.querySelector('[data-again]').onclick = () => startRound(round.mode, round.birds);
   $main.querySelector('[data-home]').onclick = home;
   $main.querySelectorAll('[data-bird]').forEach(el => el.onclick = () => birdDetail(el.dataset.bird, results));
 }
@@ -445,6 +518,7 @@ function settingsScreen() {
     </div>
     <h3 class="section">Both quizzes</h3>
     <div class="panel">
+      <div class="setting"><span>Birds in quizzes</span>${seg('scope', ['starter', 'all'], ['Starter 12', 'All 50'])}</div>
       <div class="setting"><span>Questions per round</span>${seg('roundLength', [10, 20, 30])}</div>
       <div class="setting"><span>Tricky lookalikes</span>${seg('lookalikes', [true, false], ['On', 'Off'])}</div>
     </div>
